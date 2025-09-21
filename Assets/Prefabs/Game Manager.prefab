@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4640977295831820932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903810617535682981}
+  - component: {fileID: 5916086866358601764}
+  - component: {fileID: 6534326840231186597}
+  - component: {fileID: 978380243284768667}
+  - component: {fileID: 7350449154724736018}
+  - component: {fileID: 4921404867345032155}
+  - component: {fileID: 529904240175199580}
+  - component: {fileID: 8559699735157057783}
+  - component: {fileID: 93293556193629150}
+  - component: {fileID: 2008846852244014346}
+  - component: {fileID: 5094930108127344411}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: gm
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903810617535682981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5916086866358601764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c26e9fc433aa44aa4f8b04aea99089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6534326840231186597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf074d22d088a8afbd0140ab2d7a8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 100
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  province: {fileID: 0}
+  panel: {fileID: 0}
+  panel2: {fileID: 0}
+--- !u!114 &978380243284768667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfed2e6f798b02bea90ffb1b52db0a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors: []
+  countries: []
+  governments:
+  - {fileID: 11400000, guid: 1e3df9ad1387c22aeae16ef1ba4de4be, type: 2}
+  provincesInformation: []
+  provincesMeshRender: []
+  playingAsTag: 
+  turnCount: 0
+--- !u!114 &7350449154724736018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3180cf3c0284c32f8b43722427cd767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4921404867345032155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3aae853d23977acbcddadab8f0887f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedProvince: 0
+--- !u!114 &529904240175199580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228c06bddba0fb0329a70c006c56bf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constructionButtons:
+  - {fileID: 0}
+--- !u!114 &8559699735157057783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7c6f602e9212bcbb417902531d3f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &93293556193629150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b96f9b3fd0ec3ae8b18ab31e5d0d274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  panel2: {fileID: 0}
+  provinceName: {fileID: 0}
+  provincePopulation: {fileID: 0}
+  provinceNeighbours: {fileID: 0}
+  provinceOwner: {fileID: 0}
+  provinceID: {fileID: 0}
+  provinceBuildingCount: {fileID: 0}
+  provinceBuildingList: {fileID: 0}
+  topPlayingAs: {fileID: 0}
+  topMoney: {fileID: 0}
+  topTurn: {fileID: 0}
+--- !u!114 &2008846852244014346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2652ea67e8b0960b48bbccbaed25e1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5094930108127344411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640977295831820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedaf60cfe71c275d8c17f6974aae174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

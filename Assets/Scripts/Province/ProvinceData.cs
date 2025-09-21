@@ -1,0 +1,78 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ProvinceData : MonoBehaviour
+{
+    public ProvinceInformation data;
+    public List<GameObject> neighbours;
+    [SerializeField] Collider[] colliders;
+    public Color color;
+
+    GameData gameData;
+
+    void Start()
+    {
+        data = GetComponent<ProvinceInformation>();
+
+        if (data != null)
+        {
+            name = data.provinceName;
+            gameData = GameObject.FindWithTag("gm").GetComponent<GameData>();
+
+            colliders = GetComponentsInChildren<Collider>();
+            List<Collider> tempColliders = new List<Collider>(colliders);
+            tempColliders.Remove(GetComponent<Collider>());
+            colliders = tempColliders.ToArray();
+
+            Color newColor = Color.red;
+            if (gameData.colors.Contains(newColor))
+            {
+                newColor = new Color(Random.Range(0f, 255f) / 255f, Random.Range(0f, 255f) / 255f, Random.Range(0f, 255f) / 255f, 0.5f);
+            }
+            gameData.colors.Add(newColor);
+            color = newColor;
+            GetComponent<MeshRenderer>().material.color = newColor;
+
+            foreach (var col in colliders)
+            {
+                BoxCollider box = col as BoxCollider;
+                Vector3 worldCenter = box.transform.TransformPoint(box.center);
+                Vector3 worldHalfExtents = Vector3.Scale(box.size * 0.5f, box.transform.lossyScale);
+
+                Collider[] hits = Physics.OverlapBox(worldCenter, worldHalfExtents, box.transform.rotation);
+                Debug.Log($"[{name} // {col}]: Performing foreach\nHits: {hits[0]}");
+                foreach (Collider hit in hits)
+                {
+                    Debug.Log($"[{name}]: Collider ({col}) has hit: {hit}");
+                    GameObject hitParent = hit.GetComponentInParent<ProvinceData>().gameObject;
+                    if (hit != col && hitParent != gameObject && !neighbours.Contains(hitParent))
+                    {
+                        neighbours.Add(hitParent);
+                    }
+                }
+            }
+            //GetComponent<MeshRenderer>().material.color = new Color(0f,0f,0f,1f);
+
+            gameData.provincesInformation.Add(data);
+            gameData.provincesMeshRender.Add(gameObject);
+
+            /*MeshCollider childCollider = child.GetComponent<MeshCollider>();
+            Transform childTransform = child.GetComponent<Transform>();
+            hits = Physics.OverlapBox(transform.position, childCollider.bounds.extents, childTransform.rotation);
+            Debug.Log("[LOG]: " + childTransform.position.ToString() + " ||| " + childCollider.bounds.extents.ToString() + " ||| " + childTransform.rotation.ToString());
+
+            foreach (MeshCollider hit in hits)
+            {
+                if (hit.gameObject != gameObject)
+                {
+                    neighbours.Add(hit.gameObject);
+                    Debug.Log("Colliding with: " + hit.name);
+                }
+            }*/
+        }
+        else
+        {
+            Debug.LogError("Object does not have data attached to it!");
+        }
+    }
+}
