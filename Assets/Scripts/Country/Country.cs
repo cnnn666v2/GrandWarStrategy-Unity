@@ -11,4 +11,5 @@ public class Country
     public List<int> ownedProvinces;
     public List<int> occupiedProvinces;
     public int money;
+    public int maxMoney;
 }

@@ -10,4 +10,5 @@ public class GameData : MonoBehaviour
     public List<GameObject> provincesMeshRender;
     public string playingAsTag;
     public int turnCount;
+    public List<(string offender, string defender)> warList = new List<(string, string)>();
 }

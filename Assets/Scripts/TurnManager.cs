@@ -15,13 +15,19 @@ public class TurnManager : MonoBehaviour
     public void NextTurn()
     {
         gameData.turnCount++;
-        var playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+        int totalIncome = 0;
+        //var playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
         foreach (var country in gameData.countries)
         {
-            int totalIncome = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedIncome);
-            country.money += totalIncome;
+            totalIncome = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedIncome);
+            int maxMoney = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedMoneyStorage);
+
+            country.maxMoney = maxMoney;
+
+            int newCurrentMoney = country.money + totalIncome;
+            if (newCurrentMoney >= maxMoney) country.money = maxMoney; else country.money = newCurrentMoney;
         }
 
-        guiUpdater.updateTopBar();
+        guiUpdater.updateTopBar(totalIncome);
     }
 }

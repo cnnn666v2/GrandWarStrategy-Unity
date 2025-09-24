@@ -10,12 +10,16 @@ public class ProvinceInformation : MonoBehaviour
     public Color color;
     public bool isCapital = false;
     public int buildingLimit = 5;
-    public int cachedIncome;
     public List<Building> buildings = new List<Building>();
+
+    // Cache
+    public int cachedIncome;
+    public int cachedMoneyStorage;
 
     public void AddBuilding(Building building)
     {
         buildings.Add(building);
         if (building is Market market) cachedIncome += market.income;
+        if (building is Bank bank) cachedMoneyStorage += bank.goldStorage;
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ButtonHandler : MonoBehaviour
 {
@@ -15,10 +16,15 @@ public class ButtonHandler : MonoBehaviour
         buildingsManager = GetComponent<BuildingsManager>();
         guiUpdater = GetComponent<GUIUpdater>();
 
-        constructionButtons[0].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[0]));
-        constructionButtons[0].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
+        for (int i = 0; i < constructionButtons.Count; i++)
+        {
+            int index = i;
+            TMP_Text btnText = constructionButtons[index].GetComponentInChildren<TMP_Text>();
+            btnText.text = $"Build {buildingsManager.buildings[index].buildingName} - {buildingsManager.buildings[index].cost} money";
 
-        constructionButtons[1].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[1]));
-        constructionButtons[1].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
+            constructionButtons[i].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[index]));
+            constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
+            constructionButtons[i].onClick.AddListener(() => guiUpdater.updateTopBar());
+        }
     }
 }
