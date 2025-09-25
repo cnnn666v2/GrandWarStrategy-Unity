@@ -99,7 +99,6 @@ public class GUIUpdater : MonoBehaviour
         diplomacyGovernment.text = selectedCountry.government.governmentName;
         diplomacyAtWar.text = enemyNames.Count > 0 ? string.Join(", ", enemyNames) : "At peace";
 
-
         diplomacyWar.onClick.RemoveAllListeners();
         if(selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
     }

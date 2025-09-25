@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,12 +12,14 @@ public class ClickProvince : MonoBehaviour
     public LayerMask hitLayers = 6;
     private MeshRenderer selectedProvinceRenderer;
     private Color selectedProvinceColor;
+    private Country selectedCountry;
     private GUIChanges gui;
     private GUIUpdater guiUpdater;
     private ProvinceManager provinceManager;
     public ProvinceData province;
     private GameData gameData;
     [SerializeField] GameObject panel, panel2, panel3;
+    [SerializeField] Dictionary<int, ProvinceInformation> provinceLookup = new Dictionary<int, ProvinceInformation>();
 
     void Start()
     {
@@ -22,6 +27,11 @@ public class ClickProvince : MonoBehaviour
         guiUpdater = GetComponent<GUIUpdater>();
         provinceManager = GetComponent<ProvinceManager>();
         gameData = GetComponent<GameData>();
+
+        foreach (var province in gameData.provincesInformation)
+        {
+            provinceLookup[province.id] = province;
+        }
     }
 
     void Update()
@@ -67,7 +77,7 @@ public class ClickProvince : MonoBehaviour
                 gui.hidePanel(panel3);
             }
         }
-        else if(Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1))
         {
             if (EventSystem.current.IsPointerOverGameObject()) return;
 
@@ -83,19 +93,9 @@ public class ClickProvince : MonoBehaviour
                     return;
                 }
 
-                for (int i = 0; i < gameData.countries.Count; i++)
-                {
-                    if (gameData.provincesInformation[i].owner == province.data.owner)
-                    {
-                        gameData.provincesInformation[i].GetComponent<MeshRenderer>().material.color = Color.blue;
-                    }
-                    else
-                    {
-                        gameData.provincesInformation[i].GetComponent<MeshRenderer>().material.color = Color.gray;
-                    }
-                }
-
-                provinceManager.selectedProvince = province.data.id;
+                selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == province.data.owner);
+                if (selectedProvinceColor == null) selectedProvinceColor = selectedCountry.color;
+                paintProvinces();
 
                 gui.showPanel(panel3);
                 gui.hidePanel(panel);
@@ -111,6 +111,33 @@ public class ClickProvince : MonoBehaviour
                 gui.hidePanel(panel2);
                 gui.hidePanel(panel3);
             }
+        }
+    }
+
+    private void paintProvinces()
+    {
+        if (selectedCountry != null)
+        {
+            selectedProvinceColor = selectedCountry.color;
+
+            foreach (var paintProvinceId in selectedCountry.ownedProvinces)
+            {
+                if (provinceLookup.TryGetValue(paintProvinceId, out var provinceInfo))
+                {
+                    provinceInfo.GetComponent<MeshRenderer>().material.color = Color.blue;
+                }
+            }
+        }
+        else
+        {
+            foreach (var paintProvinceId in selectedCountry.ownedProvinces)
+            {
+                if (provinceLookup.TryGetValue(paintProvinceId, out var provinceInfo))
+                {
+                    provinceInfo.GetComponent<MeshRenderer>().material.color = selectedProvinceColor;
+                }
+            }
+            return;
         }
     }
 }
