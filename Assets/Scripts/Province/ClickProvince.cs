@@ -17,6 +17,7 @@ public class ClickProvince : MonoBehaviour
     private GUIUpdater guiUpdater;
     private ProvinceManager provinceManager;
     public ProvinceData province;
+    private List<MeshRenderer> selectedProvinces = new List<MeshRenderer>();
     private GameData gameData;
     [SerializeField] GameObject panel, panel2, panel3;
     [SerializeField] Dictionary<int, ProvinceInformation> provinceLookup = new Dictionary<int, ProvinceInformation>();
@@ -116,6 +117,9 @@ public class ClickProvince : MonoBehaviour
 
     private void paintProvinces()
     {
+        if (selectedProvinces.Count > 0) foreach (var province in selectedProvinces) province.material.color = selectedCountry.color;
+        selectedProvinces.Clear();
+
         if (selectedCountry != null)
         {
             selectedProvinceColor = selectedCountry.color;
@@ -125,6 +129,7 @@ public class ClickProvince : MonoBehaviour
                 if (provinceLookup.TryGetValue(paintProvinceId, out var provinceInfo))
                 {
                     provinceInfo.GetComponent<MeshRenderer>().material.color = Color.blue;
+                    selectedProvinces.Add(provinceInfo.GetComponent<MeshRenderer>());
                 }
             }
         }
