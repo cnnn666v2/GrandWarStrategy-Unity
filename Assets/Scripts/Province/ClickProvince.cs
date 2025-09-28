@@ -1,7 +1,7 @@
+// TODO: completely rewrite this broken shit i swear i will kill myself
+
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,15 +10,18 @@ public class ClickProvince : MonoBehaviour
 
     public float maxDistance = 100f;
     public LayerMask hitLayers = 6;
-    private MeshRenderer selectedProvinceRenderer;
-    private Color selectedProvinceColor;
-    private Country selectedCountry;
+
     private GUIChanges gui;
     private GUIUpdater guiUpdater;
+    private GameData gameData;
+
+    private Country selectedCountry;
     private ProvinceManager provinceManager;
     public ProvinceData province;
+    private Color selectedProvinceColor;
     private List<MeshRenderer> selectedProvinces = new List<MeshRenderer>();
-    private GameData gameData;
+    private MeshRenderer selectedProvinceRenderer;
+
     [SerializeField] GameObject panel, panel2, panel3;
     [SerializeField] Dictionary<int, ProvinceInformation> provinceLookup = new Dictionary<int, ProvinceInformation>();
 
@@ -39,14 +42,11 @@ public class ClickProvince : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // Ignore if clicked on UI
             if (EventSystem.current.IsPointerOverGameObject()) return;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
             {
-                province = hit.collider.GetComponent<ProvinceData>();
                 Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
                 if (hit.collider.tag != "province")
                 {
@@ -54,28 +54,25 @@ public class ClickProvince : MonoBehaviour
                     return;
                 }
 
-                if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
-                selectedProvinceRenderer = hit.collider.GetComponent<MeshRenderer>();
-                selectedProvinceRenderer.material.color = Color.red;
-                selectedProvinceColor = province.data.color;
+                paintProvinces(false);
 
+                province = hit.collider.GetComponent<ProvinceData>();
+                paintProvince(hit);
                 provinceManager.selectedProvince = province.data.id;
 
+                hidePanels();
                 gui.showPanel(panel);
                 gui.showPanel(panel2);
-                gui.hidePanel(panel3);
 
                 guiUpdater.updateProvincePanel();
                 guiUpdater.updateBuildingsPanel();
-
             }
             else
             {
+                paintProvinces(false);
                 Debug.Log("No hit");
                 if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
-                gui.hidePanel(panel);
-                gui.hidePanel(panel2);
-                gui.hidePanel(panel3);
+                hidePanels();
             }
         }
         else if (Input.GetMouseButtonDown(1))
@@ -83,7 +80,6 @@ public class ClickProvince : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject()) return;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
             {
                 province = hit.collider.GetComponent<ProvinceData>();
@@ -94,33 +90,41 @@ public class ClickProvince : MonoBehaviour
                     return;
                 }
 
-                selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == province.data.owner);
-                if (selectedProvinceColor == null) selectedProvinceColor = selectedCountry.color;
-                paintProvinces();
+                if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
 
+                selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == province.data.owner);
+                paintProvinces(true);
+
+                hidePanels();
                 gui.showPanel(panel3);
-                gui.hidePanel(panel);
-                gui.hidePanel(panel2);
+
                 guiUpdater.updateDiplomacyPanel();
 
             }
             else
             {
                 if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
+                paintProvinces(false);
                 Debug.Log("No hit");
-                gui.hidePanel(panel);
-                gui.hidePanel(panel2);
-                gui.hidePanel(panel3);
+                hidePanels();
             }
         }
     }
 
-    private void paintProvinces()
+    private void paintProvince(RaycastHit hit)
     {
-        if (selectedProvinces.Count > 0) foreach (var province in selectedProvinces) province.material.color = selectedCountry.color;
+        if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
+        selectedProvinceRenderer = hit.collider.GetComponent<MeshRenderer>();
+        selectedProvinceRenderer.material.color = Color.red;
+        selectedProvinceColor = province.data.color;
+    }
+
+    private void paintProvinces(bool isHitProvince)
+    {
+        if (selectedProvinces.Count > 0) foreach (var province in selectedProvinces) province.material.color = selectedProvinceColor;
         selectedProvinces.Clear();
 
-        if (selectedCountry != null)
+        if (isHitProvince)
         {
             selectedProvinceColor = selectedCountry.color;
 
@@ -138,11 +142,16 @@ public class ClickProvince : MonoBehaviour
             foreach (var paintProvinceId in selectedCountry.ownedProvinces)
             {
                 if (provinceLookup.TryGetValue(paintProvinceId, out var provinceInfo))
-                {
                     provinceInfo.GetComponent<MeshRenderer>().material.color = selectedProvinceColor;
-                }
             }
             return;
         }
+    }
+
+    private void hidePanels()
+    {
+        gui.hidePanel(panel);
+        gui.hidePanel(panel2);
+        gui.hidePanel(panel3);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,5 +11,5 @@ public class GameData : MonoBehaviour
     public List<GameObject> provincesMeshRender;
     public string playingAsTag;
     public int turnCount;
-    public List<(string offender, string defender)> warList = new List<(string, string)>();
+    public List<War> wars = new List<War>();
 }

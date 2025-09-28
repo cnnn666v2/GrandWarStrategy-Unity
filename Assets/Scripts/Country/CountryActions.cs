@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -20,6 +21,6 @@ public class CountryActions : MonoBehaviour
             return;
         }
 
-        gameData.warList.Add((offender, defender));
+        gameData.wars.Add(new War("War", new List<string> { offender }, new List<string> { defender }));
     }
 }

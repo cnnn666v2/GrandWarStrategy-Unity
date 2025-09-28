@@ -14,7 +14,7 @@ public class GUIUpdater : MonoBehaviour
     TMP_Text provinceName, provincePopulation, provinceNeighbours, provinceOwner, provinceID,
                                 provinceBuildingCount, provinceBuildingList,
                                 topPlayingAs, topMoney, topTurn,
-                                diplomacyCountry, diplomacyGovernment, diplomacyAtWar;
+                                diplomacyCountry, diplomacyGovernment, diplomacyAtWar, diplomacyRelations;
     [SerializeField] Button diplomacyWar;
     int lastIncome;
 
@@ -85,19 +85,19 @@ public class GUIUpdater : MonoBehaviour
 
         if (selectedCountry == null) return;
 
-        var enemies = gameData.warList
-            .Where(w => w.offender == selectedCountry.countryTag || w.defender == selectedCountry.countryTag)
-            .Select(w => w.offender == selectedCountry.countryTag ? w.defender : w.offender)
-            .Distinct()
-            .ToList();
+        diplomacyRelations.text = "Peace";
 
-        var enemyNames = enemies
-            .Select(tag => gameData.countries.FirstOrDefault(c => c.countryTag == tag)?.countryName ?? tag)
-            .ToList();
+        foreach (var war in gameData.wars)
+        {
+            if ((war.offenders.Contains(selectedCountry.countryTag) || war.defenders.Contains(selectedCountry.countryTag))
+                && (war.offenders.Contains(gameData.playingAsTag) || war.defenders.Contains(gameData.playingAsTag)))
+            {
+                diplomacyRelations.text = "At war";
+            }
+        }
 
         diplomacyCountry.text = selectedCountry.countryName;
         diplomacyGovernment.text = selectedCountry.government.governmentName;
-        diplomacyAtWar.text = enemyNames.Count > 0 ? string.Join(", ", enemyNames) : "At peace";
 
         diplomacyWar.onClick.RemoveAllListeners();
         if(selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
