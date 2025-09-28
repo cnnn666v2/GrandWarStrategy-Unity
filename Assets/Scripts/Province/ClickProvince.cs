@@ -137,7 +137,7 @@ public class ClickProvince : MonoBehaviour
                 }
             }
         }
-        else
+        else if(selectedCountry != null)
         {
             foreach (var paintProvinceId in selectedCountry.ownedProvinces)
             {

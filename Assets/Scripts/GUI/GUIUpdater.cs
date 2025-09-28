@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class GUIUpdater : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GUIUpdater : MonoBehaviour
     ClickProvince clickProvince;
     CountryActions countryAction;
     GameData gameData;
+    WarManager warManager;
+
     [SerializeField] GameObject panel, panel2, panel3;
     [SerializeField]
     TMP_Text provinceName, provincePopulation, provinceNeighbours, provinceOwner, provinceID,
@@ -25,6 +28,7 @@ public class GUIUpdater : MonoBehaviour
         clickProvince = GetComponent<ClickProvince>();
         gameData = GetComponent<GameData>();
         countryAction = GetComponent<CountryActions>();
+        warManager = GetComponent<WarManager>();
     }
 
     public void updateProvincePanel()
@@ -81,23 +85,28 @@ public class GUIUpdater : MonoBehaviour
 
     public void updateDiplomacyPanel()
     {
-        var selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.data.owner);
-
+        Country selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.data.owner);
         if (selectedCountry == null) return;
 
         diplomacyRelations.text = "Peace";
 
-        foreach (var war in gameData.wars)
+        foreach (War war in gameData.wars)
         {
             if ((war.offenders.Contains(selectedCountry.countryTag) || war.defenders.Contains(selectedCountry.countryTag))
                 && (war.offenders.Contains(gameData.playingAsTag) || war.defenders.Contains(gameData.playingAsTag)))
-            {
-                diplomacyRelations.text = "At war";
-            }
+                    diplomacyRelations.text = "At war";
         }
 
         diplomacyCountry.text = selectedCountry.countryName;
         diplomacyGovernment.text = selectedCountry.government.governmentName;
+        List<string> enemies = warManager.GetEnemiesOf(selectedCountry.countryTag);
+        if (enemies.Count > 0)
+        {
+            string printedEnemies = "";
+            foreach (string enemy in enemies) printedEnemies += enemy + ", ";
+            gui.updateText(diplomacyAtWar, "At war with: ", printedEnemies);
+        }
+        else diplomacyAtWar.text = "At war with no one";
 
         diplomacyWar.onClick.RemoveAllListeners();
         if(selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
