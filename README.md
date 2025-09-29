@@ -30,5 +30,7 @@ The project is in very early alpha stages, so many things are unoptimized and me
 
 Any help with the project is greatly appreciated. So if you have some skills, take a look at this and offer some improvements, or even new features if you want!
 
+You can track progress of the project here: https://trello.com/b/dHGOdTtB/grand-war-strategy
+
 To discuss the project, join my discord server: https://discord.gg/ayF3srjbC2
 
