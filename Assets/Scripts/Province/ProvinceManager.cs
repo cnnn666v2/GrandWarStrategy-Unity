@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class ProvinceManager : MonoBehaviour
 {
@@ -12,15 +13,11 @@ public class ProvinceManager : MonoBehaviour
 
     public void constructBuilding(Building newBuilding)
     {
-        var playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+        Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+        if (playerCountry == null) return;
+        if (playerCountry.money < newBuilding.cost) return;
 
-        if (playerCountry == null) 
-            return;
-
-        if (playerCountry.money < newBuilding.cost)
-            return;
-
-        foreach (var province in gameData.provincesInformation)
+        foreach (ProvinceInformation province in gameData.provincesInformation)
         {
             if (province.owner == gameData.playingAsTag &&
                 province.id == selectedProvince &&
@@ -29,6 +26,28 @@ public class ProvinceManager : MonoBehaviour
             {
                 playerCountry.money -= newBuilding.cost;
                 province.AddBuilding(newBuilding);
+                break;
+            }
+        }
+    }
+
+    public void isConstructedBuilding(Building building, Button button)
+    {
+        Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+
+        foreach (ProvinceInformation province in gameData.provincesInformation)
+        {
+            if (province.owner == gameData.playingAsTag &&
+                province.id == selectedProvince &&
+                province.buildingLimit > province.buildings.Count &&
+                province.buildings.Contains(building))
+            {
+                button.enabled = false;
+                break;
+            }
+            else
+            {
+                button.enabled = true;
                 break;
             }
         }

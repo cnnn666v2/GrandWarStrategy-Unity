@@ -26,5 +26,15 @@ public class ButtonHandler : MonoBehaviour
             constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
             constructionButtons[i].onClick.AddListener(() => guiUpdater.updateTopBar());
         }
+
+    }
+
+    public void isBuilt()
+    {
+        for (int i = 0; i < constructionButtons.Count; i++)
+        {
+            int index = i;
+            provinceManager.isConstructedBuilding(buildingsManager.buildings[index], constructionButtons[index]);
+        }
     }
 }

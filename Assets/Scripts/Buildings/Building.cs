@@ -3,4 +3,5 @@ public abstract class Building
 {
     public string buildingName;
     public int cost;
+    public int constructionTime;
 }

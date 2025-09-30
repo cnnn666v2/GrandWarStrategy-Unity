@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ProvinceInformation : MonoBehaviour
@@ -9,12 +11,24 @@ public class ProvinceInformation : MonoBehaviour
     public string owner = "N/A";
     public Color color;
     public bool isCapital = false;
+    public int infrastructure = 100;
+    public int infrastructureLimit = 250;
+    public string resource = "Wood"; // treated as string for easier modding in future
+
+    //Buildings
     public int buildingLimit = 5;
     public List<Building> buildings = new List<Building>();
-
+    public List<Construction> constructions = new List<Construction>();
+    
     // Cache
     public int cachedIncome;
     public int cachedMoneyStorage;
+
+    void Start()
+    {
+        cachedIncome = Mathf.RoundToInt(infrastructure / 5);
+        cachedMoneyStorage = Mathf.RoundToInt(infrastructure / 2);
+    }
 
     public void AddBuilding(Building building)
     {
@@ -22,4 +36,10 @@ public class ProvinceInformation : MonoBehaviour
         if (building is Market market) cachedIncome += market.income;
         if (building is Bank bank) cachedMoneyStorage += bank.goldStorage;
     }
+}
+
+public class Construction
+{
+    protected Building building;
+    protected int turnsRemaining;
 }

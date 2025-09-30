@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class GUIUpdater : MonoBehaviour
 {
     GUIChanges gui;
+    ButtonHandler btnHandler;
     ClickProvince clickProvince;
     CountryActions countryAction;
     GameData gameData;
@@ -25,6 +26,7 @@ public class GUIUpdater : MonoBehaviour
     void Start()
     {
         gui = GetComponent<GUIChanges>();
+        btnHandler = GetComponent<ButtonHandler>();
         clickProvince = GetComponent<ClickProvince>();
         gameData = GetComponent<GameData>();
         countryAction = GetComponent<CountryActions>();
@@ -48,8 +50,9 @@ public class GUIUpdater : MonoBehaviour
         gui.updateText(provinceBuildingCount, "Total buildings: ", clickProvince.province.data.buildings.Count + "/" + clickProvince.province.data.buildingLimit.ToString());
 
         string printedBuildings = "";
-        foreach (var b in clickProvince.province.data.buildings) printedBuildings += b + ", ";
+        foreach (Building b in clickProvince.province.data.buildings) printedBuildings += b + ", ";
         gui.updateText(provinceBuildingList, "Constructed buildings: ", printedBuildings);
+        btnHandler.isBuilt();
     }
 
     public void updateTopBar()
