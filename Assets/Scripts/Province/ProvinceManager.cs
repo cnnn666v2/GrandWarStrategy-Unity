@@ -31,25 +31,20 @@ public class ProvinceManager : MonoBehaviour
         }
     }
 
-    public void isConstructedBuilding(Building building, Button button)
+    public bool isConstructedBuilding(Building building)
     {
         Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
-
         foreach (ProvinceInformation province in gameData.provincesInformation)
         {
+            Debug.Log($"Selected: {selectedProvince} // Province: {province.id}");
             if (province.owner == gameData.playingAsTag &&
                 province.id == selectedProvince &&
                 province.buildingLimit > province.buildings.Count &&
-                province.buildings.Contains(building))
+                (province.buildings.Contains(building) || province.constructions.Any(b => b.building == building)))
             {
-                button.enabled = false;
-                break;
-            }
-            else
-            {
-                button.enabled = true;
-                break;
+                return true;
             }
         }
+        return false;
     }
 }

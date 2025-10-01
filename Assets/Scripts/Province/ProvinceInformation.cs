@@ -40,6 +40,6 @@ public class ProvinceInformation : MonoBehaviour
 
 public class Construction
 {
-    protected Building building;
-    protected int turnsRemaining;
+    public Building building;
+    public int turnsRemaining;
 }

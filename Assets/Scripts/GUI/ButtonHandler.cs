@@ -15,7 +15,6 @@ public class ButtonHandler : MonoBehaviour
         provinceManager = GetComponent<ProvinceManager>();
         buildingsManager = GetComponent<BuildingsManager>();
         guiUpdater = GetComponent<GUIUpdater>();
-
         for (int i = 0; i < constructionButtons.Count; i++)
         {
             int index = i;
@@ -34,7 +33,14 @@ public class ButtonHandler : MonoBehaviour
         for (int i = 0; i < constructionButtons.Count; i++)
         {
             int index = i;
-            provinceManager.isConstructedBuilding(buildingsManager.buildings[index], constructionButtons[index]);
+            if (provinceManager.isConstructedBuilding(buildingsManager.buildings[index]))
+            {
+                constructionButtons[index].interactable = false;
+            }
+            else
+            {
+                constructionButtons[index].interactable = true;
+            }
         }
     }
 }

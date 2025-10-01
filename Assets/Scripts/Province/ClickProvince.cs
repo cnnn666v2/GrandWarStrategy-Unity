@@ -14,6 +14,7 @@ public class ClickProvince : MonoBehaviour
     private GUIChanges gui;
     private GUIUpdater guiUpdater;
     private GameData gameData;
+    private ButtonHandler buttonHandler;
 
     private Country selectedCountry;
     private ProvinceManager provinceManager;
@@ -29,6 +30,7 @@ public class ClickProvince : MonoBehaviour
     {
         gui = GetComponent<GUIChanges>();
         guiUpdater = GetComponent<GUIUpdater>();
+        buttonHandler = GetComponent<ButtonHandler>();
         provinceManager = GetComponent<ProvinceManager>();
         gameData = GetComponent<GameData>();
 
@@ -59,6 +61,8 @@ public class ClickProvince : MonoBehaviour
                 province = hit.collider.GetComponent<ProvinceData>();
                 paintProvince(hit);
                 provinceManager.selectedProvince = province.data.id;
+
+                buttonHandler.isBuilt();
 
                 hidePanels();
                 gui.showPanel(panel);
