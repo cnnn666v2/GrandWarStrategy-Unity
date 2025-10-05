@@ -13,12 +13,13 @@ public class GUIUpdater : MonoBehaviour
     GameData gameData;
     WarManager warManager;
 
-    [SerializeField] GameObject panel, panel2, panel3;
+    [SerializeField] GameObject panel, panel2, panel3, panel4;
     [SerializeField]
     TMP_Text provinceName, provincePopulation, provinceNeighbours, provinceOwner, provinceID,
                                 provinceBuildingCount, provinceBuildingList,
                                 topPlayingAs, topMoney, topTurn, topManpower,
-                                diplomacyCountry, diplomacyGovernment, diplomacyAtWar, diplomacyRelations;
+                                diplomacyCountry, diplomacyGovernment, diplomacyAtWar, diplomacyRelations,
+                                armyMax;
     [SerializeField] Button diplomacyWar;
     int lastIncome;
 
@@ -101,7 +102,7 @@ public class GUIUpdater : MonoBehaviour
         {
             if ((war.offenders.Contains(selectedCountry.countryTag) || war.defenders.Contains(selectedCountry.countryTag))
                 && (war.offenders.Contains(gameData.playingAsTag) || war.defenders.Contains(gameData.playingAsTag)))
-                    diplomacyRelations.text = "At war";
+                diplomacyRelations.text = "At war";
         }
 
         diplomacyCountry.text = selectedCountry.countryName;
@@ -116,6 +117,18 @@ public class GUIUpdater : MonoBehaviour
         else diplomacyAtWar.text = "At war with no one";
 
         diplomacyWar.onClick.RemoveAllListeners();
-        if(selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
+        if (selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
+    }
+
+    public void updateRecruitmentPanel()
+    {
+        string maxArmy = "", army = "";
+        for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
+            {
+                army = gameData.countries[i].currentArmy.ToString();
+                maxArmy = gameData.countries[i].maxArmy.ToString();
+                break;
+            }
+        gui.updateText(armyMax, "Army: ", $"{army} / {maxArmy}");
     }
 }

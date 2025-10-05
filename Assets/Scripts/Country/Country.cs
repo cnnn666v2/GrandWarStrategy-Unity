@@ -14,5 +14,7 @@ public class Country
     public int maxMoney;
     public int population;
     public int manpower;
-    public float conscriptionModifier = 0.5f;
+    public int currentArmy;
+    public int maxArmy;
+    public float conscriptionModifier = 0.15f;
 }

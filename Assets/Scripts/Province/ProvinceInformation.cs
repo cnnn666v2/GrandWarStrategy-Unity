@@ -22,6 +22,7 @@ public class ProvinceInformation : MonoBehaviour
     // Cache
     public int cachedIncome;
     public int cachedMoneyStorage;
+    public int cachedMaxArmy;
 
     void Start()
     {
@@ -40,6 +41,7 @@ public class ProvinceInformation : MonoBehaviour
         buildings.Add(building);
         if (building is Market market) cachedIncome += market.income;
         if (building is Bank bank) cachedMoneyStorage += bank.goldStorage;
+        if (building is Barracks barracks) cachedMaxArmy += barracks.maxSoldiers;
         constructions.Remove(construction);
     }
 }

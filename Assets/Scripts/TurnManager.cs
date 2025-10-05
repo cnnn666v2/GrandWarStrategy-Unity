@@ -28,6 +28,9 @@ public class TurnManager : MonoBehaviour
             int totalPopulation = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.population);
             country.population = totalPopulation;
             country.manpower = Mathf.RoundToInt(totalPopulation * country.conscriptionModifier);
+
+            int maxArmy = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedMaxArmy);
+            country.maxArmy = maxArmy;
         }
 
         foreach (var province in gameData.provincesInformation)
