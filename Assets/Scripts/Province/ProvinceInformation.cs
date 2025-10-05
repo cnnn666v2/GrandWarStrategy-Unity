@@ -1,6 +1,5 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
+using System.Linq;
 using UnityEngine;
 
 public class ProvinceInformation : MonoBehaviour
@@ -32,9 +31,16 @@ public class ProvinceInformation : MonoBehaviour
 
     public void AddBuilding(Building building)
     {
+        constructions.Add(new Construction(building, building.constructionTime));
+    }
+
+    public void ConstructBuilding(Construction construction)
+    {
+        Building building = construction.building;
         buildings.Add(building);
         if (building is Market market) cachedIncome += market.income;
         if (building is Bank bank) cachedMoneyStorage += bank.goldStorage;
+        constructions.Remove(construction);
     }
 }
 
@@ -42,4 +48,10 @@ public class Construction
 {
     public Building building;
     public int turnsRemaining;
+
+    public Construction(Building building, int turnsRemaining)
+    {
+        this.building = building;
+        this.turnsRemaining = turnsRemaining;
+    }
 }

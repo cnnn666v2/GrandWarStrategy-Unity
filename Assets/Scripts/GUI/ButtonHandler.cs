@@ -19,7 +19,7 @@ public class ButtonHandler : MonoBehaviour
         {
             int index = i;
             TMP_Text btnText = constructionButtons[index].GetComponentInChildren<TMP_Text>();
-            btnText.text = $"Build {buildingsManager.buildings[index].buildingName} - {buildingsManager.buildings[index].cost} money";
+            btnText.text = $"Build {buildingsManager.buildings[index].buildingName} - {buildingsManager.buildings[index].cost} money, {buildingsManager.buildings[index].constructionTime} turns";
 
             constructionButtons[i].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[index]));
             constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
