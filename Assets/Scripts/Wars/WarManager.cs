@@ -9,6 +9,7 @@ public class WarManager : MonoBehaviour
     {
         gameData = GetComponent<GameData>();
     }
+    
     public List<string> GetEnemiesOf(string country)
     {
         List<string> enemies = new List<string>();
@@ -25,7 +26,7 @@ public class WarManager : MonoBehaviour
                         enemies.Add(enemy);
                 }
             }
-            
+
             // If country is a defender, enemies are offenders
             else if (war.defenders.Contains(country))
             {

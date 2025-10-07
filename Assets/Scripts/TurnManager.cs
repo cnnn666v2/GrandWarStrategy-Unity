@@ -33,7 +33,7 @@ public class TurnManager : MonoBehaviour
             country.maxArmy = maxArmy;
         }
 
-        foreach (var province in gameData.provincesInformation)
+        foreach (ProvinceInformation province in gameData.provincesInformation)
         {
             for (int i = province.constructions.Count - 1; i >= 0; i--)
             {
@@ -48,5 +48,9 @@ public class TurnManager : MonoBehaviour
         }
 
         guiUpdater.updateTopBar(totalIncome);
+        guiUpdater.updateDiplomacyPanel();
+        guiUpdater.updateRecruitmentPanel();
+        guiUpdater.updateBuildingsPanel();
+        guiUpdater.updateProvincePanel();
     }
 }

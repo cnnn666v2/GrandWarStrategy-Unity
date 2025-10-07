@@ -15,6 +15,7 @@ public class ButtonHandler : MonoBehaviour
         provinceManager = GetComponent<ProvinceManager>();
         buildingsManager = GetComponent<BuildingsManager>();
         guiUpdater = GetComponent<GUIUpdater>();
+
         for (int i = 0; i < constructionButtons.Count; i++)
         {
             int index = i;
@@ -25,7 +26,6 @@ public class ButtonHandler : MonoBehaviour
             constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
             constructionButtons[i].onClick.AddListener(() => guiUpdater.updateTopBar());
         }
-
     }
 
     public void isBuilt()

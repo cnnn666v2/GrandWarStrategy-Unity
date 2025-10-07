@@ -1,9 +1,74 @@
+using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RecruitArmy : MonoBehaviour
 {
-    public void Recruit(int amount, int cost)
+    GameData gameData;
+    [SerializeField] TMP_InputField inputField;
+    private bool selectMode = false;
+    private ProvinceInformation selectedProvince;
+
+    public float maxDistance = 100f;
+    public LayerMask hitLayers = 6;
+
+    void Start()
     {
-        
+        gameData = GetComponent<GameData>();
+    }
+
+    public void PerformRecruit()
+    {
+        int amount = int.Parse(inputField.text);
+        int cost = amount * 10;
+
+        Recruit(amount, cost);
+    }
+
+    public void Recruit(int soldiers, int cost)
+    {
+        if (!selectedProvince) return;
+
+        Country country = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+        if ((country.currentArmy + soldiers) <= country.maxArmy && country.money >= cost)
+        {
+            country.currentArmy += soldiers;
+            country.money -= cost;
+            country.manpower -= soldiers;
+            selectedProvince.housingArmy = soldiers;
+        }
+    }
+
+    public void SelectProvince()
+    {
+        selectMode = true;
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && selectMode)
+        {
+            if (EventSystem.current.IsPointerOverGameObject()) return;
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
+            {
+                Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
+                if (hit.collider.tag != "province")
+                {
+                    Debug.Log("Hit object isn't a \"province\" tag");
+                    return;
+                }
+
+                selectedProvince = hit.collider.GetComponent<ProvinceInformation>();
+                Debug.Log($"nigga Selected: {selectedProvince.id}");
+            }
+            else
+            {
+                Debug.Log("No nigga");
+            }
+            selectMode = false;
+        }
     }
 }

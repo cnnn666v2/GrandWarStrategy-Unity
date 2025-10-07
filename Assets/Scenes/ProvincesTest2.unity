@@ -556,6 +556,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &23983597
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &26836153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2834,6 +2835,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!43 &389085289
 Mesh:
   m_ObjectHideFlags: 0
@@ -5242,6 +5244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6737ab6fc1d5c71ebb2595cc318f32ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputField: {fileID: 1005662641}
 --- !u!1 &870363265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,6 +5714,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &875245037
 GameObject:
   m_ObjectHideFlags: 0
@@ -7890,6 +7894,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &1403675433
 GameObject:
   m_ObjectHideFlags: 0
@@ -9097,6 +9102,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &1618060552
 GameObject:
   m_ObjectHideFlags: 0
@@ -10042,6 +10048,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &1734974727
 GameObject:
   m_ObjectHideFlags: 0
@@ -11867,7 +11874,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1983727800}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841647582}
+        m_TargetAssemblyTypeName: RecruitArmy, Assembly-CSharp
+        m_MethodName: PerformRecruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1983727800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12397,6 +12416,7 @@ MonoBehaviour:
   cachedIncome: 0
   cachedMoneyStorage: 0
   cachedMaxArmy: 0
+  housingArmy: 0
 --- !u!1 &2110826546
 GameObject:
   m_ObjectHideFlags: 0

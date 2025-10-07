@@ -18,11 +18,13 @@ public class ProvinceInformation : MonoBehaviour
     public int buildingLimit = 5;
     public List<Building> buildings = new List<Building>();
     public List<Construction> constructions = new List<Construction>();
-    
+
     // Cache
     public int cachedIncome;
     public int cachedMoneyStorage;
     public int cachedMaxArmy;
+
+    public int housingArmy;
 
     void Start()
     {

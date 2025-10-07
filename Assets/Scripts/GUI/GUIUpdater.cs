@@ -79,16 +79,20 @@ public class GUIUpdater : MonoBehaviour
     {
         lastIncome = income;
         string countryName = "";
-        string money = "", maxMoney = "";
+        string money = "", maxMoney = "", population = "", manpower = "";
         for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
             {
                 countryName = gameData.countries[i].countryName;
                 money = gameData.countries[i].money.ToString();
                 maxMoney = gameData.countries[i].maxMoney.ToString();
+                population = gameData.countries[i].population.ToString();
+                manpower = gameData.countries[i].manpower.ToString();
+                break;
             }
         gui.updateText(topPlayingAs, "Controlling: ", countryName);
         gui.updateText(topMoney, "Money: ", $"{money} / {maxMoney} (<color=green>+{income}</color>)");
         gui.updateText(topTurn, "Turn: ", gameData.turnCount.ToString());
+        gui.updateText(topManpower, "Manpower / Population: ", $"{manpower} / {population}");
     }
 
     public void updateDiplomacyPanel()
