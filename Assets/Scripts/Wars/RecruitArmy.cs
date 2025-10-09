@@ -7,8 +7,10 @@ public class RecruitArmy : MonoBehaviour
 {
     GameData gameData;
     [SerializeField] TMP_InputField inputField;
+    [SerializeField] GameObject armyPrefab;
+    [SerializeField] Transform armiesParent;
     private bool selectMode = false;
-    private ProvinceInformation selectedProvince;
+    public Transform selectedProvince;
 
     public float maxDistance = 100f;
     public LayerMask hitLayers = 6;
@@ -26,7 +28,7 @@ public class RecruitArmy : MonoBehaviour
         Recruit(amount, cost);
     }
 
-    public void Recruit(int soldiers, int cost)
+    private void Recruit(int soldiers, int cost)
     {
         if (!selectedProvince) return;
 
@@ -36,7 +38,16 @@ public class RecruitArmy : MonoBehaviour
             country.currentArmy += soldiers;
             country.money -= cost;
             country.manpower -= soldiers;
-            selectedProvince.housingArmy = soldiers;
+            //selectedProvince.housingArmy = soldiers;
+
+            Vector3 center = selectedProvince.GetComponent<Renderer>().bounds.center;
+
+            GameObject army = Instantiate(armyPrefab, new Vector3(center.x, armiesParent.position.y, center.z), Quaternion.identity, armiesParent);
+            army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
+            Army armyData = army.GetComponent<Army>();
+            armyData.soldiers = soldiers;
+            armyData.stayingIn = selectedProvince.GetComponent<ProvinceInformation>();
+            armyData.owner = gameData.playingAsTag;
         }
     }
 
@@ -61,8 +72,8 @@ public class RecruitArmy : MonoBehaviour
                     return;
                 }
 
-                selectedProvince = hit.collider.GetComponent<ProvinceInformation>();
-                Debug.Log($"nigga Selected: {selectedProvince.id}");
+                selectedProvince = hit.collider.GetComponent<Transform>();
+                Debug.Log($"nigga Selected: {selectedProvince.GetComponent<ProvinceInformation>().id}");
             }
             else
             {
