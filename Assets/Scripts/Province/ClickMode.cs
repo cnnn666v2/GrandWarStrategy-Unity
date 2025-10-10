@@ -1,0 +1,1 @@
+public enum ClickMode {province = 0, army = 1};

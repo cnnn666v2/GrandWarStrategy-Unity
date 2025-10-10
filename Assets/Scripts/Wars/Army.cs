@@ -3,6 +3,6 @@ using UnityEngine;
 public class Army : MonoBehaviour
 {
     public int soldiers;
-    public ProvinceInformation stayingIn;
+    public ProvinceData stayingIn;
     public string owner;
 }

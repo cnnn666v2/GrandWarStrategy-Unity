@@ -1,5 +1,6 @@
 // TODO: completely rewrite this broken shit i swear i will kill myself
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,24 +8,26 @@ using UnityEngine.EventSystems;
 
 public class ClickProvince : MonoBehaviour
 {
+    public ClickMode clickMode;
+    private Country selectedCountry;
+    public ProvinceData province;
+    public Army selectedArmy;
 
     public float maxDistance = 100f;
-    public LayerMask hitLayers = 6;
+    [SerializeField] LayerMask hitLayers;
 
     private GUIChanges gui;
     private GUIUpdater guiUpdater;
     private GameData gameData;
     private ButtonHandler buttonHandler;
 
-    private Country selectedCountry;
     private ProvinceManager provinceManager;
-    public ProvinceData province;
     private Color selectedProvinceColor;
     private List<MeshRenderer> selectedProvinces = new List<MeshRenderer>();
     private MeshRenderer selectedProvinceRenderer;
 
     [SerializeField] GameObject panel, panel2, panel3;
-    [SerializeField] Dictionary<int, ProvinceInformation> provinceLookup = new Dictionary<int, ProvinceInformation>();
+    [SerializeField] Dictionary<int, ProvinceData> provinceLookup = new Dictionary<int, ProvinceData>();
 
     void Start()
     {
@@ -33,6 +36,8 @@ public class ClickProvince : MonoBehaviour
         buttonHandler = GetComponent<ButtonHandler>();
         provinceManager = GetComponent<ProvinceManager>();
         gameData = GetComponent<GameData>();
+
+        clickMode = ClickMode.province;
 
         foreach (var province in gameData.provincesInformation)
         {
@@ -49,27 +54,53 @@ public class ClickProvince : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
             {
-                Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
-                if (hit.collider.tag != "province")
+                switch (clickMode)
                 {
-                    Debug.Log("Hit object isn't a \"province\" tag");
-                    return;
+                    case ClickMode.province:
+                        Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
+                        if (hit.collider.tag != "province")
+                        {
+                            Debug.Log("Hit object isn't a \"province\" tag");
+                            return;
+                        }
+
+                        paintProvinces(false);
+
+                        province = hit.collider.GetComponent<ProvinceData>();
+                        paintProvince(hit);
+                        provinceManager.selectedProvince = province.id;
+
+                        buttonHandler.isBuilt();
+
+                        hidePanels();
+                        gui.showPanel(panel);
+                        gui.showPanel(panel2);
+
+                        guiUpdater.updateProvincePanel();
+                        guiUpdater.updateBuildingsPanel();
+                        break;
+                    case ClickMode.army:
+                        Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
+                        if (hit.collider.tag != "army")
+                        {
+                            Debug.Log("Hit object isn't an \"army\" tag");
+                            return;
+                        }
+
+                        selectedArmy = hit.collider.GetComponent<Army>();
+
+                        if (selectedArmy.owner != gameData.playingAsTag)
+                        {
+                            Debug.Log($"Selected: {selectedArmy.owner} // Playing as: {gameData.playingAsTag}");
+                            return;
+                        }
+
+                        selectedArmy.GetComponent<Transform>().Find("BackgroundImg").GetComponent<SpriteRenderer>().color =  Color.green;
+                        break;
+                    default:
+                        Debug.LogError("[ClickProvince/Error]: Provided wrong or none clickMode!");
+                        break;
                 }
-
-                paintProvinces(false);
-
-                province = hit.collider.GetComponent<ProvinceData>();
-                paintProvince(hit);
-                provinceManager.selectedProvince = province.data.id;
-
-                buttonHandler.isBuilt();
-
-                hidePanels();
-                gui.showPanel(panel);
-                gui.showPanel(panel2);
-
-                guiUpdater.updateProvincePanel();
-                guiUpdater.updateBuildingsPanel();
             }
             else
             {
@@ -96,14 +127,13 @@ public class ClickProvince : MonoBehaviour
 
                 if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
 
-                selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == province.data.owner);
+                selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == province.owner);
                 paintProvinces(true);
 
                 hidePanels();
                 gui.showPanel(panel3);
 
                 guiUpdater.updateDiplomacyPanel();
-
             }
             else
             {
@@ -120,7 +150,7 @@ public class ClickProvince : MonoBehaviour
         if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
         selectedProvinceRenderer = hit.collider.GetComponent<MeshRenderer>();
         selectedProvinceRenderer.material.color = Color.red;
-        selectedProvinceColor = province.data.color;
+        selectedProvinceColor = province.color;
     }
 
     private void paintProvinces(bool isHitProvince)
@@ -141,7 +171,7 @@ public class ClickProvince : MonoBehaviour
                 }
             }
         }
-        else if(selectedCountry != null)
+        else if (selectedCountry != null)
         {
             foreach (var paintProvinceId in selectedCountry.ownedProvinces)
             {

@@ -1,23 +1,24 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class RecruitArmy : MonoBehaviour
 {
     GameData gameData;
+    ClickProvince clickProvince;
     [SerializeField] TMP_InputField inputField;
     [SerializeField] GameObject armyPrefab;
     [SerializeField] Transform armiesParent;
-    private bool selectMode = false;
+    //private bool selectMode = false;
     public Transform selectedProvince;
 
-    public float maxDistance = 100f;
-    public LayerMask hitLayers = 6;
+    //public float maxDistance = 100f;
+    //public LayerMask hitLayers = 6;
 
     void Start()
     {
         gameData = GetComponent<GameData>();
+        clickProvince = GetComponent<ClickProvince>();
     }
 
     public void PerformRecruit()
@@ -30,6 +31,7 @@ public class RecruitArmy : MonoBehaviour
 
     private void Recruit(int soldiers, int cost)
     {
+        selectedProvince = clickProvince.province.GetComponent<Transform>();
         if (!selectedProvince) return;
 
         Country country = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
@@ -46,17 +48,17 @@ public class RecruitArmy : MonoBehaviour
             army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
             Army armyData = army.GetComponent<Army>();
             armyData.soldiers = soldiers;
-            armyData.stayingIn = selectedProvince.GetComponent<ProvinceInformation>();
+            armyData.stayingIn = selectedProvince.GetComponent<ProvinceData>();
             armyData.owner = gameData.playingAsTag;
         }
     }
 
     public void SelectProvince()
     {
-        selectMode = true;
+        clickProvince.clickMode = ClickMode.province;
     }
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetMouseButtonDown(0) && selectMode)
         {
@@ -81,5 +83,5 @@ public class RecruitArmy : MonoBehaviour
             }
             selectMode = false;
         }
-    }
+    }*/
 }

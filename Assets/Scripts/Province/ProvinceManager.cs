@@ -17,7 +17,7 @@ public class ProvinceManager : MonoBehaviour
         if (playerCountry == null) return;
         if (playerCountry.money < newBuilding.cost) return;
 
-        foreach (ProvinceInformation province in gameData.provincesInformation)
+        foreach (ProvinceData province in gameData.provincesInformation)
         {
             if (province.owner == gameData.playingAsTag &&
                 province.id == selectedProvince &&
@@ -34,7 +34,7 @@ public class ProvinceManager : MonoBehaviour
     public bool isConstructedBuilding(Building building)
     {
         Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
-        foreach (ProvinceInformation province in gameData.provincesInformation)
+        foreach (ProvinceData province in gameData.provincesInformation)
         {
             Debug.Log($"Selected: {selectedProvince} // Province: {province.id}");
             if (province.owner == gameData.playingAsTag &&

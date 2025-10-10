@@ -2,22 +2,24 @@ using UnityEngine;
 
 public class MoveArmy : MonoBehaviour
 {
-    ClickArmy clickArmy;
+    ClickProvince clickProvince;
     RecruitArmy recruitArmy;
 
     void Start()
     {
-        clickArmy = GetComponent<ClickArmy>();
+        clickProvince = GetComponent<ClickProvince>();
         recruitArmy = GetComponent<RecruitArmy>();
     }
 
-    public void TransportArmy(ProvinceInformation destination)
+    public void TransportArmy()
     {
         //ProvinceInformation destination = recruitArmy.selectedProvince.GetComponent<ProvinceInformation>();
+        ProvinceData destination = clickProvince.province;
+        Transform armyPosition = clickProvince.selectedArmy.GetComponent<Transform>();
 
-        if (!clickArmy.selectedArmy.GetComponent<Army>().stayingIn.GetComponent<ProvinceData>().neighbours.Contains(destination.GetComponent<GameObject>())) return;
+        if (!clickProvince.selectedArmy.GetComponent<Army>().stayingIn.GetComponent<ProvinceData>().neighbours.Contains(destination.GetComponent<GameObject>())) return;
         Vector3 destinationVector = destination.GetComponent<Renderer>().bounds.center;
-        clickArmy.selectedArmy.GetComponent<Army>().stayingIn = destination;
-        clickArmy.selectedArmy.position = new Vector3(destinationVector.x, clickArmy.selectedArmy.position.y, destinationVector.z);
+        clickProvince.selectedArmy.GetComponent<Army>().stayingIn = destination;
+        armyPosition.position = new Vector3(destinationVector.x, armyPosition.position.y, destinationVector.z);
     }
 }

@@ -36,10 +36,10 @@ public class GUIUpdater : MonoBehaviour
 
     public void updateProvincePanel()
     {
-        provinceName.text = clickProvince.province.data.provinceName;
-        gui.updateText(provincePopulation, "Province population: ", clickProvince.province.data.population.ToString());
-        gui.updateText(provinceOwner, "Owner: ", clickProvince.province.data.owner);
-        gui.updateText(provinceID, "ID: ", clickProvince.province.data.id.ToString());
+        provinceName.text = clickProvince.province.provinceName;
+        gui.updateText(provincePopulation, "Province population: ", clickProvince.province.population.ToString());
+        gui.updateText(provinceOwner, "Owner: ", clickProvince.province.owner);
+        gui.updateText(provinceID, "ID: ", clickProvince.province.id.ToString());
 
         string printedNeighbours = "";
         foreach (var n in clickProvince.province.neighbours) printedNeighbours += n.name + ", ";
@@ -48,10 +48,10 @@ public class GUIUpdater : MonoBehaviour
 
     public void updateBuildingsPanel()
     {
-        gui.updateText(provinceBuildingCount, "Total buildings: ", clickProvince.province.data.buildings.Count + "/" + clickProvince.province.data.buildingLimit.ToString());
+        gui.updateText(provinceBuildingCount, "Total buildings: ", clickProvince.province.buildings.Count + "/" + clickProvince.province.buildingLimit.ToString());
 
         string printedBuildings = "";
-        foreach (Building b in clickProvince.province.data.buildings) printedBuildings += b + ", ";
+        foreach (Building b in clickProvince.province.buildings) printedBuildings += b + ", ";
         gui.updateText(provinceBuildingList, "Constructed buildings: ", printedBuildings);
         btnHandler.isBuilt();
     }
@@ -97,7 +97,7 @@ public class GUIUpdater : MonoBehaviour
 
     public void updateDiplomacyPanel()
     {
-        Country selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.data.owner);
+        Country selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.owner);
         if (selectedCountry == null) return;
 
         diplomacyRelations.text = "Peace";

@@ -33,7 +33,7 @@ public class TurnManager : MonoBehaviour
             country.maxArmy = maxArmy;
         }
 
-        foreach (ProvinceInformation province in gameData.provincesInformation)
+        foreach (ProvinceData province in gameData.provincesInformation)
         {
             for (int i = province.constructions.Count - 1; i >= 0; i--)
             {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickArmy : MonoBehaviour
+public class ClickArmy_O : MonoBehaviour
 {
     GameData gameData;
     public Transform selectedArmy;
@@ -14,7 +14,7 @@ public class ClickArmy : MonoBehaviour
         gameData = GetComponent<GameData>();
     }
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,5 +47,5 @@ public class ClickArmy : MonoBehaviour
                 selectedArmy = null;
             }
         }
-    }
+    }*/
 }

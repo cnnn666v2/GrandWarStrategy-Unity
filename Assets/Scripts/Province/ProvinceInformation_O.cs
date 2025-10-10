@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ProvinceInformation : MonoBehaviour
+public class ProvinceInformation_O : MonoBehaviour
 {
     public string provinceName;
     public int population;
@@ -14,7 +14,7 @@ public class ProvinceInformation : MonoBehaviour
     public int infrastructureLimit = 250;
     public string resource = "Wood"; // treated as string for easier modding in future
 
-    //Buildings
+    // Buildings
     public int buildingLimit = 5;
     public List<Building> buildings = new List<Building>();
     public List<Construction> constructions = new List<Construction>();
@@ -48,7 +48,7 @@ public class ProvinceInformation : MonoBehaviour
     }
 }
 
-public class Construction
+/*public class Construction
 {
     public Building building;
     public int turnsRemaining;
@@ -58,4 +58,4 @@ public class Construction
         this.building = building;
         this.turnsRemaining = turnsRemaining;
     }
-}
+}*/
