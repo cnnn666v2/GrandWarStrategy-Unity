@@ -4094,10 +4094,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 841647592}
-        m_TargetAssemblyTypeName: SwitchClickMode, Assembly-CSharp
-        m_MethodName: ChangeClickMode
-        m_Mode: 3
+      - m_Target: {fileID: 841647591}
+        m_TargetAssemblyTypeName: MoveArmy, Assembly-CSharp
+        m_MethodName: TransportArmy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5119,23 +5119,6 @@ MonoBehaviour:
   armyPrefab: {fileID: 6220001731641335730, guid: 21f1b98eecfcd793fa151bc848337322, type: 3}
   armiesParent: {fileID: 929454757}
   selectedProvince: {fileID: 0}
---- !u!114 &841647590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841647555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5ad5321f84b732878e6436b9c6801fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameData: {fileID: 0}
-  selectedArmy: {fileID: 0}
-  maxDistance: 100
-  hitLayers:
-    m_Bits: 320
 --- !u!114 &841647591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14207,6 +14190,10 @@ PrefabInstance:
       propertyPath: panel3
       value: 
       objectReference: {fileID: 1368702772}
+    - target: {fileID: 6534326840231186597, guid: 0cc545d878424326e9610dfb45fdec16, type: 3}
+      propertyPath: hitLayers.m_Bits
+      value: 320
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14220,9 +14207,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4640977295831820932, guid: 0cc545d878424326e9610dfb45fdec16, type: 3}
       insertIndex: -1
       addedObject: {fileID: 841647582}
-    - targetCorrespondingSourceObject: {fileID: 4640977295831820932, guid: 0cc545d878424326e9610dfb45fdec16, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 841647590}
     - targetCorrespondingSourceObject: {fileID: 4640977295831820932, guid: 0cc545d878424326e9610dfb45fdec16, type: 3}
       insertIndex: -1
       addedObject: {fileID: 841647591}
