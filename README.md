@@ -3,7 +3,7 @@
 
 This project is a template for creating a game like Age of History 2, or Hearts of Iron IV. There is no guarantee it will be ever finished, or become as modular as I would like it to be. Some features are also straight up impossible for me to do, such as automatic placement of BoxColliders on a custom object's shape.
 
-The project is in very early alpha stages, so many things are unoptimized and meassy.
+The project is in very early alpha stages, so many things are unoptimized and messy.
 
 ## Features
 
