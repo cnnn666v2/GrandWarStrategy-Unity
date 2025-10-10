@@ -4,7 +4,7 @@ using UnityEngine;
 public class ProvinceData : MonoBehaviour
 {
     //public ProvinceInformation data;
-    public List<GameObject> neighbours;
+    public List<ProvinceData> neighbours;
     [SerializeField] Collider[] colliders;
     //public Color color;
 
@@ -67,7 +67,7 @@ public class ProvinceData : MonoBehaviour
             foreach (Collider hit in hits)
             {
                 Debug.Log($"[{name}]: Collider ({col}) has hit: {hit}");
-                GameObject hitParent = hit.GetComponentInParent<ProvinceData>().gameObject;
+                ProvinceData hitParent = hit.GetComponentInParent<ProvinceData>();
                 if (hit != col && hitParent != gameObject && !neighbours.Contains(hitParent))
                 {
                     neighbours.Add(hitParent);
