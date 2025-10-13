@@ -47,10 +47,30 @@ public class TurnManager : MonoBehaviour
             }
         }
 
+        MoveDivisions();
+
         guiUpdater.updateTopBar(totalIncome);
         guiUpdater.updateDiplomacyPanel();
         guiUpdater.updateRecruitmentPanel();
         guiUpdater.updateBuildingsPanel();
         guiUpdater.updateProvincePanel();
+    }
+
+    private void MoveDivisions()
+    {
+        for (int i = gameData.movingDivisions.Count - 1; i>= 0; i--)
+        {
+            MovingDivisions movingDivision = gameData.movingDivisions[i];
+            movingDivision.travelTime--;
+
+            if(movingDivision.travelTime <= 0)
+            {
+                Vector3 destinationVector = movingDivision.destination.GetComponent<Renderer>().bounds.center;
+                movingDivision.army.stayingIn = movingDivision.destination;
+                Transform armyPosition = movingDivision.army.GetComponent<Transform>();
+                armyPosition.position = new Vector3(destinationVector.x, armyPosition.position.y, destinationVector.z);
+                gameData.movingDivisions.RemoveAt(i);
+            }
+        }
     }
 }

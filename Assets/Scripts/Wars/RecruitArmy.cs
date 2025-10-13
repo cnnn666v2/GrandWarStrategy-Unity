@@ -46,6 +46,7 @@ public class RecruitArmy : MonoBehaviour
 
             GameObject army = Instantiate(armyPrefab, new Vector3(center.x, armiesParent.position.y, center.z), Quaternion.identity, armiesParent);
             army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
+            army.GetComponent<SpriteRenderer>().color = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag).color;
             Army armyData = army.GetComponent<Army>();
             armyData.soldiers = soldiers;
             armyData.stayingIn = selectedProvince.GetComponent<ProvinceData>();

@@ -9,12 +9,15 @@ public class BoardData : MonoBehaviour
         gameData = GetComponent<GameData>();
         Country test = new Country { countryName = "Poland", countryTag = "POL", color = new Color(1, 1, 1, 1), government = gameData.governments[0], ownedProvinces = new List<int> { 0, 1, 2 } };
         Country test2 = new Country { countryName = "Germany", countryTag = "GER", color = new Color(0, 0, 0, 1), government = gameData.governments[0], ownedProvinces = new List<int> { 3, 4, 5 } };
+        Country test3 = new Country { countryName = "Russia", countryTag = "RUS", color = new Color(0, 0, 0.9f, 1), government = gameData.governments[0], ownedProvinces = new List<int> { 6 } };
 
         gameData.countries.Add(test);
         gameData.countries.Add(test2);
+        gameData.countries.Add(test3);
 
         PaintProvinces(test.ownedProvinces, test.color, test.countryTag);
         PaintProvinces(test2.ownedProvinces, test2.color, test2.countryTag);
+        PaintProvinces(test3.ownedProvinces, test3.color, test3.countryTag);
     }
 
     void PaintProvinces(List<int> provinces, Color color, string country)

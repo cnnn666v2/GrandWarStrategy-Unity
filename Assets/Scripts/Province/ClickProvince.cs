@@ -107,6 +107,8 @@ public class ClickProvince : MonoBehaviour
                 paintProvinces(false);
                 Debug.Log("No hit");
                 if (selectedProvinceRenderer) selectedProvinceRenderer.material.color = selectedProvinceColor;
+                if (selectedArmy) selectedArmy.GetComponent<Transform>().Find("BackgroundImg").GetComponent<SpriteRenderer>().color = Color.blue;
+                selectedArmy = null;
                 hidePanels();
             }
         }

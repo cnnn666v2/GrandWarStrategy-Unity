@@ -6,3 +6,5 @@ public class Army : MonoBehaviour
     public ProvinceData stayingIn;
     public string owner;
 }
+
+public enum ArmyType {infantry, tank, artillery}

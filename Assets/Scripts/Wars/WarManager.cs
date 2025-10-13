@@ -9,7 +9,7 @@ public class WarManager : MonoBehaviour
     {
         gameData = GetComponent<GameData>();
     }
-    
+
     public List<string> GetEnemiesOf(string country)
     {
         List<string> enemies = new List<string>();
@@ -39,5 +39,19 @@ public class WarManager : MonoBehaviour
         }
 
         return enemies;
+    }
+
+    public bool AreAtWar(string country1, string country2)
+    {
+        foreach (War war in gameData.wars)
+        {
+            if (war.offenders.Contains(country1) && war.defenders.Contains(country2))
+                return true;
+
+            if (war.defenders.Contains(country1) && war.offenders.Contains(country2))
+                return true;
+        }
+
+        return false;
     }
 }
