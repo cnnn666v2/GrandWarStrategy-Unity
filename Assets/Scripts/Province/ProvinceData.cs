@@ -30,8 +30,9 @@ public class ProvinceData : MonoBehaviour
     public int cachedIncome;
     public int cachedMoneyStorage;
     public int cachedMaxArmy;
+    public int cachedMaintenance;
 
-    public int housingArmy;
+    public List<Army> housingArmies = new List<Army>();
 
     void Start()
     {
@@ -100,6 +101,11 @@ public class ProvinceData : MonoBehaviour
 
         cachedIncome = Mathf.RoundToInt(infrastructure / 5);
         cachedMoneyStorage = Mathf.RoundToInt(infrastructure / 2);
+
+        int armyMaintenance = 0;
+        int infrastructureMaintenance = Mathf.RoundToInt(infrastructure / 10);
+        foreach (Army army in housingArmies) armyMaintenance += army.maintenance;
+        cachedMaintenance = infrastructureMaintenance + armyMaintenance;
     }
 
     public void AddBuilding(Building building)
@@ -115,6 +121,18 @@ public class ProvinceData : MonoBehaviour
         if (building is Bank bank) cachedMoneyStorage += bank.goldStorage;
         if (building is Barracks barracks) cachedMaxArmy += barracks.maxSoldiers;
         constructions.Remove(construction);
+    }
+
+    public void AddArmy(Army army)
+    {
+        housingArmies.Add(army);
+        cachedMaintenance += army.maintenance;
+    }
+
+    public void RemoveArmy(Army army)
+    {
+        housingArmies.Remove(army);
+        cachedMaintenance -= army.maintenance;
     }
 }
 

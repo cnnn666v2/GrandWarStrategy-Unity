@@ -10,7 +10,7 @@ public class RecruitArmy : MonoBehaviour
     [SerializeField] GameObject armyPrefab;
     [SerializeField] Transform armiesParent;
     //private bool selectMode = false;
-    public Transform selectedProvince;
+    //public Transform selectedProvince;
 
     //public float maxDistance = 100f;
     //public LayerMask hitLayers = 6;
@@ -25,13 +25,18 @@ public class RecruitArmy : MonoBehaviour
     {
         int amount = int.Parse(inputField.text);
         int cost = amount * 10;
+        int maintenance = amount * 2;
+        int turns = 2;
+        Transform placement = clickProvince.province.GetComponent<Transform>();
 
-        Recruit(amount, cost);
+        gameData.trainingDivisions.Add(new TrainingDivisions(amount, cost, maintenance, turns, placement));
+        //Recruit(amount, cost, maintenance);
     }
 
-    private void Recruit(int soldiers, int cost)
+    //TODO move Recruit() from here over to TurnManager
+    public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince)
     {
-        selectedProvince = clickProvince.province.GetComponent<Transform>();
+        //selectedProvince = clickProvince.province.GetComponent<Transform>();
         if (!selectedProvince) return;
 
         Country country = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
@@ -46,11 +51,13 @@ public class RecruitArmy : MonoBehaviour
 
             GameObject army = Instantiate(armyPrefab, new Vector3(center.x, armiesParent.position.y, center.z), Quaternion.identity, armiesParent);
             army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
-            army.GetComponent<SpriteRenderer>().color = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag).color;
+            army.GetComponent<Transform>().Find("BackgroundImg").GetComponent<SpriteRenderer>().color = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag).color;
             Army armyData = army.GetComponent<Army>();
             armyData.soldiers = soldiers;
             armyData.stayingIn = selectedProvince.GetComponent<ProvinceData>();
             armyData.owner = gameData.playingAsTag;
+            armyData.maintenance = maintenance;
+            selectedProvince.GetComponent<ProvinceData>().AddArmy(armyData);
         }
     }
 

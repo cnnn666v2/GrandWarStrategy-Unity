@@ -191,3 +191,5 @@ public class ClickProvince : MonoBehaviour
         gui.hidePanel(panel3);
     }
 }
+
+public enum ClickMode {province = 0, army = 1};

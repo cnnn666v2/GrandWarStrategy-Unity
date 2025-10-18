@@ -5,11 +5,13 @@ public class TurnManager : MonoBehaviour
 {
     GameData gameData;
     GUIUpdater guiUpdater;
+    RecruitArmy recruitArmy; // TODO: move the Recruit() from that script over here
 
     void Start()
     {
         gameData = GetComponent<GameData>();
         guiUpdater = GetComponent<GUIUpdater>();
+        recruitArmy = GetComponent<RecruitArmy>();
     }
 
     public void NextTurn()
@@ -19,7 +21,7 @@ public class TurnManager : MonoBehaviour
         //var playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
         foreach (Country country in gameData.countries)
         {
-            totalIncome = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedIncome);
+            totalIncome = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedIncome - p.cachedMaintenance);
             int maxMoney = gameData.provincesInformation.Where(p => p.owner == country.countryTag).Sum(p => p.cachedMoneyStorage);
             country.maxMoney = maxMoney;
             int newCurrentMoney = country.money + totalIncome;
@@ -48,6 +50,7 @@ public class TurnManager : MonoBehaviour
         }
 
         MoveDivisions();
+        TrainDivisions();
 
         guiUpdater.updateTopBar(totalIncome);
         guiUpdater.updateDiplomacyPanel();
@@ -58,18 +61,34 @@ public class TurnManager : MonoBehaviour
 
     private void MoveDivisions()
     {
-        for (int i = gameData.movingDivisions.Count - 1; i>= 0; i--)
+        for (int i = gameData.movingDivisions.Count - 1; i >= 0; i--)
         {
             MovingDivisions movingDivision = gameData.movingDivisions[i];
             movingDivision.travelTime--;
 
-            if(movingDivision.travelTime <= 0)
+            if (movingDivision.travelTime <= 0)
             {
+                movingDivision.army.stayingIn.RemoveArmy(movingDivision.army);
                 Vector3 destinationVector = movingDivision.destination.GetComponent<Renderer>().bounds.center;
+                movingDivision.destination.AddArmy(movingDivision.army);
                 movingDivision.army.stayingIn = movingDivision.destination;
                 Transform armyPosition = movingDivision.army.GetComponent<Transform>();
                 armyPosition.position = new Vector3(destinationVector.x, armyPosition.position.y, destinationVector.z);
                 gameData.movingDivisions.RemoveAt(i);
+            }
+        }
+    }
+    
+    private void TrainDivisions()
+    {
+        for (int i = gameData.trainingDivisions.Count - 1; i >= 0; i--)
+        {
+            TrainingDivisions trainDivision = gameData.trainingDivisions[i];
+            trainDivision.trainingTime--;
+
+            if (trainDivision.trainingTime <= 0)
+            {
+                recruitArmy.Recruit(trainDivision.amount, trainDivision.cost, trainDivision.maintenance, trainDivision.trainingDestination);
             }
         }
     }
