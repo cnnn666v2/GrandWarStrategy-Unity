@@ -1,0 +1,182 @@
+{
+  "api/Global.Army.html": {
+    "href": "api/Global.Army.html",
+    "title": "Class Army | Example Unity documentation",
+    "keywords": "Class Army Inheritance object Army Namespace: Global Assembly: cs.temp.dll.dll Syntax public class Army : MonoBehaviour Fields maintenance Declaration public int maintenance Field Value Type Description int owner Declaration public string owner Field Value Type Description string soldiers Declaration public int soldiers Field Value Type Description int stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData"
+  },
+  "api/Global.ArmyType.html": {
+    "href": "api/Global.ArmyType.html",
+    "title": "Enum ArmyType | Example Unity documentation",
+    "keywords": "Enum ArmyType Namespace: Global Assembly: cs.temp.dll.dll Syntax public enum ArmyType Fields Name Description artillery infantry tank"
+  },
+  "api/Global.Bank.html": {
+    "href": "api/Global.Bank.html",
+    "title": "Class Bank | Example Unity documentation",
+    "keywords": "Class Bank Inheritance object Building Bank Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public class Bank : Building Fields goldStorage Declaration public int goldStorage Field Value Type Description int"
+  },
+  "api/Global.Barracks.html": {
+    "href": "api/Global.Barracks.html",
+    "title": "Class Barracks | Example Unity documentation",
+    "keywords": "Class Barracks Inheritance object Building Barracks Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public class Barracks : Building Fields costRecruit Declaration public int costRecruit Field Value Type Description int maxRecruit Declaration public int maxRecruit Field Value Type Description int maxSoldiers Declaration public int maxSoldiers Field Value Type Description int"
+  },
+  "api/Global.BoardData.html": {
+    "href": "api/Global.BoardData.html",
+    "title": "Class BoardData | Example Unity documentation",
+    "keywords": "Class BoardData Inheritance object BoardData Namespace: Global Assembly: cs.temp.dll.dll Syntax public class BoardData : MonoBehaviour"
+  },
+  "api/Global.Building.html": {
+    "href": "api/Global.Building.html",
+    "title": "Class Building | Example Unity documentation",
+    "keywords": "Class Building Inheritance object Building Bank Barracks Market Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public abstract class Building Fields buildingName Declaration public string buildingName Field Value Type Description string constructionTime Declaration public int constructionTime Field Value Type Description int cost Declaration public int cost Field Value Type Description int"
+  },
+  "api/Global.BuildingsManager.html": {
+    "href": "api/Global.BuildingsManager.html",
+    "title": "Class BuildingsManager | Example Unity documentation",
+    "keywords": "Class BuildingsManager Inheritance object BuildingsManager Namespace: Global Assembly: cs.temp.dll.dll Syntax public class BuildingsManager : MonoBehaviour Fields buildings Declaration public List<Building> buildings Field Value Type Description List<><Building>"
+  },
+  "api/Global.ButtonHandler.html": {
+    "href": "api/Global.ButtonHandler.html",
+    "title": "Class ButtonHandler | Example Unity documentation",
+    "keywords": "Class ButtonHandler Inheritance object ButtonHandler Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ButtonHandler : MonoBehaviour Methods isBuilt() Declaration public void isBuilt()"
+  },
+  "api/Global.ClickArmy_O.html": {
+    "href": "api/Global.ClickArmy_O.html",
+    "title": "Class ClickArmy_O | Example Unity documentation",
+    "keywords": "Class ClickArmy_O Inheritance object ClickArmy_O Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ClickArmy_O : MonoBehaviour Fields selectedArmy Declaration public Transform selectedArmy Field Value Type Description Transform"
+  },
+  "api/Global.ClickMode.html": {
+    "href": "api/Global.ClickMode.html",
+    "title": "Enum ClickMode | Example Unity documentation",
+    "keywords": "Enum ClickMode Namespace: Global Assembly: cs.temp.dll.dll Syntax public enum ClickMode Fields Name Description army province"
+  },
+  "api/Global.ClickProvince.html": {
+    "href": "api/Global.ClickProvince.html",
+    "title": "Class ClickProvince | Example Unity documentation",
+    "keywords": "Class ClickProvince Inheritance object ClickProvince Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ClickProvince : MonoBehaviour Fields clickMode Declaration public ClickMode clickMode Field Value Type Description ClickMode maxDistance Declaration public float maxDistance Field Value Type Description float province Declaration public ProvinceData province Field Value Type Description ProvinceData selectedArmy Declaration public Army selectedArmy Field Value Type Description Army"
+  },
+  "api/Global.Construction.html": {
+    "href": "api/Global.Construction.html",
+    "title": "Class Construction | Example Unity documentation",
+    "keywords": "Class Construction Inheritance object Construction Namespace: Global Assembly: cs.temp.dll.dll Syntax public class Construction Constructors Construction(Building, int) Declaration public Construction(Building building, int turnsRemaining) Parameters Type Name Description Building building int turnsRemaining Fields building Declaration public Building building Field Value Type Description Building turnsRemaining Declaration public int turnsRemaining Field Value Type Description int"
+  },
+  "api/Global.Country.html": {
+    "href": "api/Global.Country.html",
+    "title": "Class Country | Example Unity documentation",
+    "keywords": "Class Country Inheritance object Country Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public class Country Fields color Declaration public Color color Field Value Type Description Color conscriptionModifier Declaration public float conscriptionModifier Field Value Type Description float countryName Declaration public string countryName Field Value Type Description string countryTag Declaration public string countryTag Field Value Type Description string currentArmy Declaration public int currentArmy Field Value Type Description int government Declaration public Government government Field Value Type Description Government manpower Declaration public int manpower Field Value Type Description int maxArmy Declaration public int maxArmy Field Value Type Description int maxMoney Declaration public int maxMoney Field Value Type Description int money Declaration public int money Field Value Type Description int occupiedProvinces Declaration public List<int> occupiedProvinces Field Value Type Description List<><int> ownedProvinces Declaration public List<int> ownedProvinces Field Value Type Description List<><int> population Declaration public int population Field Value Type Description int"
+  },
+  "api/Global.CountryActions.html": {
+    "href": "api/Global.CountryActions.html",
+    "title": "Class CountryActions | Example Unity documentation",
+    "keywords": "Class CountryActions Inheritance object CountryActions Namespace: Global Assembly: cs.temp.dll.dll Syntax public class CountryActions : MonoBehaviour Methods DeclareWar(string, string) Declaration public void DeclareWar(string offender, string defender) Parameters Type Name Description string offender string defender"
+  },
+  "api/Global.GameData.html": {
+    "href": "api/Global.GameData.html",
+    "title": "Class GameData | Example Unity documentation",
+    "keywords": "Class GameData Inheritance object GameData Namespace: Global Assembly: cs.temp.dll.dll Syntax public class GameData : MonoBehaviour Fields colors Declaration public List<Color> colors Field Value Type Description List<><Color> countries Declaration public List<Country> countries Field Value Type Description List<><Country> governments Declaration public List<Government> governments Field Value Type Description List<><Government> movingDivisions Declaration public List<MovingDivisions> movingDivisions Field Value Type Description List<><MovingDivisions> playingAsTag Declaration public string playingAsTag Field Value Type Description string provincesInformation Declaration public List<ProvinceData> provincesInformation Field Value Type Description List<><ProvinceData> provincesMeshRender Declaration public List<GameObject> provincesMeshRender Field Value Type Description List<><GameObject> trainingDivisions Declaration public List<TrainingDivisions> trainingDivisions Field Value Type Description List<><TrainingDivisions> turnCount Declaration public int turnCount Field Value Type Description int wars Declaration public List<War> wars Field Value Type Description List<><War>"
+  },
+  "api/Global.Government.html": {
+    "href": "api/Global.Government.html",
+    "title": "Class Government | Example Unity documentation",
+    "keywords": "Class Government Inheritance object Government Namespace: Global Assembly: cs.temp.dll.dll Syntax public class Government : ScriptableObject Fields governmentName Declaration public string governmentName Field Value Type Description string governmentTag Declaration public string governmentTag Field Value Type Description string"
+  },
+  "api/Global.GUIChanges.html": {
+    "href": "api/Global.GUIChanges.html",
+    "title": "Class GUIChanges | Example Unity documentation",
+    "keywords": "Class GUIChanges Inheritance object GUIChanges Namespace: Global Assembly: cs.temp.dll.dll Syntax public class GUIChanges : MonoBehaviour Methods hidePanel(GameObject) Declaration public void hidePanel(GameObject panel) Parameters Type Name Description GameObject panel showPanel(GameObject) Declaration public void showPanel(GameObject panel) Parameters Type Name Description GameObject panel updateText(TMP_Text, string, string) Declaration public void updateText(TMP_Text text, string originalText, string newText) Parameters Type Name Description TMP_Text text string originalText string newText"
+  },
+  "api/Global.GUIUpdater.html": {
+    "href": "api/Global.GUIUpdater.html",
+    "title": "Class GUIUpdater | Example Unity documentation",
+    "keywords": "Class GUIUpdater Inheritance object GUIUpdater Namespace: Global Assembly: cs.temp.dll.dll Syntax public class GUIUpdater : MonoBehaviour Methods updateBuildingsPanel() Declaration public void updateBuildingsPanel() updateDiplomacyPanel() Declaration public void updateDiplomacyPanel() updateProvincePanel() Declaration public void updateProvincePanel() updateRecruitmentPanel() Declaration public void updateRecruitmentPanel() updateTopBar() Declaration public void updateTopBar() updateTopBar(int) Declaration public void updateTopBar(int income) Parameters Type Name Description int income"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace | Example Unity documentation",
+    "keywords": "Namespace Classes Army Bank Barracks BoardData Building BuildingsManager ButtonHandler ClickArmy_O ClickProvince Construction Country CountryActions GameData Government GUIChanges GUIUpdater Market MoveArmy MovingDivisions ProvinceData ProvinceInformation_O ProvinceManager ProvinceSO RecruitArmy SelectCountry SwitchClickMode TrainingDivisions TurnManager jajco test War WarManager Enums ArmyType ClickMode"
+  },
+  "api/Global.Market.html": {
+    "href": "api/Global.Market.html",
+    "title": "Class Market | Example Unity documentation",
+    "keywords": "Class Market Inheritance object Building Market Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public class Market : Building Fields income Declaration public int income Field Value Type Description int"
+  },
+  "api/Global.MoveArmy.html": {
+    "href": "api/Global.MoveArmy.html",
+    "title": "Class MoveArmy | Example Unity documentation",
+    "keywords": "Class MoveArmy Inheritance object MoveArmy Namespace: Global Assembly: cs.temp.dll.dll Syntax public class MoveArmy : MonoBehaviour Methods TransportArmy() Declaration public void TransportArmy()"
+  },
+  "api/Global.MovingDivisions.html": {
+    "href": "api/Global.MovingDivisions.html",
+    "title": "Class MovingDivisions | Example Unity documentation",
+    "keywords": "Class MovingDivisions Inheritance object MovingDivisions Namespace: Global Assembly: cs.temp.dll.dll Syntax public class MovingDivisions Constructors MovingDivisions(Army, ProvinceData, ProvinceData, int) Declaration public MovingDivisions(Army army, ProvinceData stayingIn, ProvinceData destination, int travelTime) Parameters Type Name Description Army army ProvinceData stayingIn ProvinceData destination int travelTime Fields army Declaration public Army army Field Value Type Description Army destination Declaration public ProvinceData destination Field Value Type Description ProvinceData stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData travelTime Declaration public int travelTime Field Value Type Description int"
+  },
+  "api/Global.ProvinceData.html": {
+    "href": "api/Global.ProvinceData.html",
+    "title": "Class ProvinceData | Example Unity documentation",
+    "keywords": "Class ProvinceData Inheritance object ProvinceData Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ProvinceData : MonoBehaviour Fields buildingLimit Declaration public int buildingLimit Field Value Type Description int buildings Declaration public List<Building> buildings Field Value Type Description List<><Building> cachedIncome Declaration public int cachedIncome Field Value Type Description int cachedMaintenance Declaration public int cachedMaintenance Field Value Type Description int cachedMaxArmy Declaration public int cachedMaxArmy Field Value Type Description int cachedMoneyStorage Declaration public int cachedMoneyStorage Field Value Type Description int color Declaration public Color color Field Value Type Description Color constructions Declaration public List<Construction> constructions Field Value Type Description List<><Construction> housingArmies Declaration public List<Army> housingArmies Field Value Type Description List<><Army> id Declaration public int id Field Value Type Description int infrastructure Declaration public int infrastructure Field Value Type Description int infrastructureLimit Declaration public int infrastructureLimit Field Value Type Description int isCapital Declaration public bool isCapital Field Value Type Description bool neighbours Declaration public List<ProvinceData> neighbours Field Value Type Description List<><ProvinceData> owner Declaration public string owner Field Value Type Description string population Declaration public int population Field Value Type Description int provinceName Declaration public string provinceName Field Value Type Description string resource Declaration public string resource Field Value Type Description string Methods AddArmy(Army) Declaration public void AddArmy(Army army) Parameters Type Name Description Army army AddBuilding(Building) Declaration public void AddBuilding(Building building) Parameters Type Name Description Building building ConstructBuilding(Construction) Declaration public void ConstructBuilding(Construction construction) Parameters Type Name Description Construction construction RemoveArmy(Army) Declaration public void RemoveArmy(Army army) Parameters Type Name Description Army army"
+  },
+  "api/Global.ProvinceInformation_O.html": {
+    "href": "api/Global.ProvinceInformation_O.html",
+    "title": "Class ProvinceInformation_O | Example Unity documentation",
+    "keywords": "Class ProvinceInformation_O Inheritance object ProvinceInformation_O Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ProvinceInformation_O : MonoBehaviour Fields buildingLimit Declaration public int buildingLimit Field Value Type Description int buildings Declaration public List<Building> buildings Field Value Type Description List<><Building> cachedIncome Declaration public int cachedIncome Field Value Type Description int cachedMaxArmy Declaration public int cachedMaxArmy Field Value Type Description int cachedMoneyStorage Declaration public int cachedMoneyStorage Field Value Type Description int color Declaration public Color color Field Value Type Description Color constructions Declaration public List<Construction> constructions Field Value Type Description List<><Construction> housingArmy Declaration public int housingArmy Field Value Type Description int id Declaration public int id Field Value Type Description int infrastructure Declaration public int infrastructure Field Value Type Description int infrastructureLimit Declaration public int infrastructureLimit Field Value Type Description int isCapital Declaration public bool isCapital Field Value Type Description bool owner Declaration public string owner Field Value Type Description string population Declaration public int population Field Value Type Description int provinceName Declaration public string provinceName Field Value Type Description string resource Declaration public string resource Field Value Type Description string Methods AddBuilding(Building) Declaration public void AddBuilding(Building building) Parameters Type Name Description Building building ConstructBuilding(Construction) Declaration public void ConstructBuilding(Construction construction) Parameters Type Name Description Construction construction"
+  },
+  "api/Global.ProvinceManager.html": {
+    "href": "api/Global.ProvinceManager.html",
+    "title": "Class ProvinceManager | Example Unity documentation",
+    "keywords": "Class ProvinceManager Inheritance object ProvinceManager Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ProvinceManager : MonoBehaviour Fields selectedProvince Declaration public int selectedProvince Field Value Type Description int Methods constructBuilding(Building) Declaration public void constructBuilding(Building newBuilding) Parameters Type Name Description Building newBuilding isConstructedBuilding(Building) Declaration public bool isConstructedBuilding(Building building) Parameters Type Name Description Building building Returns Type Description bool"
+  },
+  "api/Global.ProvinceSO.html": {
+    "href": "api/Global.ProvinceSO.html",
+    "title": "Class ProvinceSO | Example Unity documentation",
+    "keywords": "Class ProvinceSO Inheritance object ProvinceSO Namespace: Global Assembly: cs.temp.dll.dll Syntax public class ProvinceSO : ScriptableObject Fields name Declaration public string name Field Value Type Description string population Declaration public int population Field Value Type Description int"
+  },
+  "api/Global.RecruitArmy.html": {
+    "href": "api/Global.RecruitArmy.html",
+    "title": "Class RecruitArmy | Example Unity documentation",
+    "keywords": "Class RecruitArmy Inheritance object RecruitArmy Namespace: Global Assembly: cs.temp.dll.dll Syntax public class RecruitArmy : MonoBehaviour Methods PerformRecruit() Declaration public void PerformRecruit() Recruit(int, int, int, Transform) Declaration public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince) Parameters Type Name Description int soldiers int cost int maintenance Transform selectedProvince SelectProvince() Declaration public void SelectProvince()"
+  },
+  "api/Global.SelectCountry.html": {
+    "href": "api/Global.SelectCountry.html",
+    "title": "Class SelectCountry | Example Unity documentation",
+    "keywords": "Class SelectCountry Inheritance object SelectCountry Namespace: Global Assembly: cs.temp.dll.dll Syntax public class SelectCountry : MonoBehaviour Methods SelectCountryTag(string) Declaration public void SelectCountryTag(string countryTag) Parameters Type Name Description string countryTag"
+  },
+  "api/Global.SwitchClickMode.html": {
+    "href": "api/Global.SwitchClickMode.html",
+    "title": "Class SwitchClickMode | Example Unity documentation",
+    "keywords": "Class SwitchClickMode Inheritance object SwitchClickMode Namespace: Global Assembly: cs.temp.dll.dll Syntax public class SwitchClickMode : MonoBehaviour Methods ChangeClickMode(int) Declaration public void ChangeClickMode(int selectedClickMode) Parameters Type Name Description int selectedClickMode"
+  },
+  "api/Global.TrainingDivisions.html": {
+    "href": "api/Global.TrainingDivisions.html",
+    "title": "Class TrainingDivisions | Example Unity documentation",
+    "keywords": "Class TrainingDivisions Inheritance object TrainingDivisions Namespace: Global Assembly: cs.temp.dll.dll Syntax public class TrainingDivisions Constructors TrainingDivisions(int, int, int, int, Transform) Declaration public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination) Parameters Type Name Description int amount int cost int maintenance int trainingTime Transform trainingDestination Fields amount Declaration public int amount Field Value Type Description int cost Declaration public int cost Field Value Type Description int maintenance Declaration public int maintenance Field Value Type Description int trainingDestination Declaration public Transform trainingDestination Field Value Type Description Transform trainingTime Declaration public int trainingTime Field Value Type Description int"
+  },
+  "api/Global.TurnManager.html": {
+    "href": "api/Global.TurnManager.html",
+    "title": "Class TurnManager | Example Unity documentation",
+    "keywords": "Class TurnManager jajco test Inheritance object TurnManager Namespace: Global Assembly: cs.temp.dll.dll Syntax public class TurnManager : MonoBehaviour Methods NextTurn() Declaration public void NextTurn()"
+  },
+  "api/Global.War.html": {
+    "href": "api/Global.War.html",
+    "title": "Class War | Example Unity documentation",
+    "keywords": "Class War Inheritance object War Namespace: Global Assembly: cs.temp.dll.dll Syntax [Serializable] public class War Constructors War(string, List<string>, List<string>) Declaration public War(string name, List<string> offenders, List<string> defenders) Parameters Type Name Description string name List<><string> offenders List<><string> defenders Fields defenders Declaration public List<string> defenders Field Value Type Description List<><string> name Declaration public string name Field Value Type Description string offenders Declaration public List<string> offenders Field Value Type Description List<><string>"
+  },
+  "api/Global.WarManager.html": {
+    "href": "api/Global.WarManager.html",
+    "title": "Class WarManager | Example Unity documentation",
+    "keywords": "Class WarManager Inheritance object WarManager Namespace: Global Assembly: cs.temp.dll.dll Syntax public class WarManager : MonoBehaviour Methods AreAtWar(string, string) Declaration public bool AreAtWar(string country1, string country2) Parameters Type Name Description string country1 string country2 Returns Type Description bool GetEnemiesOf(string) Declaration public List<string> GetEnemiesOf(string country) Parameters Type Name Description string country Returns Type Description List<><string>"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Grand War Strategy - a Unity 6 game template | Example Unity documentation",
+    "keywords": "Grand War Strategy - a Unity 6 game template This project is a template for creating a game like Age of History 2, or Hearts of Iron IV. There is no guarantee it will be ever finished, or become as modular as I would like it to be. Some features are also straight up impossible for me to do, such as automatic placement of BoxColliders on a custom object's shape. The project is in very early alpha stages, so many things are unoptimized and messy. Features Province data - each province has it's own data, such as id or placed buildings Province neighbour's detection - each province automatically detects its neighbours Country system - different countries, holding data such as owned provinces or money Painting provinces - each province's material color is painted according to country's color, or the randomly generated color of a province (each province has unique color) Turn system - all actions, such as money income, are made each turn Governments - each country has government type, such as \"Democracy\", although this (and many other features) will be expanded on in the future Building construction - you are able to construct different buildings in a province Planned features Save/Load games - abilit to save and load current game session Easy modding - easily add new building types, governments, countries, etc. via json files Technology/Research - each country will be able to research new technologies, similiar to HoI4 Turn based combat - this will be a mix of AoH2 and HoI4 combat systems, province housing armies will be able to attack neigbouring foreign provinces, assuming both countries are at war Focus Trees - each country will be able to have its own focus trees, with each providing different kinds of bonuses Political parties - similiar to HoI4, each country will have a bunch of political parties, based on the current ruling party, country's ideology will depend on the party's ideology (Government) Different law types - each country will be able to have different economic, conscription, trade, education, etc. laws And many more, but first I'll be working on the very basics Support Any help with the project is greatly appreciated. So if you have some skills, take a look at this and offer some improvements, or even new features if you want! You can track progress of the project here: https://trello.com/b/dHGOdTtB/grand-war-strategy To discuss the project, join my discord server: https://discord.gg/ayF3srjbC2"
+  },
+  "manual/coniunctis.html": {
+    "href": "manual/coniunctis.html",
+    "title": "Coniunctis nec qui et lanient monticolae vitae | Example Unity documentation",
+    "keywords": "Coniunctis nec qui et lanient monticolae vitae Opem ille Lorem markdownum cavis exululat inutile. Illi quem caeli, vola patruo difficili Iuppiter Patraeque, est ardebant ingeniis Troica intus Amore tibi mirantem superfusis, multum. Ut Achilles Et sitim Tibi modo ait temptant crinita daret Pariter in removi offensasque Lenaeo damno terra Phoebes ut damnosa classis ignes templo; tua ulla capillos ultima. Videre percusso plectro templa fuit diva minimum debere, quid nomen Philomela animis. Verbis istis flagrat vulnera inpediique ignes. Gravi filo obvius arte Amphionis Panes emisitque iubet. Latona te timens Latentia ante, eundem meritorum sunto! Elige in timuit templa ferrea, qui arma ligati stagnum turbant. Fraternaque aeternus, dedisse, naufragus corripiens ranas Amathunta et quod laetior culpa nec semper scorpius fuit vicem corpora ardere. Fallit in artus primordia, fratres per aliis, ipsi manu Asiae quod marmorea. mountain(googleVga, pngIphone); var radcabBitrate = dnsCronRecursion; gui(2); ipImageAix += vle(drm_cisc, horizontal + computer_key); jre(vaporware_adc_multi); Lumina ut tamen praesentia vidistis nymphae auroque Bromumque in portant furorem. Visa init resurgere praevitiat canibus et, dedignata turea, ilia. Pisenore mensura insula aere nec per o gladium causa: Alcidae. Veris sentes pallet, alta melius nostra amborum probant, deam. Iuventae dedimus nitidaque hunc traxisse sermonibus pectine flecti an pateres, hac ore gelidis foret semper. Sithon pelle. Bracchia Hippason videntur fateri hosti: palpitat animo est reliquit anne nam confusaque. Interea rex altis munera quem quae quoque rorant, rauco albescere scopulo moriensque parvo, pectus illa, quadrupedes. Notavit haec. Vertit pars quem Euryte casu usta iterum! Ablatum pectus corripiunt neu humus tamquam; ducens stellarum amore. Pulsisque latet, ad tamen victor fulva Tirynthius posco; qui inque in poena quidem enses!"
+  },
+  "manual/etiam.html": {
+    "href": "manual/etiam.html",
+    "title": "Etiam nantemque exul | Example Unity documentation",
+    "keywords": "Etiam nantemque exul Cum tulit Lorem markdownum quos stimulosque altos. Putat nubes molle Troiae vero dea; nostraque plurima. Vos de mihi, credidit: salibus et iacuit, volvitur sunt unda fronti deriguisse refert. Sumpsisse viso Nubila nomine. Purpura se o et causa parva ripas, adsonat saevaque; quid modo ambo et venere voveo. Sine et esse, illa tempore, sive tibi roseo, ministerio altos. Trepident medicamine, primasque cum et peregit dapibusque quoslibet hominis quoque insula. Tepentibus ut Cecropios ab turba, est auro ferventi aliter duratos feres differtis Ausoniis potes, non noctis Laertaque iuvenes. Caelumque vestigia Et promissa fila sentiet leges; Phrygiae et levatus ferire? Salutifer coniugis fierent ante fecissent post vultumque ultima, per radios currere; tandem. Fuerat qua, ne foedera reformatus nunc diu dea audet nonne. Ut utinam mitia tenuerunt movent spectans Mavortis nulla ite, somnos exsiccata dixit Aeetias. Binas Trinacriam album ex ipse. Quoque una utraque tardius placetque gerere; mariti sed dare ludunt memorante Delphice corpora. Caret quantum intellegat venis gaudent eurus. Et suos crista; has et ferarum quid audit omine; mea cum praemia quae duris, suspicor. Adflati qui Spiro conata supprimit diemque; ora oblitus ensem alti non quo lacrimis ferunt, ageret Cebrenida rutilis delendaque? Terras lata modus: nec fas, misi utque adpositis Iunonis. Fide vidit, ferox Schoeneia mundi, voce, tellus pariterque pedum, sic Celadon securior corpora partesque posito. Potest faxo unda pendulaque ille rostro, haesit pars: formidine captat, viseret simulaverat! Sequi est peragit flumineae pallent simulatas formae avulsa, imagine undis; formam. Et nec sed adeunt, huic aequa et ignes nec, medere terram. Move ipsum abnuat retemptat retinebat duabus diu Iovi est pluma. Tecum non deducit Pelops Inachus: arcet aliquemque, regia telo. Tollens altore nec semel qui voce Palatinae Apertis et dei duo inquit; luna secundo, fervida terret. In haec dextra septima Tydides tibi: congelat hospes nativum radice tegumenque membris Hesperio ne Libys, est vocabula siqua. Dumque stet mulces, ut fontem dea atricolor, est pronos, clarissimus poterat cum intrare sidere templi. cut_metadata(whitelistSequenceUnit.thick.of_bezel_cdma( address_suffix_troubleshooting), sram_trojan(4, hdmi_network - 1)); flash.apache -= web_gps_plug; if (offline.dac_bridge(scrollEbookRom, parameter.internal_target_superscalar(2)) < qwerty + 2 - ipvCgiContextual) { certificateIdeAsp = overclocking + app; supplyCard = siteRaster; } Sagitta curvum quoque petisti opibusque proximitas in, illa vestrum, mihi domum nescia flexit sacra in. Magni vive sim crescente causam saxo voluit, mens, quod. Tela ter ulterius similis illos nato refugit ait verbaque nec fatigatum penates iaculatricemque cecidit pinnas, cum. Misso contigit caelo dedissent lumina; nympha ad vobis occidat, malo sacra utrumque cunctos Diomedeos addita. Virgineus autumnos, ait mitissima curru: fuit sed fessi se habebat hactenus Ultor; meus."
+  }
+}

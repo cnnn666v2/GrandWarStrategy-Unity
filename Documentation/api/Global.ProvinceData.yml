@@ -1,0 +1,782 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProvinceData
+  commentId: T:Global.ProvinceData
+  id: ProvinceData
+  parent: Global
+  children:
+  - Global.ProvinceData.AddArmy(Army)
+  - Global.ProvinceData.AddBuilding(Building)
+  - Global.ProvinceData.buildingLimit
+  - Global.ProvinceData.buildings
+  - Global.ProvinceData.cachedIncome
+  - Global.ProvinceData.cachedMaintenance
+  - Global.ProvinceData.cachedMaxArmy
+  - Global.ProvinceData.cachedMoneyStorage
+  - Global.ProvinceData.color
+  - Global.ProvinceData.ConstructBuilding(Construction)
+  - Global.ProvinceData.constructions
+  - Global.ProvinceData.housingArmies
+  - Global.ProvinceData.id
+  - Global.ProvinceData.infrastructure
+  - Global.ProvinceData.infrastructureLimit
+  - Global.ProvinceData.isCapital
+  - Global.ProvinceData.neighbours
+  - Global.ProvinceData.owner
+  - Global.ProvinceData.population
+  - Global.ProvinceData.provinceName
+  - Global.ProvinceData.RemoveArmy(Army)
+  - Global.ProvinceData.resource
+  langs:
+  - csharp
+  - vb
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: ProvinceData
+  type: Class
+  source:
+    id: ProvinceData
+    path: ''
+    startLine: 542
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class ProvinceData : MonoBehaviour'
+    content.vb: Public Class ProvinceData Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.ProvinceData.neighbours
+  commentId: F:Global.ProvinceData.neighbours
+  id: neighbours
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: neighbours
+  nameWithType: ProvinceData.neighbours
+  fullName: ProvinceData.neighbours
+  type: Field
+  source:
+    id: neighbours
+    path: ''
+    startLine: 545
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<ProvinceData> neighbours
+    return:
+      type: Global.List{ProvinceData}
+    content.vb: Public neighbours As List(Of ProvinceData)
+- uid: Global.ProvinceData.provinceName
+  commentId: F:Global.ProvinceData.provinceName
+  id: provinceName
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: provinceName
+  nameWithType: ProvinceData.provinceName
+  fullName: ProvinceData.provinceName
+  type: Field
+  source:
+    id: provinceName
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string provinceName
+    return:
+      type: System.String
+    content.vb: Public provinceName As String
+- uid: Global.ProvinceData.population
+  commentId: F:Global.ProvinceData.population
+  id: population
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: population
+  nameWithType: ProvinceData.population
+  fullName: ProvinceData.population
+  type: Field
+  source:
+    id: population
+    path: ''
+    startLine: 553
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int population
+    return:
+      type: System.Int32
+    content.vb: Public population As Integer
+- uid: Global.ProvinceData.id
+  commentId: F:Global.ProvinceData.id
+  id: id
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: ProvinceData.id
+  fullName: ProvinceData.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 554
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int id
+    return:
+      type: System.Int32
+    content.vb: Public id As Integer
+- uid: Global.ProvinceData.owner
+  commentId: F:Global.ProvinceData.owner
+  id: owner
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: owner
+  nameWithType: ProvinceData.owner
+  fullName: ProvinceData.owner
+  type: Field
+  source:
+    id: owner
+    path: ''
+    startLine: 555
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string owner
+    return:
+      type: System.String
+    content.vb: Public owner As String
+- uid: Global.ProvinceData.color
+  commentId: F:Global.ProvinceData.color
+  id: color
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: color
+  nameWithType: ProvinceData.color
+  fullName: ProvinceData.color
+  type: Field
+  source:
+    id: color
+    path: ''
+    startLine: 556
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Color color
+    return:
+      type: Global.Color
+    content.vb: Public color As Color
+- uid: Global.ProvinceData.isCapital
+  commentId: F:Global.ProvinceData.isCapital
+  id: isCapital
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: isCapital
+  nameWithType: ProvinceData.isCapital
+  fullName: ProvinceData.isCapital
+  type: Field
+  source:
+    id: isCapital
+    path: ''
+    startLine: 557
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool isCapital
+    return:
+      type: System.Boolean
+    content.vb: Public isCapital As Boolean
+- uid: Global.ProvinceData.infrastructure
+  commentId: F:Global.ProvinceData.infrastructure
+  id: infrastructure
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: infrastructure
+  nameWithType: ProvinceData.infrastructure
+  fullName: ProvinceData.infrastructure
+  type: Field
+  source:
+    id: infrastructure
+    path: ''
+    startLine: 558
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int infrastructure
+    return:
+      type: System.Int32
+    content.vb: Public infrastructure As Integer
+- uid: Global.ProvinceData.infrastructureLimit
+  commentId: F:Global.ProvinceData.infrastructureLimit
+  id: infrastructureLimit
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: infrastructureLimit
+  nameWithType: ProvinceData.infrastructureLimit
+  fullName: ProvinceData.infrastructureLimit
+  type: Field
+  source:
+    id: infrastructureLimit
+    path: ''
+    startLine: 559
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int infrastructureLimit
+    return:
+      type: System.Int32
+    content.vb: Public infrastructureLimit As Integer
+- uid: Global.ProvinceData.resource
+  commentId: F:Global.ProvinceData.resource
+  id: resource
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: resource
+  nameWithType: ProvinceData.resource
+  fullName: ProvinceData.resource
+  type: Field
+  source:
+    id: resource
+    path: ''
+    startLine: 560
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string resource
+    return:
+      type: System.String
+    content.vb: Public resource As String
+- uid: Global.ProvinceData.buildingLimit
+  commentId: F:Global.ProvinceData.buildingLimit
+  id: buildingLimit
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: buildingLimit
+  nameWithType: ProvinceData.buildingLimit
+  fullName: ProvinceData.buildingLimit
+  type: Field
+  source:
+    id: buildingLimit
+    path: ''
+    startLine: 563
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int buildingLimit
+    return:
+      type: System.Int32
+    content.vb: Public buildingLimit As Integer
+- uid: Global.ProvinceData.buildings
+  commentId: F:Global.ProvinceData.buildings
+  id: buildings
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: buildings
+  nameWithType: ProvinceData.buildings
+  fullName: ProvinceData.buildings
+  type: Field
+  source:
+    id: buildings
+    path: ''
+    startLine: 564
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Building> buildings
+    return:
+      type: Global.List{Building}
+    content.vb: Public buildings As List(Of Building)
+- uid: Global.ProvinceData.constructions
+  commentId: F:Global.ProvinceData.constructions
+  id: constructions
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: constructions
+  nameWithType: ProvinceData.constructions
+  fullName: ProvinceData.constructions
+  type: Field
+  source:
+    id: constructions
+    path: ''
+    startLine: 565
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Construction> constructions
+    return:
+      type: Global.List{Construction}
+    content.vb: Public constructions As List(Of Construction)
+- uid: Global.ProvinceData.cachedIncome
+  commentId: F:Global.ProvinceData.cachedIncome
+  id: cachedIncome
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: cachedIncome
+  nameWithType: ProvinceData.cachedIncome
+  fullName: ProvinceData.cachedIncome
+  type: Field
+  source:
+    id: cachedIncome
+    path: ''
+    startLine: 568
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int cachedIncome
+    return:
+      type: System.Int32
+    content.vb: Public cachedIncome As Integer
+- uid: Global.ProvinceData.cachedMoneyStorage
+  commentId: F:Global.ProvinceData.cachedMoneyStorage
+  id: cachedMoneyStorage
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: cachedMoneyStorage
+  nameWithType: ProvinceData.cachedMoneyStorage
+  fullName: ProvinceData.cachedMoneyStorage
+  type: Field
+  source:
+    id: cachedMoneyStorage
+    path: ''
+    startLine: 569
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int cachedMoneyStorage
+    return:
+      type: System.Int32
+    content.vb: Public cachedMoneyStorage As Integer
+- uid: Global.ProvinceData.cachedMaxArmy
+  commentId: F:Global.ProvinceData.cachedMaxArmy
+  id: cachedMaxArmy
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: cachedMaxArmy
+  nameWithType: ProvinceData.cachedMaxArmy
+  fullName: ProvinceData.cachedMaxArmy
+  type: Field
+  source:
+    id: cachedMaxArmy
+    path: ''
+    startLine: 570
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int cachedMaxArmy
+    return:
+      type: System.Int32
+    content.vb: Public cachedMaxArmy As Integer
+- uid: Global.ProvinceData.cachedMaintenance
+  commentId: F:Global.ProvinceData.cachedMaintenance
+  id: cachedMaintenance
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: cachedMaintenance
+  nameWithType: ProvinceData.cachedMaintenance
+  fullName: ProvinceData.cachedMaintenance
+  type: Field
+  source:
+    id: cachedMaintenance
+    path: ''
+    startLine: 571
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int cachedMaintenance
+    return:
+      type: System.Int32
+    content.vb: Public cachedMaintenance As Integer
+- uid: Global.ProvinceData.housingArmies
+  commentId: F:Global.ProvinceData.housingArmies
+  id: housingArmies
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: housingArmies
+  nameWithType: ProvinceData.housingArmies
+  fullName: ProvinceData.housingArmies
+  type: Field
+  source:
+    id: housingArmies
+    path: ''
+    startLine: 573
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Army> housingArmies
+    return:
+      type: Global.List{Army}
+    content.vb: Public housingArmies As List(Of Army)
+- uid: Global.ProvinceData.AddBuilding(Building)
+  commentId: M:Global.ProvinceData.AddBuilding(Building)
+  id: AddBuilding(Building)
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: AddBuilding(Building)
+  nameWithType: ProvinceData.AddBuilding(Building)
+  fullName: ProvinceData.AddBuilding(Building)
+  type: Method
+  source:
+    id: AddBuilding
+    path: ''
+    startLine: 649
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void AddBuilding(Building building)
+    parameters:
+    - id: building
+      type: Global.Building
+    content.vb: Public Sub AddBuilding(building As Building)
+  overload: Global.ProvinceData.AddBuilding*
+- uid: Global.ProvinceData.ConstructBuilding(Construction)
+  commentId: M:Global.ProvinceData.ConstructBuilding(Construction)
+  id: ConstructBuilding(Construction)
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: ConstructBuilding(Construction)
+  nameWithType: ProvinceData.ConstructBuilding(Construction)
+  fullName: ProvinceData.ConstructBuilding(Construction)
+  type: Method
+  source:
+    id: ConstructBuilding
+    path: ''
+    startLine: 654
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ConstructBuilding(Construction construction)
+    parameters:
+    - id: construction
+      type: Global.Construction
+    content.vb: Public Sub ConstructBuilding(construction As Construction)
+  overload: Global.ProvinceData.ConstructBuilding*
+- uid: Global.ProvinceData.AddArmy(Army)
+  commentId: M:Global.ProvinceData.AddArmy(Army)
+  id: AddArmy(Army)
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: AddArmy(Army)
+  nameWithType: ProvinceData.AddArmy(Army)
+  fullName: ProvinceData.AddArmy(Army)
+  type: Method
+  source:
+    id: AddArmy
+    path: ''
+    startLine: 664
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void AddArmy(Army army)
+    parameters:
+    - id: army
+      type: Global.Army
+    content.vb: Public Sub AddArmy(army As Army)
+  overload: Global.ProvinceData.AddArmy*
+- uid: Global.ProvinceData.RemoveArmy(Army)
+  commentId: M:Global.ProvinceData.RemoveArmy(Army)
+  id: RemoveArmy(Army)
+  parent: Global.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: RemoveArmy(Army)
+  nameWithType: ProvinceData.RemoveArmy(Army)
+  fullName: ProvinceData.RemoveArmy(Army)
+  type: Method
+  source:
+    id: RemoveArmy
+    path: ''
+    startLine: 670
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void RemoveArmy(Army army)
+    parameters:
+    - id: army
+      type: Global.Army
+    content.vb: Public Sub RemoveArmy(army As Army)
+  overload: Global.ProvinceData.RemoveArmy*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{ProvinceData}
+  commentId: '!:Global.List{ProvinceData}'
+  definition: Global.List`1
+  name: List<ProvinceData>
+  nameWithType: List<ProvinceData>
+  fullName: List<ProvinceData>
+  nameWithType.vb: List(Of ProvinceData)
+  fullName.vb: List(Of ProvinceData)
+  name.vb: List(Of ProvinceData)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.ProvinceData
+    name: ProvinceData
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ProvinceData
+    name: ProvinceData
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.List{Building}
+  commentId: '!:Global.List{Building}'
+  definition: Global.List`1
+  name: List<Building>
+  nameWithType: List<Building>
+  fullName: List<Building>
+  nameWithType.vb: List(Of Building)
+  fullName.vb: List(Of Building)
+  name.vb: List(Of Building)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Building
+    name: Building
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Building
+    name: Building
+  - name: )
+- uid: Global.List{Construction}
+  commentId: '!:Global.List{Construction}'
+  definition: Global.List`1
+  name: List<Construction>
+  nameWithType: List<Construction>
+  fullName: List<Construction>
+  nameWithType.vb: List(Of Construction)
+  fullName.vb: List(Of Construction)
+  name.vb: List(Of Construction)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Construction
+    name: Construction
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Construction
+    name: Construction
+  - name: )
+- uid: Global.List{Army}
+  commentId: '!:Global.List{Army}'
+  definition: Global.List`1
+  name: List<Army>
+  nameWithType: List<Army>
+  fullName: List<Army>
+  nameWithType.vb: List(Of Army)
+  fullName.vb: List(Of Army)
+  name.vb: List(Of Army)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Army
+    name: Army
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Army
+    name: Army
+  - name: )
+- uid: Global.ProvinceData.AddBuilding*
+  commentId: Overload:Global.ProvinceData.AddBuilding
+  name: AddBuilding
+  nameWithType: ProvinceData.AddBuilding
+  fullName: ProvinceData.AddBuilding
+- uid: Global.Building
+  commentId: T:Global.Building
+  name: Building
+  nameWithType: Building
+  fullName: Building
+- uid: Global.ProvinceData.ConstructBuilding*
+  commentId: Overload:Global.ProvinceData.ConstructBuilding
+  name: ConstructBuilding
+  nameWithType: ProvinceData.ConstructBuilding
+  fullName: ProvinceData.ConstructBuilding
+- uid: Global.Construction
+  commentId: T:Global.Construction
+  name: Construction
+  nameWithType: Construction
+  fullName: Construction
+- uid: Global.ProvinceData.AddArmy*
+  commentId: Overload:Global.ProvinceData.AddArmy
+  name: AddArmy
+  nameWithType: ProvinceData.AddArmy
+  fullName: ProvinceData.AddArmy
+- uid: Global.Army
+  commentId: T:Global.Army
+  name: Army
+  nameWithType: Army
+  fullName: Army
+- uid: Global.ProvinceData.RemoveArmy*
+  commentId: Overload:Global.ProvinceData.RemoveArmy
+  name: RemoveArmy
+  nameWithType: ProvinceData.RemoveArmy
+  fullName: ProvinceData.RemoveArmy

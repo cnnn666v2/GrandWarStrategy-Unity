@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.GameData
+  commentId: T:Global.GameData
+  id: GameData
+  parent: Global
+  children:
+  - Global.GameData.colors
+  - Global.GameData.countries
+  - Global.GameData.governments
+  - Global.GameData.movingDivisions
+  - Global.GameData.playingAsTag
+  - Global.GameData.provincesInformation
+  - Global.GameData.provincesMeshRender
+  - Global.GameData.trainingDivisions
+  - Global.GameData.turnCount
+  - Global.GameData.wars
+  langs:
+  - csharp
+  - vb
+  name: GameData
+  nameWithType: GameData
+  fullName: GameData
+  type: Class
+  source:
+    id: GameData
+    path: ''
+    startLine: 58
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class GameData : MonoBehaviour'
+    content.vb: Public Class GameData Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.GameData.colors
+  commentId: F:Global.GameData.colors
+  id: colors
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: colors
+  nameWithType: GameData.colors
+  fullName: GameData.colors
+  type: Field
+  source:
+    id: colors
+    path: ''
+    startLine: 60
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Color> colors
+    return:
+      type: Global.List{Color}
+    content.vb: Public colors As List(Of Color)
+- uid: Global.GameData.countries
+  commentId: F:Global.GameData.countries
+  id: countries
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: countries
+  nameWithType: GameData.countries
+  fullName: GameData.countries
+  type: Field
+  source:
+    id: countries
+    path: ''
+    startLine: 61
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Country> countries
+    return:
+      type: Global.List{Country}
+    content.vb: Public countries As List(Of Country)
+- uid: Global.GameData.governments
+  commentId: F:Global.GameData.governments
+  id: governments
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: governments
+  nameWithType: GameData.governments
+  fullName: GameData.governments
+  type: Field
+  source:
+    id: governments
+    path: ''
+    startLine: 62
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Government> governments
+    return:
+      type: Global.List{Government}
+    content.vb: Public governments As List(Of Government)
+- uid: Global.GameData.provincesInformation
+  commentId: F:Global.GameData.provincesInformation
+  id: provincesInformation
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: provincesInformation
+  nameWithType: GameData.provincesInformation
+  fullName: GameData.provincesInformation
+  type: Field
+  source:
+    id: provincesInformation
+    path: ''
+    startLine: 63
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<ProvinceData> provincesInformation
+    return:
+      type: Global.List{ProvinceData}
+    content.vb: Public provincesInformation As List(Of ProvinceData)
+- uid: Global.GameData.provincesMeshRender
+  commentId: F:Global.GameData.provincesMeshRender
+  id: provincesMeshRender
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: provincesMeshRender
+  nameWithType: GameData.provincesMeshRender
+  fullName: GameData.provincesMeshRender
+  type: Field
+  source:
+    id: provincesMeshRender
+    path: ''
+    startLine: 64
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<GameObject> provincesMeshRender
+    return:
+      type: Global.List{GameObject}
+    content.vb: Public provincesMeshRender As List(Of GameObject)
+- uid: Global.GameData.playingAsTag
+  commentId: F:Global.GameData.playingAsTag
+  id: playingAsTag
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: playingAsTag
+  nameWithType: GameData.playingAsTag
+  fullName: GameData.playingAsTag
+  type: Field
+  source:
+    id: playingAsTag
+    path: ''
+    startLine: 65
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string playingAsTag
+    return:
+      type: System.String
+    content.vb: Public playingAsTag As String
+- uid: Global.GameData.turnCount
+  commentId: F:Global.GameData.turnCount
+  id: turnCount
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: turnCount
+  nameWithType: GameData.turnCount
+  fullName: GameData.turnCount
+  type: Field
+  source:
+    id: turnCount
+    path: ''
+    startLine: 66
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int turnCount
+    return:
+      type: System.Int32
+    content.vb: Public turnCount As Integer
+- uid: Global.GameData.wars
+  commentId: F:Global.GameData.wars
+  id: wars
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: wars
+  nameWithType: GameData.wars
+  fullName: GameData.wars
+  type: Field
+  source:
+    id: wars
+    path: ''
+    startLine: 67
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<War> wars
+    return:
+      type: Global.List{War}
+    content.vb: Public wars As List(Of War)
+- uid: Global.GameData.movingDivisions
+  commentId: F:Global.GameData.movingDivisions
+  id: movingDivisions
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: movingDivisions
+  nameWithType: GameData.movingDivisions
+  fullName: GameData.movingDivisions
+  type: Field
+  source:
+    id: movingDivisions
+    path: ''
+    startLine: 68
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<MovingDivisions> movingDivisions
+    return:
+      type: Global.List{MovingDivisions}
+    content.vb: Public movingDivisions As List(Of MovingDivisions)
+- uid: Global.GameData.trainingDivisions
+  commentId: F:Global.GameData.trainingDivisions
+  id: trainingDivisions
+  parent: Global.GameData
+  langs:
+  - csharp
+  - vb
+  name: trainingDivisions
+  nameWithType: GameData.trainingDivisions
+  fullName: GameData.trainingDivisions
+  type: Field
+  source:
+    id: trainingDivisions
+    path: ''
+    startLine: 69
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<TrainingDivisions> trainingDivisions
+    return:
+      type: Global.List{TrainingDivisions}
+    content.vb: Public trainingDivisions As List(Of TrainingDivisions)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Color}
+  commentId: '!:Global.List{Color}'
+  definition: Global.List`1
+  name: List<Color>
+  nameWithType: List<Color>
+  fullName: List<Color>
+  nameWithType.vb: List(Of Color)
+  fullName.vb: List(Of Color)
+  name.vb: List(Of Color)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Global.List{Country}
+  commentId: '!:Global.List{Country}'
+  definition: Global.List`1
+  name: List<Country>
+  nameWithType: List<Country>
+  fullName: List<Country>
+  nameWithType.vb: List(Of Country)
+  fullName.vb: List(Of Country)
+  name.vb: List(Of Country)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Country
+    name: Country
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Country
+    name: Country
+  - name: )
+- uid: Global.List{Government}
+  commentId: '!:Global.List{Government}'
+  definition: Global.List`1
+  name: List<Government>
+  nameWithType: List<Government>
+  fullName: List<Government>
+  nameWithType.vb: List(Of Government)
+  fullName.vb: List(Of Government)
+  name.vb: List(Of Government)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Government
+    name: Government
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Government
+    name: Government
+  - name: )
+- uid: Global.List{ProvinceData}
+  commentId: '!:Global.List{ProvinceData}'
+  definition: Global.List`1
+  name: List<ProvinceData>
+  nameWithType: List<ProvinceData>
+  fullName: List<ProvinceData>
+  nameWithType.vb: List(Of ProvinceData)
+  fullName.vb: List(Of ProvinceData)
+  name.vb: List(Of ProvinceData)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.ProvinceData
+    name: ProvinceData
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ProvinceData
+    name: ProvinceData
+  - name: )
+- uid: Global.List{GameObject}
+  commentId: '!:Global.List{GameObject}'
+  definition: Global.List`1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: List<GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: List(Of GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.List{War}
+  commentId: '!:Global.List{War}'
+  definition: Global.List`1
+  name: List<War>
+  nameWithType: List<War>
+  fullName: List<War>
+  nameWithType.vb: List(Of War)
+  fullName.vb: List(Of War)
+  name.vb: List(Of War)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.War
+    name: War
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.War
+    name: War
+  - name: )
+- uid: Global.List{MovingDivisions}
+  commentId: '!:Global.List{MovingDivisions}'
+  definition: Global.List`1
+  name: List<MovingDivisions>
+  nameWithType: List<MovingDivisions>
+  fullName: List<MovingDivisions>
+  nameWithType.vb: List(Of MovingDivisions)
+  fullName.vb: List(Of MovingDivisions)
+  name.vb: List(Of MovingDivisions)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.MovingDivisions
+    name: MovingDivisions
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.MovingDivisions
+    name: MovingDivisions
+  - name: )
+- uid: Global.List{TrainingDivisions}
+  commentId: '!:Global.List{TrainingDivisions}'
+  definition: Global.List`1
+  name: List<TrainingDivisions>
+  nameWithType: List<TrainingDivisions>
+  fullName: List<TrainingDivisions>
+  nameWithType.vb: List(Of TrainingDivisions)
+  fullName.vb: List(Of TrainingDivisions)
+  name.vb: List(Of TrainingDivisions)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.TrainingDivisions
+    name: TrainingDivisions
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.TrainingDivisions
+    name: TrainingDivisions
+  - name: )

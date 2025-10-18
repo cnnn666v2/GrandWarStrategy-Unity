@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ButtonHandler
+  commentId: T:Global.ButtonHandler
+  id: ButtonHandler
+  parent: Global
+  children:
+  - Global.ButtonHandler.isBuilt
+  langs:
+  - csharp
+  - vb
+  name: ButtonHandler
+  nameWithType: ButtonHandler
+  fullName: ButtonHandler
+  type: Class
+  source:
+    id: ButtonHandler
+    path: ''
+    startLine: 777
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class ButtonHandler : MonoBehaviour'
+    content.vb: Public Class ButtonHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.ButtonHandler.isBuilt
+  commentId: M:Global.ButtonHandler.isBuilt
+  id: isBuilt
+  parent: Global.ButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: isBuilt()
+  nameWithType: ButtonHandler.isBuilt()
+  fullName: ButtonHandler.isBuilt()
+  type: Method
+  source:
+    id: isBuilt
+    path: ''
+    startLine: 802
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void isBuilt()
+    content.vb: Public Sub isBuilt()
+  overload: Global.ButtonHandler.isBuilt*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ButtonHandler.isBuilt*
+  commentId: Overload:Global.ButtonHandler.isBuilt
+  name: isBuilt
+  nameWithType: ButtonHandler.isBuilt
+  fullName: ButtonHandler.isBuilt

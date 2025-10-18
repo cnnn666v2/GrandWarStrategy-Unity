@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BuildingsManager
+  commentId: T:Global.BuildingsManager
+  id: BuildingsManager
+  parent: Global
+  children:
+  - Global.BuildingsManager.buildings
+  langs:
+  - csharp
+  - vb
+  name: BuildingsManager
+  nameWithType: BuildingsManager
+  fullName: BuildingsManager
+  type: Class
+  source:
+    id: BuildingsManager
+    path: ''
+    startLine: 699
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class BuildingsManager : MonoBehaviour'
+    content.vb: Public Class BuildingsManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.BuildingsManager.buildings
+  commentId: F:Global.BuildingsManager.buildings
+  id: buildings
+  parent: Global.BuildingsManager
+  langs:
+  - csharp
+  - vb
+  name: buildings
+  nameWithType: BuildingsManager.buildings
+  fullName: BuildingsManager.buildings
+  type: Field
+  source:
+    id: buildings
+    path: ''
+    startLine: 701
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<Building> buildings
+    return:
+      type: Global.List{Building}
+    content.vb: Public buildings As List(Of Building)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Building}
+  commentId: '!:Global.List{Building}'
+  definition: Global.List`1
+  name: List<Building>
+  nameWithType: List<Building>
+  fullName: List<Building>
+  nameWithType.vb: List(Of Building)
+  fullName.vb: List(Of Building)
+  name.vb: List(Of Building)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Building
+    name: Building
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Building
+    name: Building
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

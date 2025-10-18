@@ -1,0 +1,68 @@
+### YamlMime:TableOfContent
+- uid: Global
+  name: ''
+  items:
+  - uid: Global.Army
+    name: Army
+  - uid: Global.ArmyType
+    name: ArmyType
+  - uid: Global.Bank
+    name: Bank
+  - uid: Global.Barracks
+    name: Barracks
+  - uid: Global.BoardData
+    name: BoardData
+  - uid: Global.Building
+    name: Building
+  - uid: Global.BuildingsManager
+    name: BuildingsManager
+  - uid: Global.ButtonHandler
+    name: ButtonHandler
+  - uid: Global.ClickArmy_O
+    name: ClickArmy_O
+  - uid: Global.ClickMode
+    name: ClickMode
+  - uid: Global.ClickProvince
+    name: ClickProvince
+  - uid: Global.Construction
+    name: Construction
+  - uid: Global.Country
+    name: Country
+  - uid: Global.CountryActions
+    name: CountryActions
+  - uid: Global.GameData
+    name: GameData
+  - uid: Global.Government
+    name: Government
+  - uid: Global.GUIChanges
+    name: GUIChanges
+  - uid: Global.GUIUpdater
+    name: GUIUpdater
+  - uid: Global.Market
+    name: Market
+  - uid: Global.MoveArmy
+    name: MoveArmy
+  - uid: Global.MovingDivisions
+    name: MovingDivisions
+  - uid: Global.ProvinceData
+    name: ProvinceData
+  - uid: Global.ProvinceInformation_O
+    name: ProvinceInformation_O
+  - uid: Global.ProvinceManager
+    name: ProvinceManager
+  - uid: Global.ProvinceSO
+    name: ProvinceSO
+  - uid: Global.RecruitArmy
+    name: RecruitArmy
+  - uid: Global.SelectCountry
+    name: SelectCountry
+  - uid: Global.SwitchClickMode
+    name: SwitchClickMode
+  - uid: Global.TrainingDivisions
+    name: TrainingDivisions
+  - uid: Global.TurnManager
+    name: TurnManager
+  - uid: Global.War
+    name: War
+  - uid: Global.WarManager
+    name: WarManager

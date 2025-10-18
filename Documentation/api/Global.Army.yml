@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Army
+  commentId: T:Global.Army
+  id: Army
+  parent: Global
+  children:
+  - Global.Army.maintenance
+  - Global.Army.owner
+  - Global.Army.soldiers
+  - Global.Army.stayingIn
+  langs:
+  - csharp
+  - vb
+  name: Army
+  nameWithType: Army
+  fullName: Army
+  type: Class
+  source:
+    id: Army
+    path: ''
+    startLine: 1127
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Army : MonoBehaviour'
+    content.vb: Public Class Army Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.Army.soldiers
+  commentId: F:Global.Army.soldiers
+  id: soldiers
+  parent: Global.Army
+  langs:
+  - csharp
+  - vb
+  name: soldiers
+  nameWithType: Army.soldiers
+  fullName: Army.soldiers
+  type: Field
+  source:
+    id: soldiers
+    path: ''
+    startLine: 1129
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int soldiers
+    return:
+      type: System.Int32
+    content.vb: Public soldiers As Integer
+- uid: Global.Army.stayingIn
+  commentId: F:Global.Army.stayingIn
+  id: stayingIn
+  parent: Global.Army
+  langs:
+  - csharp
+  - vb
+  name: stayingIn
+  nameWithType: Army.stayingIn
+  fullName: Army.stayingIn
+  type: Field
+  source:
+    id: stayingIn
+    path: ''
+    startLine: 1130
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ProvinceData stayingIn
+    return:
+      type: Global.ProvinceData
+    content.vb: Public stayingIn As ProvinceData
+- uid: Global.Army.owner
+  commentId: F:Global.Army.owner
+  id: owner
+  parent: Global.Army
+  langs:
+  - csharp
+  - vb
+  name: owner
+  nameWithType: Army.owner
+  fullName: Army.owner
+  type: Field
+  source:
+    id: owner
+    path: ''
+    startLine: 1131
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string owner
+    return:
+      type: System.String
+    content.vb: Public owner As String
+- uid: Global.Army.maintenance
+  commentId: F:Global.Army.maintenance
+  id: maintenance
+  parent: Global.Army
+  langs:
+  - csharp
+  - vb
+  name: maintenance
+  nameWithType: Army.maintenance
+  fullName: Army.maintenance
+  type: Field
+  source:
+    id: maintenance
+    path: ''
+    startLine: 1132
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maintenance
+    return:
+      type: System.Int32
+    content.vb: Public maintenance As Integer
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ProvinceData
+  commentId: T:Global.ProvinceData
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: ProvinceData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

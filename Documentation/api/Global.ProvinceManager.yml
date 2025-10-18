@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ProvinceManager
+  commentId: T:Global.ProvinceManager
+  id: ProvinceManager
+  parent: Global
+  children:
+  - Global.ProvinceManager.constructBuilding(Building)
+  - Global.ProvinceManager.isConstructedBuilding(Building)
+  - Global.ProvinceManager.selectedProvince
+  langs:
+  - csharp
+  - vb
+  name: ProvinceManager
+  nameWithType: ProvinceManager
+  fullName: ProvinceManager
+  type: Class
+  source:
+    id: ProvinceManager
+    path: ''
+    startLine: 224
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class ProvinceManager : MonoBehaviour'
+    content.vb: Public Class ProvinceManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.ProvinceManager.selectedProvince
+  commentId: F:Global.ProvinceManager.selectedProvince
+  id: selectedProvince
+  parent: Global.ProvinceManager
+  langs:
+  - csharp
+  - vb
+  name: selectedProvince
+  nameWithType: ProvinceManager.selectedProvince
+  fullName: ProvinceManager.selectedProvince
+  type: Field
+  source:
+    id: selectedProvince
+    path: ''
+    startLine: 227
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int selectedProvince
+    return:
+      type: System.Int32
+    content.vb: Public selectedProvince As Integer
+- uid: Global.ProvinceManager.constructBuilding(Building)
+  commentId: M:Global.ProvinceManager.constructBuilding(Building)
+  id: constructBuilding(Building)
+  parent: Global.ProvinceManager
+  langs:
+  - csharp
+  - vb
+  name: constructBuilding(Building)
+  nameWithType: ProvinceManager.constructBuilding(Building)
+  fullName: ProvinceManager.constructBuilding(Building)
+  type: Method
+  source:
+    id: constructBuilding
+    path: ''
+    startLine: 233
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void constructBuilding(Building newBuilding)
+    parameters:
+    - id: newBuilding
+      type: Global.Building
+    content.vb: Public Sub constructBuilding(newBuilding As Building)
+  overload: Global.ProvinceManager.constructBuilding*
+- uid: Global.ProvinceManager.isConstructedBuilding(Building)
+  commentId: M:Global.ProvinceManager.isConstructedBuilding(Building)
+  id: isConstructedBuilding(Building)
+  parent: Global.ProvinceManager
+  langs:
+  - csharp
+  - vb
+  name: isConstructedBuilding(Building)
+  nameWithType: ProvinceManager.isConstructedBuilding(Building)
+  fullName: ProvinceManager.isConstructedBuilding(Building)
+  type: Method
+  source:
+    id: isConstructedBuilding
+    path: ''
+    startLine: 253
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool isConstructedBuilding(Building building)
+    parameters:
+    - id: building
+      type: Global.Building
+    return:
+      type: System.Boolean
+    content.vb: Public Function isConstructedBuilding(building As Building) As Boolean
+  overload: Global.ProvinceManager.isConstructedBuilding*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ProvinceManager.constructBuilding*
+  commentId: Overload:Global.ProvinceManager.constructBuilding
+  name: constructBuilding
+  nameWithType: ProvinceManager.constructBuilding
+  fullName: ProvinceManager.constructBuilding
+- uid: Global.Building
+  commentId: T:Global.Building
+  name: Building
+  nameWithType: Building
+  fullName: Building
+- uid: Global.ProvinceManager.isConstructedBuilding*
+  commentId: Overload:Global.ProvinceManager.isConstructedBuilding
+  name: isConstructedBuilding
+  nameWithType: ProvinceManager.isConstructedBuilding
+  fullName: ProvinceManager.isConstructedBuilding
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

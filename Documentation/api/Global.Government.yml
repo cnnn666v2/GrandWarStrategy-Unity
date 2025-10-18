@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Government
+  commentId: T:Global.Government
+  id: Government
+  parent: Global
+  children:
+  - Global.Government.governmentName
+  - Global.Government.governmentTag
+  langs:
+  - csharp
+  - vb
+  name: Government
+  nameWithType: Government
+  fullName: Government
+  type: Class
+  source:
+    id: Government
+    path: ''
+    startLine: 745
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Government : ScriptableObject'
+    content.vb: Public Class Government Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Global.Government.governmentName
+  commentId: F:Global.Government.governmentName
+  id: governmentName
+  parent: Global.Government
+  langs:
+  - csharp
+  - vb
+  name: governmentName
+  nameWithType: Government.governmentName
+  fullName: Government.governmentName
+  type: Field
+  source:
+    id: governmentName
+    path: ''
+    startLine: 748
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string governmentName
+    return:
+      type: System.String
+    content.vb: Public governmentName As String
+- uid: Global.Government.governmentTag
+  commentId: F:Global.Government.governmentTag
+  id: governmentTag
+  parent: Global.Government
+  langs:
+  - csharp
+  - vb
+  name: governmentTag
+  nameWithType: Government.governmentTag
+  fullName: Government.governmentTag
+  type: Field
+  source:
+    id: governmentTag
+    path: ''
+    startLine: 749
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string governmentTag
+    return:
+      type: System.String
+    content.vb: Public governmentTag As String
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Barracks
+  commentId: T:Global.Barracks
+  id: Barracks
+  parent: Global
+  children:
+  - Global.Barracks.costRecruit
+  - Global.Barracks.maxRecruit
+  - Global.Barracks.maxSoldiers
+  langs:
+  - csharp
+  - vb
+  name: Barracks
+  nameWithType: Barracks
+  fullName: Barracks
+  type: Class
+  source:
+    id: Barracks
+    path: ''
+    startLine: 689
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Barracks : Building
+    content.vb: >-
+      <Serializable>
+
+      Public Class Barracks Inherits Building
+  inheritance:
+  - System.Object
+  - Global.Building
+  inheritedMembers:
+  - Global.Building.buildingName
+  - Global.Building.cost
+  - Global.Building.constructionTime
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Barracks.maxSoldiers
+  commentId: F:Global.Barracks.maxSoldiers
+  id: maxSoldiers
+  parent: Global.Barracks
+  langs:
+  - csharp
+  - vb
+  name: maxSoldiers
+  nameWithType: Barracks.maxSoldiers
+  fullName: Barracks.maxSoldiers
+  type: Field
+  source:
+    id: maxSoldiers
+    path: ''
+    startLine: 692
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maxSoldiers
+    return:
+      type: System.Int32
+    content.vb: Public maxSoldiers As Integer
+- uid: Global.Barracks.maxRecruit
+  commentId: F:Global.Barracks.maxRecruit
+  id: maxRecruit
+  parent: Global.Barracks
+  langs:
+  - csharp
+  - vb
+  name: maxRecruit
+  nameWithType: Barracks.maxRecruit
+  fullName: Barracks.maxRecruit
+  type: Field
+  source:
+    id: maxRecruit
+    path: ''
+    startLine: 693
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maxRecruit
+    return:
+      type: System.Int32
+    content.vb: Public maxRecruit As Integer
+- uid: Global.Barracks.costRecruit
+  commentId: F:Global.Barracks.costRecruit
+  id: costRecruit
+  parent: Global.Barracks
+  langs:
+  - csharp
+  - vb
+  name: costRecruit
+  nameWithType: Barracks.costRecruit
+  fullName: Barracks.costRecruit
+  type: Field
+  source:
+    id: costRecruit
+    path: ''
+    startLine: 694
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int costRecruit
+    return:
+      type: System.Int32
+    content.vb: Public costRecruit As Integer
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Building
+  commentId: T:Global.Building
+  name: Building
+  nameWithType: Building
+  fullName: Building
+- uid: Global.Building.buildingName
+  commentId: F:Global.Building.buildingName
+  parent: Global.Building
+  name: buildingName
+  nameWithType: Building.buildingName
+  fullName: Building.buildingName
+- uid: Global.Building.cost
+  commentId: F:Global.Building.cost
+  parent: Global.Building
+  name: cost
+  nameWithType: Building.cost
+  fullName: Building.cost
+- uid: Global.Building.constructionTime
+  commentId: F:Global.Building.constructionTime
+  parent: Global.Building
+  name: constructionTime
+  nameWithType: Building.constructionTime
+  fullName: Building.constructionTime
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

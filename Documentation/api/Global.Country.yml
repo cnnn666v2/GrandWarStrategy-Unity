@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Country
+  commentId: T:Global.Country
+  id: Country
+  parent: Global
+  children:
+  - Global.Country.color
+  - Global.Country.conscriptionModifier
+  - Global.Country.countryName
+  - Global.Country.countryTag
+  - Global.Country.currentArmy
+  - Global.Country.government
+  - Global.Country.manpower
+  - Global.Country.maxArmy
+  - Global.Country.maxMoney
+  - Global.Country.money
+  - Global.Country.occupiedProvinces
+  - Global.Country.ownedProvinces
+  - Global.Country.population
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: Country
+  fullName: Country
+  type: Class
+  source:
+    id: Country
+    path: ''
+    startLine: 1235
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Country
+    content.vb: >-
+      <Serializable>
+
+      Public Class Country
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Country.countryName
+  commentId: F:Global.Country.countryName
+  id: countryName
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: countryName
+  nameWithType: Country.countryName
+  fullName: Country.countryName
+  type: Field
+  source:
+    id: countryName
+    path: ''
+    startLine: 1238
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string countryName
+    return:
+      type: System.String
+    content.vb: Public countryName As String
+- uid: Global.Country.countryTag
+  commentId: F:Global.Country.countryTag
+  id: countryTag
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: countryTag
+  nameWithType: Country.countryTag
+  fullName: Country.countryTag
+  type: Field
+  source:
+    id: countryTag
+    path: ''
+    startLine: 1239
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string countryTag
+    return:
+      type: System.String
+    content.vb: Public countryTag As String
+- uid: Global.Country.color
+  commentId: F:Global.Country.color
+  id: color
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: color
+  nameWithType: Country.color
+  fullName: Country.color
+  type: Field
+  source:
+    id: color
+    path: ''
+    startLine: 1240
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Color color
+    return:
+      type: Global.Color
+    content.vb: Public color As Color
+- uid: Global.Country.government
+  commentId: F:Global.Country.government
+  id: government
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: government
+  nameWithType: Country.government
+  fullName: Country.government
+  type: Field
+  source:
+    id: government
+    path: ''
+    startLine: 1241
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Government government
+    return:
+      type: Global.Government
+    content.vb: Public government As Government
+- uid: Global.Country.ownedProvinces
+  commentId: F:Global.Country.ownedProvinces
+  id: ownedProvinces
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: ownedProvinces
+  nameWithType: Country.ownedProvinces
+  fullName: Country.ownedProvinces
+  type: Field
+  source:
+    id: ownedProvinces
+    path: ''
+    startLine: 1242
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<int> ownedProvinces
+    return:
+      type: Global.List{System.Int32}
+    content.vb: Public ownedProvinces As List(Of Integer)
+- uid: Global.Country.occupiedProvinces
+  commentId: F:Global.Country.occupiedProvinces
+  id: occupiedProvinces
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: occupiedProvinces
+  nameWithType: Country.occupiedProvinces
+  fullName: Country.occupiedProvinces
+  type: Field
+  source:
+    id: occupiedProvinces
+    path: ''
+    startLine: 1243
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<int> occupiedProvinces
+    return:
+      type: Global.List{System.Int32}
+    content.vb: Public occupiedProvinces As List(Of Integer)
+- uid: Global.Country.money
+  commentId: F:Global.Country.money
+  id: money
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: money
+  nameWithType: Country.money
+  fullName: Country.money
+  type: Field
+  source:
+    id: money
+    path: ''
+    startLine: 1244
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int money
+    return:
+      type: System.Int32
+    content.vb: Public money As Integer
+- uid: Global.Country.maxMoney
+  commentId: F:Global.Country.maxMoney
+  id: maxMoney
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: maxMoney
+  nameWithType: Country.maxMoney
+  fullName: Country.maxMoney
+  type: Field
+  source:
+    id: maxMoney
+    path: ''
+    startLine: 1245
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maxMoney
+    return:
+      type: System.Int32
+    content.vb: Public maxMoney As Integer
+- uid: Global.Country.population
+  commentId: F:Global.Country.population
+  id: population
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: population
+  nameWithType: Country.population
+  fullName: Country.population
+  type: Field
+  source:
+    id: population
+    path: ''
+    startLine: 1246
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int population
+    return:
+      type: System.Int32
+    content.vb: Public population As Integer
+- uid: Global.Country.manpower
+  commentId: F:Global.Country.manpower
+  id: manpower
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: manpower
+  nameWithType: Country.manpower
+  fullName: Country.manpower
+  type: Field
+  source:
+    id: manpower
+    path: ''
+    startLine: 1247
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int manpower
+    return:
+      type: System.Int32
+    content.vb: Public manpower As Integer
+- uid: Global.Country.currentArmy
+  commentId: F:Global.Country.currentArmy
+  id: currentArmy
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: currentArmy
+  nameWithType: Country.currentArmy
+  fullName: Country.currentArmy
+  type: Field
+  source:
+    id: currentArmy
+    path: ''
+    startLine: 1248
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int currentArmy
+    return:
+      type: System.Int32
+    content.vb: Public currentArmy As Integer
+- uid: Global.Country.maxArmy
+  commentId: F:Global.Country.maxArmy
+  id: maxArmy
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: maxArmy
+  nameWithType: Country.maxArmy
+  fullName: Country.maxArmy
+  type: Field
+  source:
+    id: maxArmy
+    path: ''
+    startLine: 1249
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maxArmy
+    return:
+      type: System.Int32
+    content.vb: Public maxArmy As Integer
+- uid: Global.Country.conscriptionModifier
+  commentId: F:Global.Country.conscriptionModifier
+  id: conscriptionModifier
+  parent: Global.Country
+  langs:
+  - csharp
+  - vb
+  name: conscriptionModifier
+  nameWithType: Country.conscriptionModifier
+  fullName: Country.conscriptionModifier
+  type: Field
+  source:
+    id: conscriptionModifier
+    path: ''
+    startLine: 1250
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float conscriptionModifier
+    return:
+      type: System.Single
+    content.vb: Public conscriptionModifier As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Global.Government
+  commentId: T:Global.Government
+  name: Government
+  nameWithType: Government
+  fullName: Government
+- uid: Global.List{System.Int32}
+  commentId: '!:Global.List{System.Int32}'
+  definition: Global.List`1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

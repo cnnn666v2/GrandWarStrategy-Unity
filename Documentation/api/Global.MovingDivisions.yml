@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MovingDivisions
+  commentId: T:Global.MovingDivisions
+  id: MovingDivisions
+  parent: Global
+  children:
+  - Global.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  - Global.MovingDivisions.army
+  - Global.MovingDivisions.destination
+  - Global.MovingDivisions.stayingIn
+  - Global.MovingDivisions.travelTime
+  langs:
+  - csharp
+  - vb
+  name: MovingDivisions
+  nameWithType: MovingDivisions
+  fullName: MovingDivisions
+  type: Class
+  source:
+    id: MovingDivisions
+    path: ''
+    startLine: 72
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public class MovingDivisions
+    content.vb: Public Class MovingDivisions
+  inheritance:
+  - System.Object
+- uid: Global.MovingDivisions.army
+  commentId: F:Global.MovingDivisions.army
+  id: army
+  parent: Global.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: army
+  nameWithType: MovingDivisions.army
+  fullName: MovingDivisions.army
+  type: Field
+  source:
+    id: army
+    path: ''
+    startLine: 74
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Army army
+    return:
+      type: Global.Army
+    content.vb: Public army As Army
+- uid: Global.MovingDivisions.stayingIn
+  commentId: F:Global.MovingDivisions.stayingIn
+  id: stayingIn
+  parent: Global.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: stayingIn
+  nameWithType: MovingDivisions.stayingIn
+  fullName: MovingDivisions.stayingIn
+  type: Field
+  source:
+    id: stayingIn
+    path: ''
+    startLine: 75
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ProvinceData stayingIn
+    return:
+      type: Global.ProvinceData
+    content.vb: Public stayingIn As ProvinceData
+- uid: Global.MovingDivisions.destination
+  commentId: F:Global.MovingDivisions.destination
+  id: destination
+  parent: Global.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: destination
+  nameWithType: MovingDivisions.destination
+  fullName: MovingDivisions.destination
+  type: Field
+  source:
+    id: destination
+    path: ''
+    startLine: 75
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ProvinceData destination
+    return:
+      type: Global.ProvinceData
+    content.vb: Public destination As ProvinceData
+- uid: Global.MovingDivisions.travelTime
+  commentId: F:Global.MovingDivisions.travelTime
+  id: travelTime
+  parent: Global.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: travelTime
+  nameWithType: MovingDivisions.travelTime
+  fullName: MovingDivisions.travelTime
+  type: Field
+  source:
+    id: travelTime
+    path: ''
+    startLine: 76
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int travelTime
+    return:
+      type: System.Int32
+    content.vb: Public travelTime As Integer
+- uid: Global.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  commentId: M:Global.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  id: '#ctor(Army,ProvinceData,ProvinceData,System.Int32)'
+  parent: Global.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: MovingDivisions(Army, ProvinceData, ProvinceData, int)
+  nameWithType: MovingDivisions.MovingDivisions(Army, ProvinceData, ProvinceData, int)
+  fullName: MovingDivisions.MovingDivisions(Army, ProvinceData, ProvinceData, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 78
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public MovingDivisions(Army army, ProvinceData stayingIn, ProvinceData destination, int travelTime)
+    parameters:
+    - id: army
+      type: Global.Army
+    - id: stayingIn
+      type: Global.ProvinceData
+    - id: destination
+      type: Global.ProvinceData
+    - id: travelTime
+      type: System.Int32
+    content.vb: Public Sub New(army As Army, stayingIn As ProvinceData, destination As ProvinceData, travelTime As Integer)
+  overload: Global.MovingDivisions.#ctor*
+  nameWithType.vb: MovingDivisions.New(Army, ProvinceData, ProvinceData, Integer)
+  fullName.vb: MovingDivisions.New(Army, ProvinceData, ProvinceData, Integer)
+  name.vb: New(Army, ProvinceData, ProvinceData, Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Army
+  commentId: T:Global.Army
+  name: Army
+  nameWithType: Army
+  fullName: Army
+- uid: Global.ProvinceData
+  commentId: T:Global.ProvinceData
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: ProvinceData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.MovingDivisions.#ctor*
+  commentId: Overload:Global.MovingDivisions.#ctor
+  name: MovingDivisions
+  nameWithType: MovingDivisions.MovingDivisions
+  fullName: MovingDivisions.MovingDivisions
+  nameWithType.vb: MovingDivisions.New
+  fullName.vb: MovingDivisions.New
+  name.vb: New

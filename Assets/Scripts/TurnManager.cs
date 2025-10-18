@@ -1,6 +1,9 @@
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// jajco test
+/// </summary>
 public class TurnManager : MonoBehaviour
 {
     GameData gameData;
@@ -78,7 +81,7 @@ public class TurnManager : MonoBehaviour
             }
         }
     }
-    
+
     private void TrainDivisions()
     {
         for (int i = gameData.trainingDivisions.Count - 1; i >= 0; i--)

@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TrainingDivisions
+  commentId: T:Global.TrainingDivisions
+  id: TrainingDivisions
+  parent: Global
+  children:
+  - Global.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  - Global.TrainingDivisions.amount
+  - Global.TrainingDivisions.cost
+  - Global.TrainingDivisions.maintenance
+  - Global.TrainingDivisions.trainingDestination
+  - Global.TrainingDivisions.trainingTime
+  langs:
+  - csharp
+  - vb
+  name: TrainingDivisions
+  nameWithType: TrainingDivisions
+  fullName: TrainingDivisions
+  type: Class
+  source:
+    id: TrainingDivisions
+    path: ''
+    startLine: 87
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public class TrainingDivisions
+    content.vb: Public Class TrainingDivisions
+  inheritance:
+  - System.Object
+- uid: Global.TrainingDivisions.amount
+  commentId: F:Global.TrainingDivisions.amount
+  id: amount
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: amount
+  nameWithType: TrainingDivisions.amount
+  fullName: TrainingDivisions.amount
+  type: Field
+  source:
+    id: amount
+    path: ''
+    startLine: 89
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int amount
+    return:
+      type: System.Int32
+    content.vb: Public amount As Integer
+- uid: Global.TrainingDivisions.cost
+  commentId: F:Global.TrainingDivisions.cost
+  id: cost
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: cost
+  nameWithType: TrainingDivisions.cost
+  fullName: TrainingDivisions.cost
+  type: Field
+  source:
+    id: cost
+    path: ''
+    startLine: 90
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int cost
+    return:
+      type: System.Int32
+    content.vb: Public cost As Integer
+- uid: Global.TrainingDivisions.maintenance
+  commentId: F:Global.TrainingDivisions.maintenance
+  id: maintenance
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: maintenance
+  nameWithType: TrainingDivisions.maintenance
+  fullName: TrainingDivisions.maintenance
+  type: Field
+  source:
+    id: maintenance
+    path: ''
+    startLine: 91
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int maintenance
+    return:
+      type: System.Int32
+    content.vb: Public maintenance As Integer
+- uid: Global.TrainingDivisions.trainingTime
+  commentId: F:Global.TrainingDivisions.trainingTime
+  id: trainingTime
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: trainingTime
+  nameWithType: TrainingDivisions.trainingTime
+  fullName: TrainingDivisions.trainingTime
+  type: Field
+  source:
+    id: trainingTime
+    path: ''
+    startLine: 92
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int trainingTime
+    return:
+      type: System.Int32
+    content.vb: Public trainingTime As Integer
+- uid: Global.TrainingDivisions.trainingDestination
+  commentId: F:Global.TrainingDivisions.trainingDestination
+  id: trainingDestination
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: trainingDestination
+  nameWithType: TrainingDivisions.trainingDestination
+  fullName: TrainingDivisions.trainingDestination
+  type: Field
+  source:
+    id: trainingDestination
+    path: ''
+    startLine: 93
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Transform trainingDestination
+    return:
+      type: Global.Transform
+    content.vb: Public trainingDestination As Transform
+- uid: Global.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  commentId: M:Global.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)'
+  parent: Global.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: TrainingDivisions(int, int, int, int, Transform)
+  nameWithType: TrainingDivisions.TrainingDivisions(int, int, int, int, Transform)
+  fullName: TrainingDivisions.TrainingDivisions(int, int, int, int, Transform)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 95
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination)
+    parameters:
+    - id: amount
+      type: System.Int32
+    - id: cost
+      type: System.Int32
+    - id: maintenance
+      type: System.Int32
+    - id: trainingTime
+      type: System.Int32
+    - id: trainingDestination
+      type: Global.Transform
+    content.vb: Public Sub New(amount As Integer, cost As Integer, maintenance As Integer, trainingTime As Integer, trainingDestination As Transform)
+  overload: Global.TrainingDivisions.#ctor*
+  nameWithType.vb: TrainingDivisions.New(Integer, Integer, Integer, Integer, Transform)
+  fullName.vb: TrainingDivisions.New(Integer, Integer, Integer, Integer, Transform)
+  name.vb: New(Integer, Integer, Integer, Integer, Transform)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Global.TrainingDivisions.#ctor*
+  commentId: Overload:Global.TrainingDivisions.#ctor
+  name: TrainingDivisions
+  nameWithType: TrainingDivisions.TrainingDivisions
+  fullName: TrainingDivisions.TrainingDivisions
+  nameWithType.vb: TrainingDivisions.New
+  fullName.vb: TrainingDivisions.New
+  name.vb: New

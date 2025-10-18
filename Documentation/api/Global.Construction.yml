@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Construction
+  commentId: T:Global.Construction
+  id: Construction
+  parent: Global
+  children:
+  - Global.Construction.#ctor(Building,System.Int32)
+  - Global.Construction.building
+  - Global.Construction.turnsRemaining
+  langs:
+  - csharp
+  - vb
+  name: Construction
+  nameWithType: Construction
+  fullName: Construction
+  type: Class
+  source:
+    id: Construction
+    path: ''
+    startLine: 677
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public class Construction
+    content.vb: Public Class Construction
+  inheritance:
+  - System.Object
+- uid: Global.Construction.building
+  commentId: F:Global.Construction.building
+  id: building
+  parent: Global.Construction
+  langs:
+  - csharp
+  - vb
+  name: building
+  nameWithType: Construction.building
+  fullName: Construction.building
+  type: Field
+  source:
+    id: building
+    path: ''
+    startLine: 679
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Building building
+    return:
+      type: Global.Building
+    content.vb: Public building As Building
+- uid: Global.Construction.turnsRemaining
+  commentId: F:Global.Construction.turnsRemaining
+  id: turnsRemaining
+  parent: Global.Construction
+  langs:
+  - csharp
+  - vb
+  name: turnsRemaining
+  nameWithType: Construction.turnsRemaining
+  fullName: Construction.turnsRemaining
+  type: Field
+  source:
+    id: turnsRemaining
+    path: ''
+    startLine: 680
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int turnsRemaining
+    return:
+      type: System.Int32
+    content.vb: Public turnsRemaining As Integer
+- uid: Global.Construction.#ctor(Building,System.Int32)
+  commentId: M:Global.Construction.#ctor(Building,System.Int32)
+  id: '#ctor(Building,System.Int32)'
+  parent: Global.Construction
+  langs:
+  - csharp
+  - vb
+  name: Construction(Building, int)
+  nameWithType: Construction.Construction(Building, int)
+  fullName: Construction.Construction(Building, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 682
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Construction(Building building, int turnsRemaining)
+    parameters:
+    - id: building
+      type: Global.Building
+    - id: turnsRemaining
+      type: System.Int32
+    content.vb: Public Sub New(building As Building, turnsRemaining As Integer)
+  overload: Global.Construction.#ctor*
+  nameWithType.vb: Construction.New(Building, Integer)
+  fullName.vb: Construction.New(Building, Integer)
+  name.vb: New(Building, Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Building
+  commentId: T:Global.Building
+  name: Building
+  nameWithType: Building
+  fullName: Building
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Construction.#ctor*
+  commentId: Overload:Global.Construction.#ctor
+  name: Construction
+  nameWithType: Construction.Construction
+  fullName: Construction.Construction
+  nameWithType.vb: Construction.New
+  fullName.vb: Construction.New
+  name.vb: New

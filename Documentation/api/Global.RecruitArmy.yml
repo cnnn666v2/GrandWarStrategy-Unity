@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RecruitArmy
+  commentId: T:Global.RecruitArmy
+  id: RecruitArmy
+  parent: Global
+  children:
+  - Global.RecruitArmy.PerformRecruit
+  - Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  - Global.RecruitArmy.SelectProvince
+  langs:
+  - csharp
+  - vb
+  name: RecruitArmy
+  nameWithType: RecruitArmy
+  fullName: RecruitArmy
+  type: Class
+  source:
+    id: RecruitArmy
+    path: ''
+    startLine: 1140
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class RecruitArmy : MonoBehaviour'
+    content.vb: Public Class RecruitArmy Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.RecruitArmy.PerformRecruit
+  commentId: M:Global.RecruitArmy.PerformRecruit
+  id: PerformRecruit
+  parent: Global.RecruitArmy
+  langs:
+  - csharp
+  - vb
+  name: PerformRecruit()
+  nameWithType: RecruitArmy.PerformRecruit()
+  fullName: RecruitArmy.PerformRecruit()
+  type: Method
+  source:
+    id: PerformRecruit
+    path: ''
+    startLine: 1159
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void PerformRecruit()
+    content.vb: Public Sub PerformRecruit()
+  overload: Global.RecruitArmy.PerformRecruit*
+- uid: Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  commentId: M:Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  id: Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  parent: Global.RecruitArmy
+  langs:
+  - csharp
+  - vb
+  name: Recruit(int, int, int, Transform)
+  nameWithType: RecruitArmy.Recruit(int, int, int, Transform)
+  fullName: RecruitArmy.Recruit(int, int, int, Transform)
+  type: Method
+  source:
+    id: Recruit
+    path: ''
+    startLine: 1172
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince)
+    parameters:
+    - id: soldiers
+      type: System.Int32
+    - id: cost
+      type: System.Int32
+    - id: maintenance
+      type: System.Int32
+    - id: selectedProvince
+      type: Global.Transform
+    content.vb: Public Sub Recruit(soldiers As Integer, cost As Integer, maintenance As Integer, selectedProvince As Transform)
+  overload: Global.RecruitArmy.Recruit*
+  nameWithType.vb: RecruitArmy.Recruit(Integer, Integer, Integer, Transform)
+  fullName.vb: RecruitArmy.Recruit(Integer, Integer, Integer, Transform)
+  name.vb: Recruit(Integer, Integer, Integer, Transform)
+- uid: Global.RecruitArmy.SelectProvince
+  commentId: M:Global.RecruitArmy.SelectProvince
+  id: SelectProvince
+  parent: Global.RecruitArmy
+  langs:
+  - csharp
+  - vb
+  name: SelectProvince()
+  nameWithType: RecruitArmy.SelectProvince()
+  fullName: RecruitArmy.SelectProvince()
+  type: Method
+  source:
+    id: SelectProvince
+    path: ''
+    startLine: 1199
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void SelectProvince()
+    content.vb: Public Sub SelectProvince()
+  overload: Global.RecruitArmy.SelectProvince*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.RecruitArmy.PerformRecruit*
+  commentId: Overload:Global.RecruitArmy.PerformRecruit
+  name: PerformRecruit
+  nameWithType: RecruitArmy.PerformRecruit
+  fullName: RecruitArmy.PerformRecruit
+- uid: Global.RecruitArmy.Recruit*
+  commentId: Overload:Global.RecruitArmy.Recruit
+  name: Recruit
+  nameWithType: RecruitArmy.Recruit
+  fullName: RecruitArmy.Recruit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Global.RecruitArmy.SelectProvince*
+  commentId: Overload:Global.RecruitArmy.SelectProvince
+  name: SelectProvince
+  nameWithType: RecruitArmy.SelectProvince
+  fullName: RecruitArmy.SelectProvince

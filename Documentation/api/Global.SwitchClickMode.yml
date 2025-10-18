@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwitchClickMode
+  commentId: T:Global.SwitchClickMode
+  id: SwitchClickMode
+  parent: Global
+  children:
+  - Global.SwitchClickMode.ChangeClickMode(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SwitchClickMode
+  nameWithType: SwitchClickMode
+  fullName: SwitchClickMode
+  type: Class
+  source:
+    id: SwitchClickMode
+    path: ''
+    startLine: 107
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class SwitchClickMode : MonoBehaviour'
+    content.vb: Public Class SwitchClickMode Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.SwitchClickMode.ChangeClickMode(System.Int32)
+  commentId: M:Global.SwitchClickMode.ChangeClickMode(System.Int32)
+  id: ChangeClickMode(System.Int32)
+  parent: Global.SwitchClickMode
+  langs:
+  - csharp
+  - vb
+  name: ChangeClickMode(int)
+  nameWithType: SwitchClickMode.ChangeClickMode(int)
+  fullName: SwitchClickMode.ChangeClickMode(int)
+  type: Method
+  source:
+    id: ChangeClickMode
+    path: ''
+    startLine: 116
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void ChangeClickMode(int selectedClickMode)
+    parameters:
+    - id: selectedClickMode
+      type: System.Int32
+    content.vb: Public Sub ChangeClickMode(selectedClickMode As Integer)
+  overload: Global.SwitchClickMode.ChangeClickMode*
+  nameWithType.vb: SwitchClickMode.ChangeClickMode(Integer)
+  fullName.vb: SwitchClickMode.ChangeClickMode(Integer)
+  name.vb: ChangeClickMode(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SwitchClickMode.ChangeClickMode*
+  commentId: Overload:Global.SwitchClickMode.ChangeClickMode
+  name: ChangeClickMode
+  nameWithType: SwitchClickMode.ChangeClickMode
+  fullName: SwitchClickMode.ChangeClickMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ClickMode
+  commentId: T:Global.ClickMode
+  id: ClickMode
+  parent: Global
+  children:
+  - Global.ClickMode.army
+  - Global.ClickMode.province
+  langs:
+  - csharp
+  - vb
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: ClickMode
+  type: Enum
+  source:
+    id: ClickMode
+    path: ''
+    startLine: 466
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public enum ClickMode
+    content.vb: Public Enum ClickMode
+- uid: Global.ClickMode.province
+  commentId: F:Global.ClickMode.province
+  id: province
+  parent: Global.ClickMode
+  langs:
+  - csharp
+  - vb
+  name: province
+  nameWithType: ClickMode.province
+  fullName: ClickMode.province
+  type: Field
+  source:
+    id: province
+    path: ''
+    startLine: 466
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: province = 0
+    return:
+      type: Global.ClickMode
+- uid: Global.ClickMode.army
+  commentId: F:Global.ClickMode.army
+  id: army
+  parent: Global.ClickMode
+  langs:
+  - csharp
+  - vb
+  name: army
+  nameWithType: ClickMode.army
+  fullName: ClickMode.army
+  type: Field
+  source:
+    id: army
+    path: ''
+    startLine: 466
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: army = 1
+    return:
+      type: Global.ClickMode
+references:
+- uid: Global
+- uid: Global.ClickMode
+  commentId: T:Global.ClickMode
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: ClickMode

@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WarManager
+  commentId: T:Global.WarManager
+  id: WarManager
+  parent: Global
+  children:
+  - Global.WarManager.AreAtWar(System.String,System.String)
+  - Global.WarManager.GetEnemiesOf(System.String)
+  langs:
+  - csharp
+  - vb
+  name: WarManager
+  nameWithType: WarManager
+  fullName: WarManager
+  type: Class
+  source:
+    id: WarManager
+    path: ''
+    startLine: 1019
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class WarManager : MonoBehaviour'
+    content.vb: Public Class WarManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.WarManager.GetEnemiesOf(System.String)
+  commentId: M:Global.WarManager.GetEnemiesOf(System.String)
+  id: GetEnemiesOf(System.String)
+  parent: Global.WarManager
+  langs:
+  - csharp
+  - vb
+  name: GetEnemiesOf(string)
+  nameWithType: WarManager.GetEnemiesOf(string)
+  fullName: WarManager.GetEnemiesOf(string)
+  type: Method
+  source:
+    id: GetEnemiesOf
+    path: ''
+    startLine: 1028
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<string> GetEnemiesOf(string country)
+    parameters:
+    - id: country
+      type: System.String
+    return:
+      type: Global.List{System.String}
+    content.vb: Public Function GetEnemiesOf(country As String) As List(Of String)
+  overload: Global.WarManager.GetEnemiesOf*
+  nameWithType.vb: WarManager.GetEnemiesOf(String)
+  fullName.vb: WarManager.GetEnemiesOf(String)
+  name.vb: GetEnemiesOf(String)
+- uid: Global.WarManager.AreAtWar(System.String,System.String)
+  commentId: M:Global.WarManager.AreAtWar(System.String,System.String)
+  id: AreAtWar(System.String,System.String)
+  parent: Global.WarManager
+  langs:
+  - csharp
+  - vb
+  name: AreAtWar(string, string)
+  nameWithType: WarManager.AreAtWar(string, string)
+  fullName: WarManager.AreAtWar(string, string)
+  type: Method
+  source:
+    id: AreAtWar
+    path: ''
+    startLine: 1059
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool AreAtWar(string country1, string country2)
+    parameters:
+    - id: country1
+      type: System.String
+    - id: country2
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function AreAtWar(country1 As String, country2 As String) As Boolean
+  overload: Global.WarManager.AreAtWar*
+  nameWithType.vb: WarManager.AreAtWar(String, String)
+  fullName.vb: WarManager.AreAtWar(String, String)
+  name.vb: AreAtWar(String, String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.WarManager.GetEnemiesOf*
+  commentId: Overload:Global.WarManager.GetEnemiesOf
+  name: GetEnemiesOf
+  nameWithType: WarManager.GetEnemiesOf
+  fullName: WarManager.GetEnemiesOf
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.List{System.String}
+  commentId: '!:Global.List{System.String}'
+  definition: Global.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Global.WarManager.AreAtWar*
+  commentId: Overload:Global.WarManager.AreAtWar
+  name: AreAtWar
+  nameWithType: WarManager.AreAtWar
+  fullName: WarManager.AreAtWar
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

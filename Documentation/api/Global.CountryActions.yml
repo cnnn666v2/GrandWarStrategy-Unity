@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CountryActions
+  commentId: T:Global.CountryActions
+  id: CountryActions
+  parent: Global
+  children:
+  - Global.CountryActions.DeclareWar(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CountryActions
+  nameWithType: CountryActions
+  fullName: CountryActions
+  type: Class
+  source:
+    id: CountryActions
+    path: ''
+    startLine: 1257
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class CountryActions : MonoBehaviour'
+    content.vb: Public Class CountryActions Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.CountryActions.DeclareWar(System.String,System.String)
+  commentId: M:Global.CountryActions.DeclareWar(System.String,System.String)
+  id: DeclareWar(System.String,System.String)
+  parent: Global.CountryActions
+  langs:
+  - csharp
+  - vb
+  name: DeclareWar(string, string)
+  nameWithType: CountryActions.DeclareWar(string, string)
+  fullName: CountryActions.DeclareWar(string, string)
+  type: Method
+  source:
+    id: DeclareWar
+    path: ''
+    startLine: 1265
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void DeclareWar(string offender, string defender)
+    parameters:
+    - id: offender
+      type: System.String
+    - id: defender
+      type: System.String
+    content.vb: Public Sub DeclareWar(offender As String, defender As String)
+  overload: Global.CountryActions.DeclareWar*
+  nameWithType.vb: CountryActions.DeclareWar(String, String)
+  fullName.vb: CountryActions.DeclareWar(String, String)
+  name.vb: DeclareWar(String, String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.CountryActions.DeclareWar*
+  commentId: Overload:Global.CountryActions.DeclareWar
+  name: DeclareWar
+  nameWithType: CountryActions.DeclareWar
+  fullName: CountryActions.DeclareWar
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ArmyType
+  commentId: T:Global.ArmyType
+  id: ArmyType
+  parent: Global
+  children:
+  - Global.ArmyType.artillery
+  - Global.ArmyType.infantry
+  - Global.ArmyType.tank
+  langs:
+  - csharp
+  - vb
+  name: ArmyType
+  nameWithType: ArmyType
+  fullName: ArmyType
+  type: Enum
+  source:
+    id: ArmyType
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public enum ArmyType
+    content.vb: Public Enum ArmyType
+- uid: Global.ArmyType.infantry
+  commentId: F:Global.ArmyType.infantry
+  id: infantry
+  parent: Global.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: infantry
+  nameWithType: ArmyType.infantry
+  fullName: ArmyType.infantry
+  type: Field
+  source:
+    id: infantry
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: infantry = 0
+    return:
+      type: Global.ArmyType
+- uid: Global.ArmyType.tank
+  commentId: F:Global.ArmyType.tank
+  id: tank
+  parent: Global.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: tank
+  nameWithType: ArmyType.tank
+  fullName: ArmyType.tank
+  type: Field
+  source:
+    id: tank
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: tank = 1
+    return:
+      type: Global.ArmyType
+- uid: Global.ArmyType.artillery
+  commentId: F:Global.ArmyType.artillery
+  id: artillery
+  parent: Global.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: artillery
+  nameWithType: ArmyType.artillery
+  fullName: ArmyType.artillery
+  type: Field
+  source:
+    id: artillery
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: artillery = 2
+    return:
+      type: Global.ArmyType
+references:
+- uid: Global
+- uid: Global.ArmyType
+  commentId: T:Global.ArmyType
+  name: ArmyType
+  nameWithType: ArmyType
+  fullName: ArmyType

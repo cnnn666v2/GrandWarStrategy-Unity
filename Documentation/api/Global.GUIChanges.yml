@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.GUIChanges
+  commentId: T:Global.GUIChanges
+  id: GUIChanges
+  parent: Global
+  children:
+  - Global.GUIChanges.hidePanel(GameObject)
+  - Global.GUIChanges.showPanel(GameObject)
+  - Global.GUIChanges.updateText(TMP_Text,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: GUIChanges
+  nameWithType: GUIChanges
+  fullName: GUIChanges
+  type: Class
+  source:
+    id: GUIChanges
+    path: ''
+    startLine: 754
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class GUIChanges : MonoBehaviour'
+    content.vb: Public Class GUIChanges Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.GUIChanges.showPanel(GameObject)
+  commentId: M:Global.GUIChanges.showPanel(GameObject)
+  id: showPanel(GameObject)
+  parent: Global.GUIChanges
+  langs:
+  - csharp
+  - vb
+  name: showPanel(GameObject)
+  nameWithType: GUIChanges.showPanel(GameObject)
+  fullName: GUIChanges.showPanel(GameObject)
+  type: Method
+  source:
+    id: showPanel
+    path: ''
+    startLine: 756
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void showPanel(GameObject panel)
+    parameters:
+    - id: panel
+      type: Global.GameObject
+    content.vb: Public Sub showPanel(panel As GameObject)
+  overload: Global.GUIChanges.showPanel*
+- uid: Global.GUIChanges.hidePanel(GameObject)
+  commentId: M:Global.GUIChanges.hidePanel(GameObject)
+  id: hidePanel(GameObject)
+  parent: Global.GUIChanges
+  langs:
+  - csharp
+  - vb
+  name: hidePanel(GameObject)
+  nameWithType: GUIChanges.hidePanel(GameObject)
+  fullName: GUIChanges.hidePanel(GameObject)
+  type: Method
+  source:
+    id: hidePanel
+    path: ''
+    startLine: 761
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void hidePanel(GameObject panel)
+    parameters:
+    - id: panel
+      type: Global.GameObject
+    content.vb: Public Sub hidePanel(panel As GameObject)
+  overload: Global.GUIChanges.hidePanel*
+- uid: Global.GUIChanges.updateText(TMP_Text,System.String,System.String)
+  commentId: M:Global.GUIChanges.updateText(TMP_Text,System.String,System.String)
+  id: updateText(TMP_Text,System.String,System.String)
+  parent: Global.GUIChanges
+  langs:
+  - csharp
+  - vb
+  name: updateText(TMP_Text, string, string)
+  nameWithType: GUIChanges.updateText(TMP_Text, string, string)
+  fullName: GUIChanges.updateText(TMP_Text, string, string)
+  type: Method
+  source:
+    id: updateText
+    path: ''
+    startLine: 766
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void updateText(TMP_Text text, string originalText, string newText)
+    parameters:
+    - id: text
+      type: Global.TMP_Text
+    - id: originalText
+      type: System.String
+    - id: newText
+      type: System.String
+    content.vb: Public Sub updateText(text As TMP_Text, originalText As String, newText As String)
+  overload: Global.GUIChanges.updateText*
+  nameWithType.vb: GUIChanges.updateText(TMP_Text, String, String)
+  fullName.vb: GUIChanges.updateText(TMP_Text, String, String)
+  name.vb: updateText(TMP_Text, String, String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.GUIChanges.showPanel*
+  commentId: Overload:Global.GUIChanges.showPanel
+  name: showPanel
+  nameWithType: GUIChanges.showPanel
+  fullName: GUIChanges.showPanel
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Global.GUIChanges.hidePanel*
+  commentId: Overload:Global.GUIChanges.hidePanel
+  name: hidePanel
+  nameWithType: GUIChanges.hidePanel
+  fullName: GUIChanges.hidePanel
+- uid: Global.GUIChanges.updateText*
+  commentId: Overload:Global.GUIChanges.updateText
+  name: updateText
+  nameWithType: GUIChanges.updateText
+  fullName: GUIChanges.updateText
+- uid: Global.TMP_Text
+  commentId: '!:Global.TMP_Text'
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

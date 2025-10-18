@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ClickProvince
+  commentId: T:Global.ClickProvince
+  id: ClickProvince
+  parent: Global
+  children:
+  - Global.ClickProvince.clickMode
+  - Global.ClickProvince.maxDistance
+  - Global.ClickProvince.province
+  - Global.ClickProvince.selectedArmy
+  langs:
+  - csharp
+  - vb
+  name: ClickProvince
+  nameWithType: ClickProvince
+  fullName: ClickProvince
+  type: Class
+  source:
+    id: ClickProvince
+    path: ''
+    startLine: 280
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class ClickProvince : MonoBehaviour'
+    content.vb: Public Class ClickProvince Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Global.ClickProvince.clickMode
+  commentId: F:Global.ClickProvince.clickMode
+  id: clickMode
+  parent: Global.ClickProvince
+  langs:
+  - csharp
+  - vb
+  name: clickMode
+  nameWithType: ClickProvince.clickMode
+  fullName: ClickProvince.clickMode
+  type: Field
+  source:
+    id: clickMode
+    path: ''
+    startLine: 282
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ClickMode clickMode
+    return:
+      type: Global.ClickMode
+    content.vb: Public clickMode As ClickMode
+- uid: Global.ClickProvince.province
+  commentId: F:Global.ClickProvince.province
+  id: province
+  parent: Global.ClickProvince
+  langs:
+  - csharp
+  - vb
+  name: province
+  nameWithType: ClickProvince.province
+  fullName: ClickProvince.province
+  type: Field
+  source:
+    id: province
+    path: ''
+    startLine: 284
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ProvinceData province
+    return:
+      type: Global.ProvinceData
+    content.vb: Public province As ProvinceData
+- uid: Global.ClickProvince.selectedArmy
+  commentId: F:Global.ClickProvince.selectedArmy
+  id: selectedArmy
+  parent: Global.ClickProvince
+  langs:
+  - csharp
+  - vb
+  name: selectedArmy
+  nameWithType: ClickProvince.selectedArmy
+  fullName: ClickProvince.selectedArmy
+  type: Field
+  source:
+    id: selectedArmy
+    path: ''
+    startLine: 285
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Army selectedArmy
+    return:
+      type: Global.Army
+    content.vb: Public selectedArmy As Army
+- uid: Global.ClickProvince.maxDistance
+  commentId: F:Global.ClickProvince.maxDistance
+  id: maxDistance
+  parent: Global.ClickProvince
+  langs:
+  - csharp
+  - vb
+  name: maxDistance
+  nameWithType: ClickProvince.maxDistance
+  fullName: ClickProvince.maxDistance
+  type: Field
+  source:
+    id: maxDistance
+    path: ''
+    startLine: 287
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float maxDistance
+    return:
+      type: System.Single
+    content.vb: Public maxDistance As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ClickMode
+  commentId: T:Global.ClickMode
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: ClickMode
+- uid: Global.ProvinceData
+  commentId: T:Global.ProvinceData
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: ProvinceData
+- uid: Global.Army
+  commentId: T:Global.Army
+  name: Army
+  nameWithType: Army
+  fullName: Army
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
