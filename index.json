@@ -1,168 +1,178 @@
 {
-  "api/Global.Army.html": {
-    "href": "api/Global.Army.html",
-    "title": "Class Army | Example Unity documentation",
-    "keywords": "Class Army Inheritance System.Object Army Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Army : MonoBehaviour Fields maintenance Declaration public int maintenance Field Value Type Description System.Int32 owner Declaration public string owner Field Value Type Description System.String soldiers Declaration public int soldiers Field Value Type Description System.Int32 stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData"
-  },
-  "api/Global.ArmyType.html": {
-    "href": "api/Global.ArmyType.html",
-    "title": "Enum ArmyType | Example Unity documentation",
-    "keywords": "Enum ArmyType Namespace : Global Assembly : cs.temp.dll.dll Syntax public enum ArmyType Fields Name Description artillery infantry tank"
-  },
-  "api/Global.Bank.html": {
-    "href": "api/Global.Bank.html",
-    "title": "Class Bank | Example Unity documentation",
-    "keywords": "Class Bank Inheritance System.Object Building Bank Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class Bank : Building Fields goldStorage Declaration public int goldStorage Field Value Type Description System.Int32"
-  },
-  "api/Global.Barracks.html": {
-    "href": "api/Global.Barracks.html",
-    "title": "Class Barracks | Example Unity documentation",
-    "keywords": "Class Barracks Inheritance System.Object Building Barracks Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class Barracks : Building Fields costRecruit Declaration public int costRecruit Field Value Type Description System.Int32 maxRecruit Declaration public int maxRecruit Field Value Type Description System.Int32 maxSoldiers Declaration public int maxSoldiers Field Value Type Description System.Int32"
-  },
-  "api/Global.BoardData.html": {
-    "href": "api/Global.BoardData.html",
-    "title": "Class BoardData | Example Unity documentation",
-    "keywords": "Class BoardData Inheritance System.Object BoardData Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BoardData : MonoBehaviour"
-  },
-  "api/Global.Building.html": {
-    "href": "api/Global.Building.html",
-    "title": "Class Building | Example Unity documentation",
-    "keywords": "Class Building Inheritance System.Object Building Bank Barracks Market Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public abstract class Building Fields buildingName Declaration public string buildingName Field Value Type Description System.String constructionTime Declaration public int constructionTime Field Value Type Description System.Int32 cost Declaration public int cost Field Value Type Description System.Int32"
-  },
-  "api/Global.BuildingsManager.html": {
-    "href": "api/Global.BuildingsManager.html",
-    "title": "Class BuildingsManager | Example Unity documentation",
-    "keywords": "Class BuildingsManager Inheritance System.Object BuildingsManager Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BuildingsManager : MonoBehaviour Fields buildings Declaration public List<Building> buildings Field Value Type Description System.Collections.Generic.List < Building >"
-  },
-  "api/Global.ButtonHandler.html": {
-    "href": "api/Global.ButtonHandler.html",
-    "title": "Class ButtonHandler | Example Unity documentation",
-    "keywords": "Class ButtonHandler Inheritance System.Object ButtonHandler Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ButtonHandler : MonoBehaviour Methods isBuilt() Declaration public void isBuilt()"
-  },
-  "api/Global.ClickArmy_O.html": {
-    "href": "api/Global.ClickArmy_O.html",
-    "title": "Class ClickArmy_O | Example Unity documentation",
-    "keywords": "Class ClickArmy_O Inheritance System.Object ClickArmy_O Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ClickArmy_O : MonoBehaviour Fields selectedArmy Declaration public Transform selectedArmy Field Value Type Description Transform"
-  },
-  "api/Global.ClickMode.html": {
-    "href": "api/Global.ClickMode.html",
-    "title": "Enum ClickMode | Example Unity documentation",
-    "keywords": "Enum ClickMode Namespace : Global Assembly : cs.temp.dll.dll Syntax public enum ClickMode Fields Name Description army province"
-  },
-  "api/Global.ClickProvince.html": {
-    "href": "api/Global.ClickProvince.html",
-    "title": "Class ClickProvince | Example Unity documentation",
-    "keywords": "Class ClickProvince Inheritance System.Object ClickProvince Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ClickProvince : MonoBehaviour Fields clickMode Declaration public ClickMode clickMode Field Value Type Description ClickMode maxDistance Declaration public float maxDistance Field Value Type Description System.Single province Declaration public ProvinceData province Field Value Type Description ProvinceData selectedArmy Declaration public Army selectedArmy Field Value Type Description Army"
-  },
-  "api/Global.Construction.html": {
-    "href": "api/Global.Construction.html",
-    "title": "Class Construction | Example Unity documentation",
-    "keywords": "Class Construction Inheritance System.Object Construction Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Construction Constructors Construction(Building, Int32) Declaration public Construction(Building building, int turnsRemaining) Parameters Type Name Description Building building System.Int32 turnsRemaining Fields building Declaration public Building building Field Value Type Description Building turnsRemaining Declaration public int turnsRemaining Field Value Type Description System.Int32"
-  },
   "api/Global.Country.html": {
     "href": "api/Global.Country.html",
     "title": "Class Country | Example Unity documentation",
-    "keywords": "Class Country Inheritance System.Object Country Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class Country Fields color Declaration public Color color Field Value Type Description Color conscriptionModifier Declaration public float conscriptionModifier Field Value Type Description System.Single countryName Declaration public string countryName Field Value Type Description System.String countryTag Declaration public string countryTag Field Value Type Description System.String currentArmy Declaration public int currentArmy Field Value Type Description System.Int32 government Declaration public Government government Field Value Type Description Government manpower Declaration public int manpower Field Value Type Description System.Int32 maxArmy Declaration public int maxArmy Field Value Type Description System.Int32 maxMoney Declaration public int maxMoney Field Value Type Description System.Int32 money Declaration public int money Field Value Type Description System.Int32 occupiedProvinces Declaration public List<int> occupiedProvinces Field Value Type Description System.Collections.Generic.List < System.Int32 > ownedProvinces Declaration public List<int> ownedProvinces Field Value Type Description System.Collections.Generic.List < System.Int32 > population Declaration public int population Field Value Type Description System.Int32"
-  },
-  "api/Global.CountryActions.html": {
-    "href": "api/Global.CountryActions.html",
-    "title": "Class CountryActions | Example Unity documentation",
-    "keywords": "Class CountryActions Inheritance System.Object CountryActions Namespace : Global Assembly : cs.temp.dll.dll Syntax public class CountryActions : MonoBehaviour Methods DeclareWar(String, String) Declaration public void DeclareWar(string offender, string defender) Parameters Type Name Description System.String offender System.String defender"
-  },
-  "api/Global.GameData.html": {
-    "href": "api/Global.GameData.html",
-    "title": "Class GameData | Example Unity documentation",
-    "keywords": "Class GameData Inheritance System.Object GameData Namespace : Global Assembly : cs.temp.dll.dll Syntax public class GameData : MonoBehaviour Fields colors Declaration public List<Color> colors Field Value Type Description System.Collections.Generic.List < Color > countries Declaration public List<Country> countries Field Value Type Description System.Collections.Generic.List < Country > governments Declaration public List<Government> governments Field Value Type Description System.Collections.Generic.List < Government > movingDivisions Declaration public List<MovingDivisions> movingDivisions Field Value Type Description System.Collections.Generic.List < MovingDivisions > playingAsTag Declaration public string playingAsTag Field Value Type Description System.String provincesInformation Declaration public List<ProvinceData> provincesInformation Field Value Type Description System.Collections.Generic.List < ProvinceData > provincesMeshRender Declaration public List<GameObject> provincesMeshRender Field Value Type Description System.Collections.Generic.List < GameObject > trainingDivisions Declaration public List<TrainingDivisions> trainingDivisions Field Value Type Description System.Collections.Generic.List < TrainingDivisions > turnCount Declaration public int turnCount Field Value Type Description System.Int32 wars Declaration public List<War> wars Field Value Type Description System.Collections.Generic.List < War >"
+    "keywords": "Class Country Inheritance System.Object Country Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class Country Fields color Declaration public Color color Field Value Type Description Color conscriptionModifier Declaration public float conscriptionModifier Field Value Type Description System.Single countryName Declaration public string countryName Field Value Type Description System.String countryTag Declaration public string countryTag Field Value Type Description System.String currentArmy Declaration public int currentArmy Field Value Type Description System.Int32 government Declaration public Government government Field Value Type Description Government manpower Declaration public int manpower Field Value Type Description System.Int32 maxArmy Declaration public int maxArmy Field Value Type Description System.Int32 maxMoney Declaration public int maxMoney Field Value Type Description System.Int32 money Declaration public int money Field Value Type Description System.Int32 occupiedProvinces Declaration public List<int> occupiedProvinces Field Value Type Description System.Collections.Generic.List < System.Int32 > ownedProvinces Declaration public List<int> ownedProvinces Field Value Type Description System.Collections.Generic.List < System.Int32 > population Declaration public int population Field Value Type Description System.Int32"
   },
   "api/Global.Government.html": {
     "href": "api/Global.Government.html",
     "title": "Class Government | Example Unity documentation",
     "keywords": "Class Government Inheritance System.Object Government Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Government : ScriptableObject Fields governmentName Declaration public string governmentName Field Value Type Description System.String governmentTag Declaration public string governmentTag Field Value Type Description System.String"
   },
-  "api/Global.GUIChanges.html": {
-    "href": "api/Global.GUIChanges.html",
-    "title": "Class GUIChanges | Example Unity documentation",
-    "keywords": "Class GUIChanges Inheritance System.Object GUIChanges Namespace : Global Assembly : cs.temp.dll.dll Syntax public class GUIChanges : MonoBehaviour Methods hidePanel(GameObject) Declaration public void hidePanel(GameObject panel) Parameters Type Name Description GameObject panel showPanel(GameObject) Declaration public void showPanel(GameObject panel) Parameters Type Name Description GameObject panel updateText(TMP_Text, String, String) Declaration public void updateText(TMP_Text text, string originalText, string newText) Parameters Type Name Description TMP_Text text System.String originalText System.String newText"
-  },
-  "api/Global.GUIUpdater.html": {
-    "href": "api/Global.GUIUpdater.html",
-    "title": "Class GUIUpdater | Example Unity documentation",
-    "keywords": "Class GUIUpdater Inheritance System.Object GUIUpdater Namespace : Global Assembly : cs.temp.dll.dll Syntax public class GUIUpdater : MonoBehaviour Methods updateBuildingsPanel() Declaration public void updateBuildingsPanel() updateDiplomacyPanel() Declaration public void updateDiplomacyPanel() updateProvincePanel() Declaration public void updateProvincePanel() updateRecruitmentPanel() Declaration public void updateRecruitmentPanel() updateTopBar() Declaration public void updateTopBar() updateTopBar(Int32) Declaration public void updateTopBar(int income) Parameters Type Name Description System.Int32 income"
-  },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace Global | Example Unity documentation",
-    "keywords": "Namespace Global Classes Army Bank Barracks BoardData Building BuildingsManager ButtonHandler ClickArmy_O ClickProvince Construction Country CountryActions GameData Government GUIChanges GUIUpdater Market MoveArmy MovingDivisions ProvinceData ProvinceInformation_O ProvinceManager ProvinceSO RecruitArmy SelectCountry SwitchClickMode TrainingDivisions TurnManager jajco test War WarManager Enums ArmyType ClickMode"
-  },
-  "api/Global.Market.html": {
-    "href": "api/Global.Market.html",
-    "title": "Class Market | Example Unity documentation",
-    "keywords": "Class Market Inheritance System.Object Building Market Inherited Members Building.buildingName Building.cost Building.constructionTime Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class Market : Building Fields income Declaration public int income Field Value Type Description System.Int32"
-  },
-  "api/Global.MoveArmy.html": {
-    "href": "api/Global.MoveArmy.html",
-    "title": "Class MoveArmy | Example Unity documentation",
-    "keywords": "Class MoveArmy Inheritance System.Object MoveArmy Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MoveArmy : MonoBehaviour Methods TransportArmy() Declaration public void TransportArmy()"
-  },
-  "api/Global.MovingDivisions.html": {
-    "href": "api/Global.MovingDivisions.html",
-    "title": "Class MovingDivisions | Example Unity documentation",
-    "keywords": "Class MovingDivisions Inheritance System.Object MovingDivisions Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MovingDivisions Constructors MovingDivisions(Army, ProvinceData, ProvinceData, Int32) Declaration public MovingDivisions(Army army, ProvinceData stayingIn, ProvinceData destination, int travelTime) Parameters Type Name Description Army army ProvinceData stayingIn ProvinceData destination System.Int32 travelTime Fields army Declaration public Army army Field Value Type Description Army destination Declaration public ProvinceData destination Field Value Type Description ProvinceData stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData travelTime Declaration public int travelTime Field Value Type Description System.Int32"
-  },
-  "api/Global.ProvinceData.html": {
-    "href": "api/Global.ProvinceData.html",
-    "title": "Class ProvinceData | Example Unity documentation",
-    "keywords": "Class ProvinceData Inheritance System.Object ProvinceData Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ProvinceData : MonoBehaviour Fields buildingLimit Declaration public int buildingLimit Field Value Type Description System.Int32 buildings Declaration public List<Building> buildings Field Value Type Description System.Collections.Generic.List < Building > cachedIncome Declaration public int cachedIncome Field Value Type Description System.Int32 cachedMaintenance Declaration public int cachedMaintenance Field Value Type Description System.Int32 cachedMaxArmy Declaration public int cachedMaxArmy Field Value Type Description System.Int32 cachedMoneyStorage Declaration public int cachedMoneyStorage Field Value Type Description System.Int32 color Declaration public Color color Field Value Type Description Color constructions Declaration public List<Construction> constructions Field Value Type Description System.Collections.Generic.List < Construction > housingArmies Declaration public List<Army> housingArmies Field Value Type Description System.Collections.Generic.List < Army > id Declaration public int id Field Value Type Description System.Int32 infrastructure Declaration public int infrastructure Field Value Type Description System.Int32 infrastructureLimit Declaration public int infrastructureLimit Field Value Type Description System.Int32 isCapital Declaration public bool isCapital Field Value Type Description System.Boolean neighbours Declaration public List<ProvinceData> neighbours Field Value Type Description System.Collections.Generic.List < ProvinceData > owner Declaration public string owner Field Value Type Description System.String population Declaration public int population Field Value Type Description System.Int32 provinceName Declaration public string provinceName Field Value Type Description System.String resource Declaration public string resource Field Value Type Description System.String Methods AddArmy(Army) Declaration public void AddArmy(Army army) Parameters Type Name Description Army army AddBuilding(Building) Declaration public void AddBuilding(Building building) Parameters Type Name Description Building building ConstructBuilding(Construction) Declaration public void ConstructBuilding(Construction construction) Parameters Type Name Description Construction construction RemoveArmy(Army) Declaration public void RemoveArmy(Army army) Parameters Type Name Description Army army"
-  },
-  "api/Global.ProvinceInformation_O.html": {
-    "href": "api/Global.ProvinceInformation_O.html",
-    "title": "Class ProvinceInformation_O | Example Unity documentation",
-    "keywords": "Class ProvinceInformation_O Inheritance System.Object ProvinceInformation_O Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ProvinceInformation_O : MonoBehaviour Fields buildingLimit Declaration public int buildingLimit Field Value Type Description System.Int32 buildings Declaration public List<Building> buildings Field Value Type Description System.Collections.Generic.List < Building > cachedIncome Declaration public int cachedIncome Field Value Type Description System.Int32 cachedMaxArmy Declaration public int cachedMaxArmy Field Value Type Description System.Int32 cachedMoneyStorage Declaration public int cachedMoneyStorage Field Value Type Description System.Int32 color Declaration public Color color Field Value Type Description Color constructions Declaration public List<Construction> constructions Field Value Type Description System.Collections.Generic.List < Construction > housingArmy Declaration public int housingArmy Field Value Type Description System.Int32 id Declaration public int id Field Value Type Description System.Int32 infrastructure Declaration public int infrastructure Field Value Type Description System.Int32 infrastructureLimit Declaration public int infrastructureLimit Field Value Type Description System.Int32 isCapital Declaration public bool isCapital Field Value Type Description System.Boolean owner Declaration public string owner Field Value Type Description System.String population Declaration public int population Field Value Type Description System.Int32 provinceName Declaration public string provinceName Field Value Type Description System.String resource Declaration public string resource Field Value Type Description System.String Methods AddBuilding(Building) Declaration public void AddBuilding(Building building) Parameters Type Name Description Building building ConstructBuilding(Construction) Declaration public void ConstructBuilding(Construction construction) Parameters Type Name Description Construction construction"
-  },
-  "api/Global.ProvinceManager.html": {
-    "href": "api/Global.ProvinceManager.html",
-    "title": "Class ProvinceManager | Example Unity documentation",
-    "keywords": "Class ProvinceManager Inheritance System.Object ProvinceManager Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ProvinceManager : MonoBehaviour Fields selectedProvince Declaration public int selectedProvince Field Value Type Description System.Int32 Methods constructBuilding(Building) Declaration public void constructBuilding(Building newBuilding) Parameters Type Name Description Building newBuilding isConstructedBuilding(Building) Declaration public bool isConstructedBuilding(Building building) Parameters Type Name Description Building building Returns Type Description System.Boolean"
-  },
-  "api/Global.ProvinceSO.html": {
-    "href": "api/Global.ProvinceSO.html",
-    "title": "Class ProvinceSO | Example Unity documentation",
-    "keywords": "Class ProvinceSO Inheritance System.Object ProvinceSO Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ProvinceSO : ScriptableObject Fields name Declaration public string name Field Value Type Description System.String population Declaration public int population Field Value Type Description System.Int32"
-  },
-  "api/Global.RecruitArmy.html": {
-    "href": "api/Global.RecruitArmy.html",
-    "title": "Class RecruitArmy | Example Unity documentation",
-    "keywords": "Class RecruitArmy Inheritance System.Object RecruitArmy Namespace : Global Assembly : cs.temp.dll.dll Syntax public class RecruitArmy : MonoBehaviour Methods PerformRecruit() Declaration public void PerformRecruit() Recruit(Int32, Int32, Int32, Transform) Declaration public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince) Parameters Type Name Description System.Int32 soldiers System.Int32 cost System.Int32 maintenance Transform selectedProvince SelectProvince() Declaration public void SelectProvince()"
-  },
-  "api/Global.SelectCountry.html": {
-    "href": "api/Global.SelectCountry.html",
-    "title": "Class SelectCountry | Example Unity documentation",
-    "keywords": "Class SelectCountry Inheritance System.Object SelectCountry Namespace : Global Assembly : cs.temp.dll.dll Syntax public class SelectCountry : MonoBehaviour Methods SelectCountryTag(String) Declaration public void SelectCountryTag(string countryTag) Parameters Type Name Description System.String countryTag"
+    "keywords": "Namespace Global Classes Country Government SwitchClickMode War"
   },
   "api/Global.SwitchClickMode.html": {
     "href": "api/Global.SwitchClickMode.html",
     "title": "Class SwitchClickMode | Example Unity documentation",
     "keywords": "Class SwitchClickMode Inheritance System.Object SwitchClickMode Namespace : Global Assembly : cs.temp.dll.dll Syntax public class SwitchClickMode : MonoBehaviour Methods ChangeClickMode(Int32) Declaration public void ChangeClickMode(int selectedClickMode) Parameters Type Name Description System.Int32 selectedClickMode"
   },
-  "api/Global.TrainingDivisions.html": {
-    "href": "api/Global.TrainingDivisions.html",
-    "title": "Class TrainingDivisions | Example Unity documentation",
-    "keywords": "Class TrainingDivisions Inheritance System.Object TrainingDivisions Namespace : Global Assembly : cs.temp.dll.dll Syntax public class TrainingDivisions Constructors TrainingDivisions(Int32, Int32, Int32, Int32, Transform) Declaration public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination) Parameters Type Name Description System.Int32 amount System.Int32 cost System.Int32 maintenance System.Int32 trainingTime Transform trainingDestination Fields amount Declaration public int amount Field Value Type Description System.Int32 cost Declaration public int cost Field Value Type Description System.Int32 maintenance Declaration public int maintenance Field Value Type Description System.Int32 trainingDestination Declaration public Transform trainingDestination Field Value Type Description Transform trainingTime Declaration public int trainingTime Field Value Type Description System.Int32"
-  },
-  "api/Global.TurnManager.html": {
-    "href": "api/Global.TurnManager.html",
-    "title": "Class TurnManager | Example Unity documentation",
-    "keywords": "Class TurnManager jajco test Inheritance System.Object TurnManager Namespace : Global Assembly : cs.temp.dll.dll Syntax public class TurnManager : MonoBehaviour Methods NextTurn() Declaration public void NextTurn()"
-  },
   "api/Global.War.html": {
     "href": "api/Global.War.html",
     "title": "Class War | Example Unity documentation",
-    "keywords": "Class War Inheritance System.Object War Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class War Constructors War(String, List<String>, List<String>) Declaration public War(string name, List<string> offenders, List<string> defenders) Parameters Type Name Description System.String name System.Collections.Generic.List < System.String > offenders System.Collections.Generic.List < System.String > defenders Fields defenders Declaration public List<string> defenders Field Value Type Description System.Collections.Generic.List < System.String > name Declaration public string name Field Value Type Description System.String offenders Declaration public List<string> offenders Field Value Type Description System.Collections.Generic.List < System.String >"
+    "keywords": "Class War Inheritance System.Object War Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : Global Assembly : cs.temp.dll.dll Syntax [Serializable] public class War Constructors War(String, List<String>, List<String>) Declaration public War(string name, List<string> offenders, List<string> defenders) Parameters Type Name Description System.String name System.Collections.Generic.List < System.String > offenders System.Collections.Generic.List < System.String > defenders Fields defenders Declaration public List<string> defenders Field Value Type Description System.Collections.Generic.List < System.String > name Declaration public string name Field Value Type Description System.String offenders Declaration public List<string> offenders Field Value Type Description System.Collections.Generic.List < System.String >"
   },
-  "api/Global.WarManager.html": {
-    "href": "api/Global.WarManager.html",
+  "api/GrandWarStrategy.Buildings.Bank.html": {
+    "href": "api/GrandWarStrategy.Buildings.Bank.html",
+    "title": "Class Bank | Example Unity documentation",
+    "keywords": "Class Bank Inheritance System.Object Building Bank Inherited Members Building.buildingName Building.cost Building.constructionTime System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Buildings Assembly : cs.temp.dll.dll Syntax [Serializable] public class Bank : Building Fields goldStorage Declaration public int goldStorage Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Buildings.Barracks.html": {
+    "href": "api/GrandWarStrategy.Buildings.Barracks.html",
+    "title": "Class Barracks | Example Unity documentation",
+    "keywords": "Class Barracks Inheritance System.Object Building Barracks Inherited Members Building.buildingName Building.cost Building.constructionTime System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Buildings Assembly : cs.temp.dll.dll Syntax [Serializable] public class Barracks : Building Fields costRecruit Declaration public int costRecruit Field Value Type Description System.Int32 maxRecruit Declaration public int maxRecruit Field Value Type Description System.Int32 maxSoldiers Declaration public int maxSoldiers Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Buildings.Building.html": {
+    "href": "api/GrandWarStrategy.Buildings.Building.html",
+    "title": "Class Building | Example Unity documentation",
+    "keywords": "Class Building Inheritance System.Object Building Bank Barracks Market Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Buildings Assembly : cs.temp.dll.dll Syntax [Serializable] public abstract class Building Fields buildingName Declaration public string buildingName Field Value Type Description System.String constructionTime Declaration public int constructionTime Field Value Type Description System.Int32 cost Declaration public int cost Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Buildings.html": {
+    "href": "api/GrandWarStrategy.Buildings.html",
+    "title": "Namespace GrandWarStrategy.Buildings | Example Unity documentation",
+    "keywords": "Namespace GrandWarStrategy.Buildings Classes Bank Barracks Building Market"
+  },
+  "api/GrandWarStrategy.Buildings.Market.html": {
+    "href": "api/GrandWarStrategy.Buildings.Market.html",
+    "title": "Class Market | Example Unity documentation",
+    "keywords": "Class Market Inheritance System.Object Building Market Inherited Members Building.buildingName Building.cost Building.constructionTime System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Buildings Assembly : cs.temp.dll.dll Syntax [Serializable] public class Market : Building Fields income Declaration public int income Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Division.Army.html": {
+    "href": "api/GrandWarStrategy.Division.Army.html",
+    "title": "Class Army | Example Unity documentation",
+    "keywords": "Class Army Inheritance System.Object Army Namespace : GrandWarStrategy.Division Assembly : cs.temp.dll.dll Syntax public class Army : MonoBehaviour Fields maintenance Declaration public int maintenance Field Value Type Description System.Int32 owner Declaration public string owner Field Value Type Description System.String soldiers Declaration public int soldiers Field Value Type Description System.Int32 stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData"
+  },
+  "api/GrandWarStrategy.Division.ArmyType.html": {
+    "href": "api/GrandWarStrategy.Division.ArmyType.html",
+    "title": "Enum ArmyType | Example Unity documentation",
+    "keywords": "Enum ArmyType Namespace : GrandWarStrategy.Division Assembly : cs.temp.dll.dll Syntax public enum ArmyType Fields Name Description artillery infantry tank"
+  },
+  "api/GrandWarStrategy.Division.html": {
+    "href": "api/GrandWarStrategy.Division.html",
+    "title": "Namespace GrandWarStrategy.Division | Example Unity documentation",
+    "keywords": "Namespace GrandWarStrategy.Division Classes Army Enums ArmyType"
+  },
+  "api/GrandWarStrategy.Logic.BoardData.html": {
+    "href": "api/GrandWarStrategy.Logic.BoardData.html",
+    "title": "Class BoardData | Example Unity documentation",
+    "keywords": "Class BoardData Inheritance System.Object BoardData Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class BoardData : MonoBehaviour"
+  },
+  "api/GrandWarStrategy.Logic.BuildingsManager.html": {
+    "href": "api/GrandWarStrategy.Logic.BuildingsManager.html",
+    "title": "Class BuildingsManager | Example Unity documentation",
+    "keywords": "Class BuildingsManager Inheritance System.Object BuildingsManager Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class BuildingsManager : MonoBehaviour Fields buildings Declaration public List<Building> buildings Field Value Type Description System.Collections.Generic.List < Building >"
+  },
+  "api/GrandWarStrategy.Logic.ClickMode.html": {
+    "href": "api/GrandWarStrategy.Logic.ClickMode.html",
+    "title": "Enum ClickMode | Example Unity documentation",
+    "keywords": "Enum ClickMode Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public enum ClickMode Fields Name Description army province"
+  },
+  "api/GrandWarStrategy.Logic.ClickProvince.html": {
+    "href": "api/GrandWarStrategy.Logic.ClickProvince.html",
+    "title": "Class ClickProvince | Example Unity documentation",
+    "keywords": "Class ClickProvince Inheritance System.Object ClickProvince Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class ClickProvince : MonoBehaviour Fields clickMode Declaration public ClickMode clickMode Field Value Type Description ClickMode maxDistance Declaration public float maxDistance Field Value Type Description System.Single province Declaration public ProvinceData province Field Value Type Description ProvinceData selectedArmy Declaration public Army selectedArmy Field Value Type Description Army"
+  },
+  "api/GrandWarStrategy.Logic.CountryActions.html": {
+    "href": "api/GrandWarStrategy.Logic.CountryActions.html",
+    "title": "Class CountryActions | Example Unity documentation",
+    "keywords": "Class CountryActions Inheritance System.Object CountryActions Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class CountryActions : MonoBehaviour Methods DeclareWar(String, String) Declaration public void DeclareWar(string offender, string defender) Parameters Type Name Description System.String offender System.String defender"
+  },
+  "api/GrandWarStrategy.Logic.GameData.html": {
+    "href": "api/GrandWarStrategy.Logic.GameData.html",
+    "title": "Class GameData | Example Unity documentation",
+    "keywords": "Class GameData Inheritance System.Object GameData Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class GameData : MonoBehaviour Fields colors Declaration public List<Color> colors Field Value Type Description System.Collections.Generic.List < Color > countries Declaration public List<Country> countries Field Value Type Description System.Collections.Generic.List < Country > governments Declaration public List<Government> governments Field Value Type Description System.Collections.Generic.List < Government > movingDivisions Declaration public List<MovingDivisions> movingDivisions Field Value Type Description System.Collections.Generic.List < MovingDivisions > playingAsTag Declaration public string playingAsTag Field Value Type Description System.String provincesInformation Declaration public List<ProvinceData> provincesInformation Field Value Type Description System.Collections.Generic.List < ProvinceData > provincesMeshRender Declaration public List<GameObject> provincesMeshRender Field Value Type Description System.Collections.Generic.List < GameObject > trainingDivisions Declaration public List<TrainingDivisions> trainingDivisions Field Value Type Description System.Collections.Generic.List < TrainingDivisions > turnCount Declaration public int turnCount Field Value Type Description System.Int32 wars Declaration public List<War> wars Field Value Type Description System.Collections.Generic.List < War >"
+  },
+  "api/GrandWarStrategy.Logic.html": {
+    "href": "api/GrandWarStrategy.Logic.html",
+    "title": "Namespace GrandWarStrategy.Logic | Example Unity documentation",
+    "keywords": "Namespace GrandWarStrategy.Logic Classes BoardData BuildingsManager ClickProvince CountryActions GameData MoveArmy MovingDivisions ProvinceManager RecruitArmy TrainingDivisions TurnManager WarManager Enums ClickMode"
+  },
+  "api/GrandWarStrategy.Logic.MoveArmy.html": {
+    "href": "api/GrandWarStrategy.Logic.MoveArmy.html",
+    "title": "Class MoveArmy | Example Unity documentation",
+    "keywords": "Class MoveArmy Inheritance System.Object MoveArmy Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class MoveArmy : MonoBehaviour Methods TransportArmy() Declaration public void TransportArmy()"
+  },
+  "api/GrandWarStrategy.Logic.MovingDivisions.html": {
+    "href": "api/GrandWarStrategy.Logic.MovingDivisions.html",
+    "title": "Class MovingDivisions | Example Unity documentation",
+    "keywords": "Class MovingDivisions Inheritance System.Object MovingDivisions Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class MovingDivisions Constructors MovingDivisions(Army, ProvinceData, ProvinceData, Int32) Declaration public MovingDivisions(Army army, ProvinceData stayingIn, ProvinceData destination, int travelTime) Parameters Type Name Description Army army ProvinceData stayingIn ProvinceData destination System.Int32 travelTime Fields army Declaration public Army army Field Value Type Description Army destination Declaration public ProvinceData destination Field Value Type Description ProvinceData stayingIn Declaration public ProvinceData stayingIn Field Value Type Description ProvinceData travelTime Declaration public int travelTime Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Logic.ProvinceManager.html": {
+    "href": "api/GrandWarStrategy.Logic.ProvinceManager.html",
+    "title": "Class ProvinceManager | Example Unity documentation",
+    "keywords": "Class ProvinceManager Inheritance System.Object ProvinceManager Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class ProvinceManager : MonoBehaviour Fields selectedProvince Declaration public int selectedProvince Field Value Type Description System.Int32 Methods constructBuilding(Building) Declaration public void constructBuilding(Building newBuilding) Parameters Type Name Description Building newBuilding isConstructedBuilding(Building) Declaration public bool isConstructedBuilding(Building building) Parameters Type Name Description Building building Returns Type Description System.Boolean"
+  },
+  "api/GrandWarStrategy.Logic.RecruitArmy.html": {
+    "href": "api/GrandWarStrategy.Logic.RecruitArmy.html",
+    "title": "Class RecruitArmy | Example Unity documentation",
+    "keywords": "Class RecruitArmy Inheritance System.Object RecruitArmy Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class RecruitArmy : MonoBehaviour Methods PerformRecruit() Declaration public void PerformRecruit() Recruit(Int32, Int32, Int32, Transform) Declaration public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince) Parameters Type Name Description System.Int32 soldiers System.Int32 cost System.Int32 maintenance Transform selectedProvince SelectProvince() Declaration public void SelectProvince()"
+  },
+  "api/GrandWarStrategy.Logic.TrainingDivisions.html": {
+    "href": "api/GrandWarStrategy.Logic.TrainingDivisions.html",
+    "title": "Class TrainingDivisions | Example Unity documentation",
+    "keywords": "Class TrainingDivisions Inheritance System.Object TrainingDivisions Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class TrainingDivisions Constructors TrainingDivisions(Int32, Int32, Int32, Int32, Transform) Declaration public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination) Parameters Type Name Description System.Int32 amount System.Int32 cost System.Int32 maintenance System.Int32 trainingTime Transform trainingDestination Fields amount Declaration public int amount Field Value Type Description System.Int32 cost Declaration public int cost Field Value Type Description System.Int32 maintenance Declaration public int maintenance Field Value Type Description System.Int32 trainingDestination Declaration public Transform trainingDestination Field Value Type Description Transform trainingTime Declaration public int trainingTime Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Logic.TurnManager.html": {
+    "href": "api/GrandWarStrategy.Logic.TurnManager.html",
+    "title": "Class TurnManager | Example Unity documentation",
+    "keywords": "Class TurnManager Inheritance System.Object TurnManager Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class TurnManager : MonoBehaviour Methods NextTurn() Declaration public void NextTurn()"
+  },
+  "api/GrandWarStrategy.Logic.WarManager.html": {
+    "href": "api/GrandWarStrategy.Logic.WarManager.html",
     "title": "Class WarManager | Example Unity documentation",
-    "keywords": "Class WarManager Inheritance System.Object WarManager Namespace : Global Assembly : cs.temp.dll.dll Syntax public class WarManager : MonoBehaviour Methods AreAtWar(String, String) Declaration public bool AreAtWar(string country1, string country2) Parameters Type Name Description System.String country1 System.String country2 Returns Type Description System.Boolean GetEnemiesOf(String) Declaration public List<string> GetEnemiesOf(string country) Parameters Type Name Description System.String country Returns Type Description System.Collections.Generic.List < System.String >"
+    "keywords": "Class WarManager Inheritance System.Object WarManager Namespace : GrandWarStrategy.Logic Assembly : cs.temp.dll.dll Syntax public class WarManager : MonoBehaviour Methods AreAtWar(String, String) Declaration public bool AreAtWar(string country1, string country2) Parameters Type Name Description System.String country1 System.String country2 Returns Type Description System.Boolean GetEnemiesOf(String) Declaration public List<string> GetEnemiesOf(string country) Parameters Type Name Description System.String country Returns Type Description System.Collections.Generic.List < System.String >"
+  },
+  "api/GrandWarStrategy.Province.Construction.html": {
+    "href": "api/GrandWarStrategy.Province.Construction.html",
+    "title": "Class Construction | Example Unity documentation",
+    "keywords": "Class Construction Inheritance System.Object Construction Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace : GrandWarStrategy.Province Assembly : cs.temp.dll.dll Syntax public class Construction Constructors Construction(Building, Int32) Declaration public Construction(Building building, int turnsRemaining) Parameters Type Name Description Building building System.Int32 turnsRemaining Fields building Declaration public Building building Field Value Type Description Building turnsRemaining Declaration public int turnsRemaining Field Value Type Description System.Int32"
+  },
+  "api/GrandWarStrategy.Province.html": {
+    "href": "api/GrandWarStrategy.Province.html",
+    "title": "Namespace GrandWarStrategy.Province | Example Unity documentation",
+    "keywords": "Namespace GrandWarStrategy.Province Classes Construction ProvinceData"
+  },
+  "api/GrandWarStrategy.Province.ProvinceData.html": {
+    "href": "api/GrandWarStrategy.Province.ProvinceData.html",
+    "title": "Class ProvinceData | Example Unity documentation",
+    "keywords": "Class ProvinceData Inheritance System.Object ProvinceData Namespace : GrandWarStrategy.Province Assembly : cs.temp.dll.dll Syntax public class ProvinceData : MonoBehaviour Fields buildingLimit Declaration public int buildingLimit Field Value Type Description System.Int32 buildings Declaration public List<Building> buildings Field Value Type Description System.Collections.Generic.List < Building > cachedIncome Declaration public int cachedIncome Field Value Type Description System.Int32 cachedMaintenance Declaration public int cachedMaintenance Field Value Type Description System.Int32 cachedMaxArmy Declaration public int cachedMaxArmy Field Value Type Description System.Int32 cachedMoneyStorage Declaration public int cachedMoneyStorage Field Value Type Description System.Int32 color Declaration public Color color Field Value Type Description Color constructions Declaration public List<Construction> constructions Field Value Type Description System.Collections.Generic.List < Construction > housingArmies Declaration public List<Army> housingArmies Field Value Type Description System.Collections.Generic.List < Army > id Declaration public int id Field Value Type Description System.Int32 infrastructure Declaration public int infrastructure Field Value Type Description System.Int32 infrastructureLimit Declaration public int infrastructureLimit Field Value Type Description System.Int32 isCapital Declaration public bool isCapital Field Value Type Description System.Boolean neighbours Declaration public List<ProvinceData> neighbours Field Value Type Description System.Collections.Generic.List < ProvinceData > owner Declaration public string owner Field Value Type Description System.String population Declaration public int population Field Value Type Description System.Int32 provinceName Declaration public string provinceName Field Value Type Description System.String resource Declaration public string resource Field Value Type Description System.String Methods AddArmy(Army) Declaration public void AddArmy(Army army) Parameters Type Name Description Army army AddBuilding(Building) Declaration public void AddBuilding(Building building) Parameters Type Name Description Building building ConstructBuilding(Construction) Declaration public void ConstructBuilding(Construction construction) Parameters Type Name Description Construction construction RemoveArmy(Army) Declaration public void RemoveArmy(Army army) Parameters Type Name Description Army army"
+  },
+  "api/GrandWarStrategy.Utility.ButtonHandler.html": {
+    "href": "api/GrandWarStrategy.Utility.ButtonHandler.html",
+    "title": "Class ButtonHandler | Example Unity documentation",
+    "keywords": "Class ButtonHandler Inheritance System.Object ButtonHandler Namespace : GrandWarStrategy.Utility Assembly : cs.temp.dll.dll Syntax public class ButtonHandler : MonoBehaviour Methods isBuilt() Declaration public void isBuilt()"
+  },
+  "api/GrandWarStrategy.Utility.GUIChanges.html": {
+    "href": "api/GrandWarStrategy.Utility.GUIChanges.html",
+    "title": "Class GUIChanges | Example Unity documentation",
+    "keywords": "Class GUIChanges Inheritance System.Object GUIChanges Namespace : GrandWarStrategy.Utility Assembly : cs.temp.dll.dll Syntax public class GUIChanges : MonoBehaviour Methods hidePanel(GameObject) Declaration public void hidePanel(GameObject panel) Parameters Type Name Description GameObject panel showPanel(GameObject) Declaration public void showPanel(GameObject panel) Parameters Type Name Description GameObject panel updateText(TMP_Text, String, String) Declaration public void updateText(TMP_Text text, string originalText, string newText) Parameters Type Name Description TMP_Text text System.String originalText System.String newText"
+  },
+  "api/GrandWarStrategy.Utility.GUIUpdater.html": {
+    "href": "api/GrandWarStrategy.Utility.GUIUpdater.html",
+    "title": "Class GUIUpdater | Example Unity documentation",
+    "keywords": "Class GUIUpdater Inheritance System.Object GUIUpdater Namespace : GrandWarStrategy.Utility Assembly : cs.temp.dll.dll Syntax public class GUIUpdater : MonoBehaviour Methods updateBuildingsPanel() Declaration public void updateBuildingsPanel() updateDiplomacyPanel() Declaration public void updateDiplomacyPanel() updateProvincePanel() Declaration public void updateProvincePanel() updateRecruitmentPanel() Declaration public void updateRecruitmentPanel() updateTopBar() Declaration public void updateTopBar() updateTopBar(Int32) Declaration public void updateTopBar(int income) Parameters Type Name Description System.Int32 income"
+  },
+  "api/GrandWarStrategy.Utility.html": {
+    "href": "api/GrandWarStrategy.Utility.html",
+    "title": "Namespace GrandWarStrategy.Utility | Example Unity documentation",
+    "keywords": "Namespace GrandWarStrategy.Utility Classes ButtonHandler GUIChanges GUIUpdater SelectCountry"
+  },
+  "api/GrandWarStrategy.Utility.SelectCountry.html": {
+    "href": "api/GrandWarStrategy.Utility.SelectCountry.html",
+    "title": "Class SelectCountry | Example Unity documentation",
+    "keywords": "Class SelectCountry Inheritance System.Object SelectCountry Namespace : GrandWarStrategy.Utility Assembly : cs.temp.dll.dll Syntax public class SelectCountry : MonoBehaviour Methods SelectCountryTag(String) Declaration public void SelectCountryTag(string countryTag) Parameters Type Name Description System.String countryTag"
   },
   "index.html": {
     "href": "index.html",

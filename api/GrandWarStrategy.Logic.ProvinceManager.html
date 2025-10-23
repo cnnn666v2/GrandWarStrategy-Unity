@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Army
+    <title>Class ProvinceManager
    | Example Unity documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Army
+    <meta name="title" content="Class ProvinceManager
    | Example Unity documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,34 +78,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Global.Army">
+            <article class="content wrap" id="_content" data-uid="GrandWarStrategy.Logic.ProvinceManager">
   
   
-  <h1 id="Global_Army" data-uid="Global.Army" class="text-break">Class Army
+  <h1 id="GrandWarStrategy_Logic_ProvinceManager" data-uid="GrandWarStrategy.Logic.ProvinceManager" class="text-break">Class ProvinceManager
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Army</span></div>
+    <div class="level1"><span class="xref">ProvinceManager</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GrandWarStrategy.Logic.html">GrandWarStrategy.Logic</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Global_Army_syntax">Syntax</h5>
+  <h5 id="GrandWarStrategy_Logic_ProvinceManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Army : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProvinceManager : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Global_Army_maintenance" data-uid="Global.Army.maintenance">maintenance</h4>
+  <h4 id="GrandWarStrategy_Logic_ProvinceManager_selectedProvince" data-uid="GrandWarStrategy.Logic.ProvinceManager.selectedProvince">selectedProvince</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int maintenance</code></pre>
+    <pre><code class="lang-csharp hljs">public int selectedProvince</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,64 +122,63 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <h4 id="Global_Army_owner" data-uid="Global.Army.owner">owner</h4>
+  <a id="GrandWarStrategy_Logic_ProvinceManager_constructBuilding_" data-uid="GrandWarStrategy.Logic.ProvinceManager.constructBuilding*"></a>
+  <h4 id="GrandWarStrategy_Logic_ProvinceManager_constructBuilding_Building_" data-uid="GrandWarStrategy.Logic.ProvinceManager.constructBuilding(Building)">constructBuilding(Building)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string owner</code></pre>
+    <pre><code class="lang-csharp hljs">public void constructBuilding(Building newBuilding)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Building</span></td>
+        <td><span class="parametername">newBuilding</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Global_Army_soldiers" data-uid="Global.Army.soldiers">soldiers</h4>
+  <a id="GrandWarStrategy_Logic_ProvinceManager_isConstructedBuilding_" data-uid="GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding*"></a>
+  <h4 id="GrandWarStrategy_Logic_ProvinceManager_isConstructedBuilding_Building_" data-uid="GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding(Building)">isConstructedBuilding(Building)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int soldiers</code></pre>
+    <pre><code class="lang-csharp hljs">public bool isConstructedBuilding(Building building)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Building</span></td>
+        <td><span class="parametername">building</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Global_Army_stayingIn" data-uid="Global.Army.stayingIn">stayingIn</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProvinceData stayingIn</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -189,7 +188,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Global.ProvinceData.html">ProvinceData</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

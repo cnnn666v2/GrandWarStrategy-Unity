@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TrainingDivisions
+    <title>Class Construction
    | Example Unity documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TrainingDivisions
+    <meta name="title" content="Class Construction
    | Example Unity documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,35 +78,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Global.TrainingDivisions">
+            <article class="content wrap" id="_content" data-uid="GrandWarStrategy.Province.Construction">
   
   
-  <h1 id="Global_TrainingDivisions" data-uid="Global.TrainingDivisions" class="text-break">Class TrainingDivisions
+  <h1 id="GrandWarStrategy_Province_Construction" data-uid="GrandWarStrategy.Province.Construction" class="text-break">Class Construction
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TrainingDivisions</span></div>
+    <div class="level1"><span class="xref">Construction</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GrandWarStrategy.Province.html">GrandWarStrategy.Province</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Global_TrainingDivisions_syntax">Syntax</h5>
+  <h5 id="GrandWarStrategy_Province_Construction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TrainingDivisions</code></pre>
+    <pre><code class="lang-csharp hljs">public class Construction</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Global_TrainingDivisions__ctor_" data-uid="Global.TrainingDivisions.#ctor*"></a>
-  <h4 id="Global_TrainingDivisions__ctor_System_Int32_System_Int32_System_Int32_System_Int32_Transform_" data-uid="Global.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)">TrainingDivisions(Int32, Int32, Int32, Int32, Transform)</h4>
+  <a id="GrandWarStrategy_Province_Construction__ctor_" data-uid="GrandWarStrategy.Province.Construction.#ctor*"></a>
+  <h4 id="GrandWarStrategy_Province_Construction__ctor_Building_System_Int32_" data-uid="GrandWarStrategy.Province.Construction.#ctor(Building,System.Int32)">Construction(Building, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination)</code></pre>
+    <pre><code class="lang-csharp hljs">public Construction(Building building, int turnsRemaining)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,28 +143,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">amount</span></td>
+        <td><span class="xref">Building</span></td>
+        <td><span class="parametername">building</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">cost</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">maintenance</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">trainingTime</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><span class="parametername">trainingDestination</span></td>
+        <td><span class="parametername">turnsRemaining</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -149,12 +158,12 @@
   </h3>
   
   
-  <h4 id="Global_TrainingDivisions_amount" data-uid="Global.TrainingDivisions.amount">amount</h4>
+  <h4 id="GrandWarStrategy_Province_Construction_building" data-uid="GrandWarStrategy.Province.Construction.building">building</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int amount</code></pre>
+    <pre><code class="lang-csharp hljs">public Building building</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,91 +175,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Building</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Global_TrainingDivisions_cost" data-uid="Global.TrainingDivisions.cost">cost</h4>
+  <h4 id="GrandWarStrategy_Province_Construction_turnsRemaining" data-uid="GrandWarStrategy.Province.Construction.turnsRemaining">turnsRemaining</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int cost</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Global_TrainingDivisions_maintenance" data-uid="Global.TrainingDivisions.maintenance">maintenance</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int maintenance</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Global_TrainingDivisions_trainingDestination" data-uid="Global.TrainingDivisions.trainingDestination">trainingDestination</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform trainingDestination</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transform</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Global_TrainingDivisions_trainingTime" data-uid="Global.TrainingDivisions.trainingTime">trainingTime</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int trainingTime</code></pre>
+    <pre><code class="lang-csharp hljs">public int turnsRemaining</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
