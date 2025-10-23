@@ -1,6 +1,9 @@
 
-[System.Serializable]
-public class Bank : Building
+namespace GrandWarStrategy.Buildings
 {
-    public int goldStorage;
+    [System.Serializable]
+    public class Bank : Building
+    {
+        public int goldStorage;
+    }
 }

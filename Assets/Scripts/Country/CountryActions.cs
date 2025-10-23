@@ -2,25 +2,28 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class CountryActions : MonoBehaviour
+namespace GrandWarStrategy.Logic
 {
-    GameData gameData;
-    void Start()
+    public class CountryActions : MonoBehaviour
     {
-        gameData = GetComponent<GameData>();
-    }
-
-    public void DeclareWar(string offender, string defender)
-    {
-        var offenderCountry = gameData.countries.FirstOrDefault(p => p.countryTag == offender);
-        var defenderCountry = gameData.countries.FirstOrDefault(p => p.countryTag == defender);
-
-        if (offenderCountry == null || defenderCountry == null)
+        GameData gameData;
+        void Start()
         {
-            Debug.LogError("Invalid offender or defender tag");
-            return;
+            gameData = GetComponent<GameData>();
         }
 
-        gameData.wars.Add(new War("War", new List<string> { offender }, new List<string> { defender }));
+        public void DeclareWar(string offender, string defender)
+        {
+            var offenderCountry = gameData.countries.FirstOrDefault(p => p.countryTag == offender);
+            var defenderCountry = gameData.countries.FirstOrDefault(p => p.countryTag == defender);
+
+            if (offenderCountry == null || defenderCountry == null)
+            {
+                Debug.LogError("Invalid offender or defender tag");
+                return;
+            }
+
+            gameData.wars.Add(new War("War", new List<string> { offender }, new List<string> { defender }));
+        }
     }
 }

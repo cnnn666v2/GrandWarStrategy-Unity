@@ -1,271 +1,287 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.GameData
-  commentId: T:Global.GameData
+- uid: GrandWarStrategy.Logic.GameData
+  commentId: T:GrandWarStrategy.Logic.GameData
   id: GameData
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.GameData.colors
-  - Global.GameData.countries
-  - Global.GameData.governments
-  - Global.GameData.movingDivisions
-  - Global.GameData.playingAsTag
-  - Global.GameData.provincesInformation
-  - Global.GameData.provincesMeshRender
-  - Global.GameData.trainingDivisions
-  - Global.GameData.turnCount
-  - Global.GameData.wars
+  - GrandWarStrategy.Logic.GameData.colors
+  - GrandWarStrategy.Logic.GameData.countries
+  - GrandWarStrategy.Logic.GameData.governments
+  - GrandWarStrategy.Logic.GameData.movingDivisions
+  - GrandWarStrategy.Logic.GameData.playingAsTag
+  - GrandWarStrategy.Logic.GameData.provincesInformation
+  - GrandWarStrategy.Logic.GameData.provincesMeshRender
+  - GrandWarStrategy.Logic.GameData.trainingDivisions
+  - GrandWarStrategy.Logic.GameData.turnCount
+  - GrandWarStrategy.Logic.GameData.wars
   langs:
   - csharp
   - vb
   name: GameData
   nameWithType: GameData
-  fullName: GameData
+  fullName: GrandWarStrategy.Logic.GameData
   type: Class
   source:
     id: GameData
     path: ''
-    startLine: 58
+    startLine: 68
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class GameData : MonoBehaviour'
     content.vb: Public Class GameData Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.GameData.colors
-  commentId: F:Global.GameData.colors
+- uid: GrandWarStrategy.Logic.GameData.colors
+  commentId: F:GrandWarStrategy.Logic.GameData.colors
   id: colors
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: colors
   nameWithType: GameData.colors
-  fullName: GameData.colors
+  fullName: GrandWarStrategy.Logic.GameData.colors
   type: Field
   source:
     id: colors
     path: ''
-    startLine: 60
+    startLine: 70
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<Color> colors
     return:
       type: Global.List{Color}
     content.vb: Public colors As List(Of Color)
-- uid: Global.GameData.countries
-  commentId: F:Global.GameData.countries
+- uid: GrandWarStrategy.Logic.GameData.countries
+  commentId: F:GrandWarStrategy.Logic.GameData.countries
   id: countries
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: countries
   nameWithType: GameData.countries
-  fullName: GameData.countries
+  fullName: GrandWarStrategy.Logic.GameData.countries
   type: Field
   source:
     id: countries
     path: ''
-    startLine: 61
+    startLine: 71
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<Country> countries
     return:
       type: Global.List{Country}
     content.vb: Public countries As List(Of Country)
-- uid: Global.GameData.governments
-  commentId: F:Global.GameData.governments
+- uid: GrandWarStrategy.Logic.GameData.governments
+  commentId: F:GrandWarStrategy.Logic.GameData.governments
   id: governments
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: governments
   nameWithType: GameData.governments
-  fullName: GameData.governments
+  fullName: GrandWarStrategy.Logic.GameData.governments
   type: Field
   source:
     id: governments
     path: ''
-    startLine: 62
+    startLine: 72
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<Government> governments
     return:
       type: Global.List{Government}
     content.vb: Public governments As List(Of Government)
-- uid: Global.GameData.provincesInformation
-  commentId: F:Global.GameData.provincesInformation
+- uid: GrandWarStrategy.Logic.GameData.provincesInformation
+  commentId: F:GrandWarStrategy.Logic.GameData.provincesInformation
   id: provincesInformation
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: provincesInformation
   nameWithType: GameData.provincesInformation
-  fullName: GameData.provincesInformation
+  fullName: GrandWarStrategy.Logic.GameData.provincesInformation
   type: Field
   source:
     id: provincesInformation
     path: ''
-    startLine: 63
+    startLine: 73
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<ProvinceData> provincesInformation
     return:
       type: Global.List{ProvinceData}
     content.vb: Public provincesInformation As List(Of ProvinceData)
-- uid: Global.GameData.provincesMeshRender
-  commentId: F:Global.GameData.provincesMeshRender
+- uid: GrandWarStrategy.Logic.GameData.provincesMeshRender
+  commentId: F:GrandWarStrategy.Logic.GameData.provincesMeshRender
   id: provincesMeshRender
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: provincesMeshRender
   nameWithType: GameData.provincesMeshRender
-  fullName: GameData.provincesMeshRender
+  fullName: GrandWarStrategy.Logic.GameData.provincesMeshRender
   type: Field
   source:
     id: provincesMeshRender
     path: ''
-    startLine: 64
+    startLine: 74
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<GameObject> provincesMeshRender
     return:
       type: Global.List{GameObject}
     content.vb: Public provincesMeshRender As List(Of GameObject)
-- uid: Global.GameData.playingAsTag
-  commentId: F:Global.GameData.playingAsTag
+- uid: GrandWarStrategy.Logic.GameData.playingAsTag
+  commentId: F:GrandWarStrategy.Logic.GameData.playingAsTag
   id: playingAsTag
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: playingAsTag
   nameWithType: GameData.playingAsTag
-  fullName: GameData.playingAsTag
+  fullName: GrandWarStrategy.Logic.GameData.playingAsTag
   type: Field
   source:
     id: playingAsTag
     path: ''
-    startLine: 65
+    startLine: 75
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public string playingAsTag
     return:
       type: System.String
     content.vb: Public playingAsTag As String
-- uid: Global.GameData.turnCount
-  commentId: F:Global.GameData.turnCount
+- uid: GrandWarStrategy.Logic.GameData.turnCount
+  commentId: F:GrandWarStrategy.Logic.GameData.turnCount
   id: turnCount
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: turnCount
   nameWithType: GameData.turnCount
-  fullName: GameData.turnCount
+  fullName: GrandWarStrategy.Logic.GameData.turnCount
   type: Field
   source:
     id: turnCount
     path: ''
-    startLine: 66
+    startLine: 76
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public int turnCount
     return:
       type: System.Int32
     content.vb: Public turnCount As Integer
-- uid: Global.GameData.wars
-  commentId: F:Global.GameData.wars
+- uid: GrandWarStrategy.Logic.GameData.wars
+  commentId: F:GrandWarStrategy.Logic.GameData.wars
   id: wars
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: wars
   nameWithType: GameData.wars
-  fullName: GameData.wars
+  fullName: GrandWarStrategy.Logic.GameData.wars
   type: Field
   source:
     id: wars
     path: ''
-    startLine: 67
+    startLine: 77
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<War> wars
     return:
       type: Global.List{War}
     content.vb: Public wars As List(Of War)
-- uid: Global.GameData.movingDivisions
-  commentId: F:Global.GameData.movingDivisions
+- uid: GrandWarStrategy.Logic.GameData.movingDivisions
+  commentId: F:GrandWarStrategy.Logic.GameData.movingDivisions
   id: movingDivisions
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: movingDivisions
   nameWithType: GameData.movingDivisions
-  fullName: GameData.movingDivisions
+  fullName: GrandWarStrategy.Logic.GameData.movingDivisions
   type: Field
   source:
     id: movingDivisions
     path: ''
-    startLine: 68
+    startLine: 78
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<MovingDivisions> movingDivisions
     return:
-      type: Global.List{MovingDivisions}
+      type: Global.List{GrandWarStrategy.Logic.MovingDivisions}
     content.vb: Public movingDivisions As List(Of MovingDivisions)
-- uid: Global.GameData.trainingDivisions
-  commentId: F:Global.GameData.trainingDivisions
+- uid: GrandWarStrategy.Logic.GameData.trainingDivisions
+  commentId: F:GrandWarStrategy.Logic.GameData.trainingDivisions
   id: trainingDivisions
-  parent: Global.GameData
+  parent: GrandWarStrategy.Logic.GameData
   langs:
   - csharp
   - vb
   name: trainingDivisions
   nameWithType: GameData.trainingDivisions
-  fullName: GameData.trainingDivisions
+  fullName: GrandWarStrategy.Logic.GameData.trainingDivisions
   type: Field
   source:
     id: trainingDivisions
     path: ''
-    startLine: 69
+    startLine: 79
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<TrainingDivisions> trainingDivisions
     return:
-      type: Global.List{TrainingDivisions}
+      type: Global.List{GrandWarStrategy.Logic.TrainingDivisions}
     content.vb: Public trainingDivisions As List(Of TrainingDivisions)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -405,6 +421,7 @@ references:
   - name: <
   - uid: Global.ProvinceData
     name: ProvinceData
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: Global.List`1
@@ -415,6 +432,7 @@ references:
   - name: " "
   - uid: Global.ProvinceData
     name: ProvinceData
+    isExternal: true
   - name: )
 - uid: Global.List{GameObject}
   commentId: '!:Global.List{GameObject}'
@@ -492,21 +510,21 @@ references:
   - uid: Global.War
     name: War
   - name: )
-- uid: Global.List{MovingDivisions}
-  commentId: '!:Global.List{MovingDivisions}'
+- uid: Global.List{GrandWarStrategy.Logic.MovingDivisions}
+  commentId: '!:Global.List{GrandWarStrategy.Logic.MovingDivisions}'
   definition: Global.List`1
   name: List<MovingDivisions>
   nameWithType: List<MovingDivisions>
-  fullName: List<MovingDivisions>
+  fullName: List<GrandWarStrategy.Logic.MovingDivisions>
   nameWithType.vb: List(Of MovingDivisions)
-  fullName.vb: List(Of MovingDivisions)
+  fullName.vb: List(Of GrandWarStrategy.Logic.MovingDivisions)
   name.vb: List(Of MovingDivisions)
   spec.csharp:
   - uid: Global.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Global.MovingDivisions
+  - uid: GrandWarStrategy.Logic.MovingDivisions
     name: MovingDivisions
   - name: '>'
   spec.vb:
@@ -516,24 +534,24 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Global.MovingDivisions
+  - uid: GrandWarStrategy.Logic.MovingDivisions
     name: MovingDivisions
   - name: )
-- uid: Global.List{TrainingDivisions}
-  commentId: '!:Global.List{TrainingDivisions}'
+- uid: Global.List{GrandWarStrategy.Logic.TrainingDivisions}
+  commentId: '!:Global.List{GrandWarStrategy.Logic.TrainingDivisions}'
   definition: Global.List`1
   name: List<TrainingDivisions>
   nameWithType: List<TrainingDivisions>
-  fullName: List<TrainingDivisions>
+  fullName: List<GrandWarStrategy.Logic.TrainingDivisions>
   nameWithType.vb: List(Of TrainingDivisions)
-  fullName.vb: List(Of TrainingDivisions)
+  fullName.vb: List(Of GrandWarStrategy.Logic.TrainingDivisions)
   name.vb: List(Of TrainingDivisions)
   spec.csharp:
   - uid: Global.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Global.TrainingDivisions
+  - uid: GrandWarStrategy.Logic.TrainingDivisions
     name: TrainingDivisions
   - name: '>'
   spec.vb:
@@ -543,6 +561,6 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Global.TrainingDivisions
+  - uid: GrandWarStrategy.Logic.TrainingDivisions
     name: TrainingDivisions
   - name: )

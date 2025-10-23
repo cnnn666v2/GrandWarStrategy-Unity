@@ -3,38 +3,10 @@ items:
 - uid: Global
   id: Global
   children:
-  - Global.Army
-  - Global.ArmyType
-  - Global.Bank
-  - Global.Barracks
-  - Global.BoardData
-  - Global.Building
-  - Global.BuildingsManager
-  - Global.ButtonHandler
-  - Global.ClickArmy_O
-  - Global.ClickMode
-  - Global.ClickProvince
-  - Global.Construction
   - Global.Country
-  - Global.CountryActions
-  - Global.GameData
   - Global.Government
-  - Global.GUIChanges
-  - Global.GUIUpdater
-  - Global.Market
-  - Global.MoveArmy
-  - Global.MovingDivisions
-  - Global.ProvinceData
-  - Global.ProvinceInformation_O
-  - Global.ProvinceManager
-  - Global.ProvinceSO
-  - Global.RecruitArmy
-  - Global.SelectCountry
   - Global.SwitchClickMode
-  - Global.TrainingDivisions
-  - Global.TurnManager
   - Global.War
-  - Global.WarManager
   langs:
   - csharp
   - vb
@@ -45,163 +17,23 @@ items:
   assemblies:
   - cs.temp.dll
 references:
-- uid: Global.SelectCountry
-  commentId: T:Global.SelectCountry
-  name: SelectCountry
-  nameWithType: SelectCountry
-  fullName: SelectCountry
-- uid: Global.BoardData
-  commentId: T:Global.BoardData
-  name: BoardData
-  nameWithType: BoardData
-  fullName: BoardData
-- uid: Global.GameData
-  commentId: T:Global.GameData
-  name: GameData
-  nameWithType: GameData
-  fullName: GameData
-- uid: Global.MovingDivisions
-  commentId: T:Global.MovingDivisions
-  name: MovingDivisions
-  nameWithType: MovingDivisions
-  fullName: MovingDivisions
-- uid: Global.TrainingDivisions
-  commentId: T:Global.TrainingDivisions
-  name: TrainingDivisions
-  nameWithType: TrainingDivisions
-  fullName: TrainingDivisions
 - uid: Global.SwitchClickMode
   commentId: T:Global.SwitchClickMode
   name: SwitchClickMode
   nameWithType: SwitchClickMode
   fullName: SwitchClickMode
-- uid: Global.TurnManager
-  commentId: T:Global.TurnManager
-  name: TurnManager
-  nameWithType: TurnManager
-  fullName: TurnManager
-- uid: Global.ProvinceManager
-  commentId: T:Global.ProvinceManager
-  name: ProvinceManager
-  nameWithType: ProvinceManager
-  fullName: ProvinceManager
-- uid: Global.ClickProvince
-  commentId: T:Global.ClickProvince
-  name: ClickProvince
-  nameWithType: ClickProvince
-  fullName: ClickProvince
-- uid: Global.ClickMode
-  commentId: T:Global.ClickMode
-  name: ClickMode
-  nameWithType: ClickMode
-  fullName: ClickMode
-- uid: Global.ProvinceInformation_O
-  commentId: T:Global.ProvinceInformation_O
-  name: ProvinceInformation_O
-  nameWithType: ProvinceInformation_O
-  fullName: ProvinceInformation_O
-- uid: Global.ProvinceSO
-  commentId: T:Global.ProvinceSO
-  name: ProvinceSO
-  nameWithType: ProvinceSO
-  fullName: ProvinceSO
-- uid: Global.ProvinceData
-  commentId: T:Global.ProvinceData
-  name: ProvinceData
-  nameWithType: ProvinceData
-  fullName: ProvinceData
-- uid: Global.Construction
-  commentId: T:Global.Construction
-  name: Construction
-  nameWithType: Construction
-  fullName: Construction
-- uid: Global.Barracks
-  commentId: T:Global.Barracks
-  name: Barracks
-  nameWithType: Barracks
-  fullName: Barracks
-- uid: Global.BuildingsManager
-  commentId: T:Global.BuildingsManager
-  name: BuildingsManager
-  nameWithType: BuildingsManager
-  fullName: BuildingsManager
-- uid: Global.Bank
-  commentId: T:Global.Bank
-  name: Bank
-  nameWithType: Bank
-  fullName: Bank
-- uid: Global.Market
-  commentId: T:Global.Market
-  name: Market
-  nameWithType: Market
-  fullName: Market
-- uid: Global.Building
-  commentId: T:Global.Building
-  name: Building
-  nameWithType: Building
-  fullName: Building
 - uid: Global.Government
   commentId: T:Global.Government
   name: Government
   nameWithType: Government
   fullName: Government
-- uid: Global.GUIChanges
-  commentId: T:Global.GUIChanges
-  name: GUIChanges
-  nameWithType: GUIChanges
-  fullName: GUIChanges
-- uid: Global.ButtonHandler
-  commentId: T:Global.ButtonHandler
-  name: ButtonHandler
-  nameWithType: ButtonHandler
-  fullName: ButtonHandler
-- uid: Global.GUIUpdater
-  commentId: T:Global.GUIUpdater
-  name: GUIUpdater
-  nameWithType: GUIUpdater
-  fullName: GUIUpdater
-- uid: Global.MoveArmy
-  commentId: T:Global.MoveArmy
-  name: MoveArmy
-  nameWithType: MoveArmy
-  fullName: MoveArmy
 - uid: Global.War
   commentId: T:Global.War
   name: War
   nameWithType: War
   fullName: War
-- uid: Global.WarManager
-  commentId: T:Global.WarManager
-  name: WarManager
-  nameWithType: WarManager
-  fullName: WarManager
-- uid: Global.ClickArmy_O
-  commentId: T:Global.ClickArmy_O
-  name: ClickArmy_O
-  nameWithType: ClickArmy_O
-  fullName: ClickArmy_O
-- uid: Global.Army
-  commentId: T:Global.Army
-  name: Army
-  nameWithType: Army
-  fullName: Army
-- uid: Global.ArmyType
-  commentId: T:Global.ArmyType
-  name: ArmyType
-  nameWithType: ArmyType
-  fullName: ArmyType
-- uid: Global.RecruitArmy
-  commentId: T:Global.RecruitArmy
-  name: RecruitArmy
-  nameWithType: RecruitArmy
-  fullName: RecruitArmy
 - uid: Global.Country
   commentId: T:Global.Country
   name: Country
   nameWithType: Country
   fullName: Country
-- uid: Global.CountryActions
-  commentId: T:Global.CountryActions
-  name: CountryActions
-  nameWithType: CountryActions
-  fullName: CountryActions

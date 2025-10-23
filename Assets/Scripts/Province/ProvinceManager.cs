@@ -1,50 +1,54 @@
 using UnityEngine;
 using System.Linq;
-using UnityEngine.UI;
+using GrandWarStrategy.Buildings;
+using GrandWarStrategy.Province;
 
-public class ProvinceManager : MonoBehaviour
+namespace GrandWarStrategy.Logic
 {
-    GameData gameData;
-    public int selectedProvince;
-    void Start()
+    public class ProvinceManager : MonoBehaviour
     {
-        gameData = GetComponent<GameData>();
-    }
-
-    public void constructBuilding(Building newBuilding)
-    {
-        Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
-        if (playerCountry == null) return;
-        if (playerCountry.money < newBuilding.cost) return;
-
-        foreach (ProvinceData province in gameData.provincesInformation)
+        GameData gameData;
+        public int selectedProvince;
+        void Start()
         {
-            if (province.owner == gameData.playingAsTag &&
-                province.id == selectedProvince &&
-                province.buildingLimit > province.buildings.Count &&
-                !province.buildings.Contains(newBuilding))
+            gameData = GetComponent<GameData>();
+        }
+
+        public void constructBuilding(Building newBuilding)
+        {
+            Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+            if (playerCountry == null) return;
+            if (playerCountry.money < newBuilding.cost) return;
+
+            foreach (ProvinceData province in gameData.provincesInformation)
             {
-                playerCountry.money -= newBuilding.cost;
-                province.AddBuilding(newBuilding);
-                break;
+                if (province.owner == gameData.playingAsTag &&
+                    province.id == selectedProvince &&
+                    province.buildingLimit > province.buildings.Count &&
+                    !province.buildings.Contains(newBuilding))
+                {
+                    playerCountry.money -= newBuilding.cost;
+                    province.AddBuilding(newBuilding);
+                    break;
+                }
             }
         }
-    }
 
-    public bool isConstructedBuilding(Building building)
-    {
-        Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
-        foreach (ProvinceData province in gameData.provincesInformation)
+        public bool isConstructedBuilding(Building building)
         {
-            Debug.Log($"Selected: {selectedProvince} // Province: {province.id}");
-            if (province.owner == gameData.playingAsTag &&
-                province.id == selectedProvince &&
-                province.buildingLimit > province.buildings.Count &&
-                (province.buildings.Contains(building) || province.constructions.Any(b => b.building == building)))
+            Country playerCountry = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+            foreach (ProvinceData province in gameData.provincesInformation)
             {
-                return true;
+                Debug.Log($"Selected: {selectedProvince} // Province: {province.id}");
+                if (province.owner == gameData.playingAsTag &&
+                    province.id == selectedProvince &&
+                    province.buildingLimit > province.buildings.Count &&
+                    (province.buildings.Contains(building) || province.constructions.Any(b => b.building == building)))
+                {
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
     }
 }

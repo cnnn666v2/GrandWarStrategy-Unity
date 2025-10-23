@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Logic.ClickMode
+  commentId: T:GrandWarStrategy.Logic.ClickMode
+  id: ClickMode
+  parent: GrandWarStrategy.Logic
+  children:
+  - GrandWarStrategy.Logic.ClickMode.army
+  - GrandWarStrategy.Logic.ClickMode.province
+  langs:
+  - csharp
+  - vb
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: GrandWarStrategy.Logic.ClickMode
+  type: Enum
+  source:
+    id: ClickMode
+    path: ''
+    startLine: 486
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: public enum ClickMode
+    content.vb: Public Enum ClickMode
+- uid: GrandWarStrategy.Logic.ClickMode.province
+  commentId: F:GrandWarStrategy.Logic.ClickMode.province
+  id: province
+  parent: GrandWarStrategy.Logic.ClickMode
+  langs:
+  - csharp
+  - vb
+  name: province
+  nameWithType: ClickMode.province
+  fullName: GrandWarStrategy.Logic.ClickMode.province
+  type: Field
+  source:
+    id: province
+    path: ''
+    startLine: 486
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: province = 0
+    return:
+      type: GrandWarStrategy.Logic.ClickMode
+- uid: GrandWarStrategy.Logic.ClickMode.army
+  commentId: F:GrandWarStrategy.Logic.ClickMode.army
+  id: army
+  parent: GrandWarStrategy.Logic.ClickMode
+  langs:
+  - csharp
+  - vb
+  name: army
+  nameWithType: ClickMode.army
+  fullName: GrandWarStrategy.Logic.ClickMode.army
+  type: Field
+  source:
+    id: army
+    path: ''
+    startLine: 486
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: army = 1
+    return:
+      type: GrandWarStrategy.Logic.ClickMode
+references:
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+- uid: GrandWarStrategy.Logic.ClickMode
+  commentId: T:GrandWarStrategy.Logic.ClickMode
+  parent: GrandWarStrategy.Logic
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: GrandWarStrategy.Logic.ClickMode

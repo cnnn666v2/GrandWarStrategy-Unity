@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Utility.ButtonHandler
+  commentId: T:GrandWarStrategy.Utility.ButtonHandler
+  id: ButtonHandler
+  parent: GrandWarStrategy.Utility
+  children:
+  - GrandWarStrategy.Utility.ButtonHandler.isBuilt
+  langs:
+  - csharp
+  - vb
+  name: ButtonHandler
+  nameWithType: ButtonHandler
+  fullName: GrandWarStrategy.Utility.ButtonHandler
+  type: Class
+  source:
+    id: ButtonHandler
+    path: ''
+    startLine: 742
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: 'public class ButtonHandler : MonoBehaviour'
+    content.vb: Public Class ButtonHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: GrandWarStrategy.Utility.ButtonHandler.isBuilt
+  commentId: M:GrandWarStrategy.Utility.ButtonHandler.isBuilt
+  id: isBuilt
+  parent: GrandWarStrategy.Utility.ButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: isBuilt()
+  nameWithType: ButtonHandler.isBuilt()
+  fullName: GrandWarStrategy.Utility.ButtonHandler.isBuilt()
+  type: Method
+  source:
+    id: isBuilt
+    path: ''
+    startLine: 767
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void isBuilt()
+    content.vb: Public Sub isBuilt()
+  overload: GrandWarStrategy.Utility.ButtonHandler.isBuilt*
+references:
+- uid: GrandWarStrategy.Utility
+  commentId: N:GrandWarStrategy.Utility
+  name: GrandWarStrategy.Utility
+  nameWithType: GrandWarStrategy.Utility
+  fullName: GrandWarStrategy.Utility
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GrandWarStrategy.Utility.ButtonHandler.isBuilt*
+  commentId: Overload:GrandWarStrategy.Utility.ButtonHandler.isBuilt
+  name: isBuilt
+  nameWithType: ButtonHandler.isBuilt
+  fullName: GrandWarStrategy.Utility.ButtonHandler.isBuilt

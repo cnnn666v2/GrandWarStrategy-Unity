@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  id: GrandWarStrategy.Logic
+  children:
+  - GrandWarStrategy.Logic.BoardData
+  - GrandWarStrategy.Logic.BuildingsManager
+  - GrandWarStrategy.Logic.ClickMode
+  - GrandWarStrategy.Logic.ClickProvince
+  - GrandWarStrategy.Logic.CountryActions
+  - GrandWarStrategy.Logic.GameData
+  - GrandWarStrategy.Logic.MoveArmy
+  - GrandWarStrategy.Logic.MovingDivisions
+  - GrandWarStrategy.Logic.ProvinceManager
+  - GrandWarStrategy.Logic.RecruitArmy
+  - GrandWarStrategy.Logic.TrainingDivisions
+  - GrandWarStrategy.Logic.TurnManager
+  - GrandWarStrategy.Logic.WarManager
+  langs:
+  - csharp
+  - vb
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: GrandWarStrategy.Logic.BoardData
+  commentId: T:GrandWarStrategy.Logic.BoardData
+  name: BoardData
+  nameWithType: BoardData
+  fullName: GrandWarStrategy.Logic.BoardData
+- uid: GrandWarStrategy.Logic.GameData
+  commentId: T:GrandWarStrategy.Logic.GameData
+  name: GameData
+  nameWithType: GameData
+  fullName: GrandWarStrategy.Logic.GameData
+- uid: GrandWarStrategy.Logic.MovingDivisions
+  commentId: T:GrandWarStrategy.Logic.MovingDivisions
+  name: MovingDivisions
+  nameWithType: MovingDivisions
+  fullName: GrandWarStrategy.Logic.MovingDivisions
+- uid: GrandWarStrategy.Logic.TrainingDivisions
+  commentId: T:GrandWarStrategy.Logic.TrainingDivisions
+  name: TrainingDivisions
+  nameWithType: TrainingDivisions
+  fullName: GrandWarStrategy.Logic.TrainingDivisions
+- uid: GrandWarStrategy.Logic.TurnManager
+  commentId: T:GrandWarStrategy.Logic.TurnManager
+  name: TurnManager
+  nameWithType: TurnManager
+  fullName: GrandWarStrategy.Logic.TurnManager
+- uid: GrandWarStrategy.Logic.ProvinceManager
+  commentId: T:GrandWarStrategy.Logic.ProvinceManager
+  name: ProvinceManager
+  nameWithType: ProvinceManager
+  fullName: GrandWarStrategy.Logic.ProvinceManager
+- uid: GrandWarStrategy.Logic.ClickProvince
+  commentId: T:GrandWarStrategy.Logic.ClickProvince
+  name: ClickProvince
+  nameWithType: ClickProvince
+  fullName: GrandWarStrategy.Logic.ClickProvince
+- uid: GrandWarStrategy.Logic.ClickMode
+  commentId: T:GrandWarStrategy.Logic.ClickMode
+  parent: GrandWarStrategy.Logic
+  name: ClickMode
+  nameWithType: ClickMode
+  fullName: GrandWarStrategy.Logic.ClickMode
+- uid: GrandWarStrategy.Logic.BuildingsManager
+  commentId: T:GrandWarStrategy.Logic.BuildingsManager
+  name: BuildingsManager
+  nameWithType: BuildingsManager
+  fullName: GrandWarStrategy.Logic.BuildingsManager
+- uid: GrandWarStrategy.Logic.MoveArmy
+  commentId: T:GrandWarStrategy.Logic.MoveArmy
+  name: MoveArmy
+  nameWithType: MoveArmy
+  fullName: GrandWarStrategy.Logic.MoveArmy
+- uid: GrandWarStrategy.Logic.WarManager
+  commentId: T:GrandWarStrategy.Logic.WarManager
+  name: WarManager
+  nameWithType: WarManager
+  fullName: GrandWarStrategy.Logic.WarManager
+- uid: GrandWarStrategy.Logic.RecruitArmy
+  commentId: T:GrandWarStrategy.Logic.RecruitArmy
+  name: RecruitArmy
+  nameWithType: RecruitArmy
+  fullName: GrandWarStrategy.Logic.RecruitArmy
+- uid: GrandWarStrategy.Logic.CountryActions
+  commentId: T:GrandWarStrategy.Logic.CountryActions
+  name: CountryActions
+  nameWithType: CountryActions
+  fullName: GrandWarStrategy.Logic.CountryActions
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic

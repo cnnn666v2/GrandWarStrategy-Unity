@@ -3,136 +3,141 @@ using TMPro;
 using System.Linq;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using GrandWarStrategy.Logic;
+using GrandWarStrategy.Buildings;
 
-public class GUIUpdater : MonoBehaviour
+namespace GrandWarStrategy.Utility
 {
-    GUIChanges gui;
-    ButtonHandler btnHandler;
-    ClickProvince clickProvince;
-    CountryActions countryAction;
-    GameData gameData;
-    WarManager warManager;
-
-    [SerializeField] GameObject panel, panel2, panel3, panel4;
-    [SerializeField]
-    TMP_Text provinceName, provincePopulation, provinceNeighbours, provinceOwner, provinceID,
-                                provinceBuildingCount, provinceBuildingList,
-                                topPlayingAs, topMoney, topTurn, topManpower,
-                                diplomacyCountry, diplomacyGovernment, diplomacyAtWar, diplomacyRelations,
-                                armyMax;
-    [SerializeField] Button diplomacyWar;
-    int lastIncome;
-
-
-    void Start()
+    public class GUIUpdater : MonoBehaviour
     {
-        gui = GetComponent<GUIChanges>();
-        btnHandler = GetComponent<ButtonHandler>();
-        clickProvince = GetComponent<ClickProvince>();
-        gameData = GetComponent<GameData>();
-        countryAction = GetComponent<CountryActions>();
-        warManager = GetComponent<WarManager>();
-    }
+        GUIChanges gui;
+        ButtonHandler btnHandler;
+        ClickProvince clickProvince;
+        CountryActions countryAction;
+        GameData gameData;
+        WarManager warManager;
 
-    public void updateProvincePanel()
-    {
-        provinceName.text = clickProvince.province.provinceName;
-        gui.updateText(provincePopulation, "Province population: ", clickProvince.province.population.ToString());
-        gui.updateText(provinceOwner, "Owner: ", clickProvince.province.owner);
-        gui.updateText(provinceID, "ID: ", clickProvince.province.id.ToString());
+        [SerializeField] GameObject panel, panel2, panel3, panel4;
+        [SerializeField]
+        TMP_Text provinceName, provincePopulation, provinceNeighbours, provinceOwner, provinceID,
+                                    provinceBuildingCount, provinceBuildingList,
+                                    topPlayingAs, topMoney, topTurn, topManpower,
+                                    diplomacyCountry, diplomacyGovernment, diplomacyAtWar, diplomacyRelations,
+                                    armyMax;
+        [SerializeField] Button diplomacyWar;
+        int lastIncome;
 
-        string printedNeighbours = "";
-        foreach (var n in clickProvince.province.neighbours) printedNeighbours += n.name + ", ";
-        gui.updateText(provinceNeighbours, "Neighbours: ", printedNeighbours);
-    }
 
-    public void updateBuildingsPanel()
-    {
-        gui.updateText(provinceBuildingCount, "Total buildings: ", clickProvince.province.buildings.Count + "/" + clickProvince.province.buildingLimit.ToString());
-
-        string printedBuildings = "";
-        foreach (Building b in clickProvince.province.buildings) printedBuildings += b + ", ";
-        gui.updateText(provinceBuildingList, "Constructed buildings: ", printedBuildings);
-        btnHandler.isBuilt();
-    }
-
-    public void updateTopBar()
-    {
-        string countryName = "";
-        string money = "", maxMoney = "", population = "", manpower = "";
-        for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
-            {
-                countryName = gameData.countries[i].countryName;
-                money = gameData.countries[i].money.ToString();
-                maxMoney = gameData.countries[i].maxMoney.ToString();
-                population = gameData.countries[i].population.ToString();
-                manpower = gameData.countries[i].manpower.ToString();
-                break;
-            }
-        gui.updateText(topPlayingAs, "Controlling: ", countryName);
-        gui.updateText(topMoney, "Money: ", $"{money} / {maxMoney} (<color=green>+{lastIncome}</color>)");
-        gui.updateText(topTurn, "Turn: ", gameData.turnCount.ToString());
-        gui.updateText(topManpower, "Manpower / Population: ", $"{manpower} / {population}");
-    }
-
-    public void updateTopBar(int income)
-    {
-        lastIncome = income;
-        string countryName = "";
-        string money = "", maxMoney = "", population = "", manpower = "";
-        for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
-            {
-                countryName = gameData.countries[i].countryName;
-                money = gameData.countries[i].money.ToString();
-                maxMoney = gameData.countries[i].maxMoney.ToString();
-                population = gameData.countries[i].population.ToString();
-                manpower = gameData.countries[i].manpower.ToString();
-                break;
-            }
-        gui.updateText(topPlayingAs, "Controlling: ", countryName);
-        gui.updateText(topMoney, "Money: ", $"{money} / {maxMoney} (<color=green>+{income}</color>)");
-        gui.updateText(topTurn, "Turn: ", gameData.turnCount.ToString());
-        gui.updateText(topManpower, "Manpower / Population: ", $"{manpower} / {population}");
-    }
-
-    public void updateDiplomacyPanel()
-    {
-        Country selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.owner);
-        if (selectedCountry == null) return;
-
-        diplomacyRelations.text = "Peace";
-
-        foreach (War war in gameData.wars)
+        void Start()
         {
-            if ((war.offenders.Contains(selectedCountry.countryTag) || war.defenders.Contains(selectedCountry.countryTag))
-                && (war.offenders.Contains(gameData.playingAsTag) || war.defenders.Contains(gameData.playingAsTag)))
-                diplomacyRelations.text = "At war";
+            gui = GetComponent<GUIChanges>();
+            btnHandler = GetComponent<ButtonHandler>();
+            clickProvince = GetComponent<ClickProvince>();
+            gameData = GetComponent<GameData>();
+            countryAction = GetComponent<CountryActions>();
+            warManager = GetComponent<WarManager>();
         }
 
-        diplomacyCountry.text = selectedCountry.countryName;
-        diplomacyGovernment.text = selectedCountry.government.governmentName;
-        List<string> enemies = warManager.GetEnemiesOf(selectedCountry.countryTag);
-        if (enemies.Count > 0)
+        public void updateProvincePanel()
         {
-            string printedEnemies = "";
-            foreach (string enemy in enemies) printedEnemies += enemy + ", ";
-            gui.updateText(diplomacyAtWar, "At war with: ", printedEnemies);
+            provinceName.text = clickProvince.province.provinceName;
+            gui.updateText(provincePopulation, "Province population: ", clickProvince.province.population.ToString());
+            gui.updateText(provinceOwner, "Owner: ", clickProvince.province.owner);
+            gui.updateText(provinceID, "ID: ", clickProvince.province.id.ToString());
+
+            string printedNeighbours = "";
+            foreach (var n in clickProvince.province.neighbours) printedNeighbours += n.name + ", ";
+            gui.updateText(provinceNeighbours, "Neighbours: ", printedNeighbours);
         }
-        else diplomacyAtWar.text = "At war with no one";
 
-        diplomacyWar.onClick.RemoveAllListeners();
-        if (selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
-    }
+        public void updateBuildingsPanel()
+        {
+            gui.updateText(provinceBuildingCount, "Total buildings: ", clickProvince.province.buildings.Count + "/" + clickProvince.province.buildingLimit.ToString());
 
-    public void updateRecruitmentPanel()
-    {
-        string maxArmy = "", army = "";
-        for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
+            string printedBuildings = "";
+            foreach (Building b in clickProvince.province.buildings) printedBuildings += b + ", ";
+            gui.updateText(provinceBuildingList, "Constructed buildings: ", printedBuildings);
+            btnHandler.isBuilt();
+        }
+
+        public void updateTopBar()
+        {
+            string countryName = "";
+            string money = "", maxMoney = "", population = "", manpower = "";
+            for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
+                {
+                    countryName = gameData.countries[i].countryName;
+                    money = gameData.countries[i].money.ToString();
+                    maxMoney = gameData.countries[i].maxMoney.ToString();
+                    population = gameData.countries[i].population.ToString();
+                    manpower = gameData.countries[i].manpower.ToString();
+                    break;
+                }
+            gui.updateText(topPlayingAs, "Controlling: ", countryName);
+            gui.updateText(topMoney, "Money: ", $"{money} / {maxMoney} (<color=green>+{lastIncome}</color>)");
+            gui.updateText(topTurn, "Turn: ", gameData.turnCount.ToString());
+            gui.updateText(topManpower, "Manpower / Population: ", $"{manpower} / {population}");
+        }
+
+        public void updateTopBar(int income)
+        {
+            lastIncome = income;
+            string countryName = "";
+            string money = "", maxMoney = "", population = "", manpower = "";
+            for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
+                {
+                    countryName = gameData.countries[i].countryName;
+                    money = gameData.countries[i].money.ToString();
+                    maxMoney = gameData.countries[i].maxMoney.ToString();
+                    population = gameData.countries[i].population.ToString();
+                    manpower = gameData.countries[i].manpower.ToString();
+                    break;
+                }
+            gui.updateText(topPlayingAs, "Controlling: ", countryName);
+            gui.updateText(topMoney, "Money: ", $"{money} / {maxMoney} (<color=green>+{income}</color>)");
+            gui.updateText(topTurn, "Turn: ", gameData.turnCount.ToString());
+            gui.updateText(topManpower, "Manpower / Population: ", $"{manpower} / {population}");
+        }
+
+        public void updateDiplomacyPanel()
+        {
+            Country selectedCountry = gameData.countries.FirstOrDefault(c => c.countryTag == clickProvince.province.owner);
+            if (selectedCountry == null) return;
+
+            diplomacyRelations.text = "Peace";
+
+            foreach (War war in gameData.wars)
             {
-                army = gameData.countries[i].currentArmy.ToString();
-                maxArmy = gameData.countries[i].maxArmy.ToString();
-                break;
+                if ((war.offenders.Contains(selectedCountry.countryTag) || war.defenders.Contains(selectedCountry.countryTag))
+                    && (war.offenders.Contains(gameData.playingAsTag) || war.defenders.Contains(gameData.playingAsTag)))
+                    diplomacyRelations.text = "At war";
             }
-        gui.updateText(armyMax, "Army: ", $"{army} / {maxArmy}");
+
+            diplomacyCountry.text = selectedCountry.countryName;
+            diplomacyGovernment.text = selectedCountry.government.governmentName;
+            List<string> enemies = warManager.GetEnemiesOf(selectedCountry.countryTag);
+            if (enemies.Count > 0)
+            {
+                string printedEnemies = "";
+                foreach (string enemy in enemies) printedEnemies += enemy + ", ";
+                gui.updateText(diplomacyAtWar, "At war with: ", printedEnemies);
+            }
+            else diplomacyAtWar.text = "At war with no one";
+
+            diplomacyWar.onClick.RemoveAllListeners();
+            if (selectedCountry.countryTag != gameData.playingAsTag) diplomacyWar.onClick.AddListener(() => countryAction.DeclareWar(gameData.playingAsTag, selectedCountry.countryTag));
+        }
+
+        public void updateRecruitmentPanel()
+        {
+            string maxArmy = "", army = "";
+            for (int i = 0; i < gameData.countries.Count; i++) if (gameData.countries[i].countryTag == gameData.playingAsTag)
+                {
+                    army = gameData.countries[i].currentArmy.ToString();
+                    maxArmy = gameData.countries[i].maxArmy.ToString();
+                    break;
+                }
+            gui.updateText(armyMax, "Army: ", $"{army} / {maxArmy}");
+        }
     }
 }

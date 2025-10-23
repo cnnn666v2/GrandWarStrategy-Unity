@@ -1,7 +1,10 @@
-[System.Serializable]
-public class Barracks : Building
+namespace GrandWarStrategy.Buildings
 {
-    public int maxSoldiers;
-    public int maxRecruit;
-    public int costRecruit;
+    [System.Serializable]
+    public class Barracks : Building
+    {
+        public int maxSoldiers;
+        public int maxRecruit;
+        public int costRecruit;
+    }
 }

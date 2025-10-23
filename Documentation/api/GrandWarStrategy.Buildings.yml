@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Buildings
+  commentId: N:GrandWarStrategy.Buildings
+  id: GrandWarStrategy.Buildings
+  children:
+  - GrandWarStrategy.Buildings.Bank
+  - GrandWarStrategy.Buildings.Barracks
+  - GrandWarStrategy.Buildings.Building
+  - GrandWarStrategy.Buildings.Market
+  langs:
+  - csharp
+  - vb
+  name: GrandWarStrategy.Buildings
+  nameWithType: GrandWarStrategy.Buildings
+  fullName: GrandWarStrategy.Buildings
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: GrandWarStrategy.Buildings.Barracks
+  commentId: T:GrandWarStrategy.Buildings.Barracks
+  name: Barracks
+  nameWithType: Barracks
+  fullName: GrandWarStrategy.Buildings.Barracks
+- uid: GrandWarStrategy.Buildings.Bank
+  commentId: T:GrandWarStrategy.Buildings.Bank
+  name: Bank
+  nameWithType: Bank
+  fullName: GrandWarStrategy.Buildings.Bank
+- uid: GrandWarStrategy.Buildings.Market
+  commentId: T:GrandWarStrategy.Buildings.Market
+  name: Market
+  nameWithType: Market
+  fullName: GrandWarStrategy.Buildings.Market
+- uid: GrandWarStrategy.Buildings.Building
+  commentId: T:GrandWarStrategy.Buildings.Building
+  parent: GrandWarStrategy.Buildings
+  name: Building
+  nameWithType: Building
+  fullName: GrandWarStrategy.Buildings.Building
+- uid: GrandWarStrategy.Buildings
+  commentId: N:GrandWarStrategy.Buildings
+  name: GrandWarStrategy.Buildings
+  nameWithType: GrandWarStrategy.Buildings
+  fullName: GrandWarStrategy.Buildings
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Buildings
+    name: Buildings
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Buildings
+    name: Buildings

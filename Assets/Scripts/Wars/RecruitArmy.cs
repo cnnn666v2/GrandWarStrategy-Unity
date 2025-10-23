@@ -1,95 +1,100 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using GrandWarStrategy.Province;
+using GrandWarStrategy.Division;
 
-public class RecruitArmy : MonoBehaviour
+namespace GrandWarStrategy.Logic
 {
-    GameData gameData;
-    ClickProvince clickProvince;
-    [SerializeField] TMP_InputField inputField;
-    [SerializeField] GameObject armyPrefab;
-    [SerializeField] Transform armiesParent;
-    //private bool selectMode = false;
-    //public Transform selectedProvince;
-
-    //public float maxDistance = 100f;
-    //public LayerMask hitLayers = 6;
-
-    void Start()
+    public class RecruitArmy : MonoBehaviour
     {
-        gameData = GetComponent<GameData>();
-        clickProvince = GetComponent<ClickProvince>();
-    }
+        GameData gameData;
+        ClickProvince clickProvince;
+        [SerializeField] TMP_InputField inputField;
+        [SerializeField] GameObject armyPrefab;
+        [SerializeField] Transform armiesParent;
+        //private bool selectMode = false;
+        //public Transform selectedProvince;
 
-    public void PerformRecruit()
-    {
-        int amount = int.Parse(inputField.text);
-        int cost = amount * 10;
-        int maintenance = amount * 2;
-        int turns = 2;
-        Transform placement = clickProvince.province.GetComponent<Transform>();
+        //public float maxDistance = 100f;
+        //public LayerMask hitLayers = 6;
 
-        gameData.trainingDivisions.Add(new TrainingDivisions(amount, cost, maintenance, turns, placement));
-        //Recruit(amount, cost, maintenance);
-    }
-
-    //TODO move Recruit() from here over to TurnManager
-    public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince)
-    {
-        //selectedProvince = clickProvince.province.GetComponent<Transform>();
-        if (!selectedProvince) return;
-
-        Country country = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
-        if ((country.currentArmy + soldiers) <= country.maxArmy && country.money >= cost)
+        void Start()
         {
-            country.currentArmy += soldiers;
-            country.money -= cost;
-            country.manpower -= soldiers;
-            //selectedProvince.housingArmy = soldiers;
-
-            Vector3 center = selectedProvince.GetComponent<Renderer>().bounds.center;
-
-            GameObject army = Instantiate(armyPrefab, new Vector3(center.x, armiesParent.position.y, center.z), Quaternion.identity, armiesParent);
-            army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
-            army.GetComponent<Transform>().Find("BackgroundImg").GetComponent<SpriteRenderer>().color = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag).color;
-            Army armyData = army.GetComponent<Army>();
-            armyData.soldiers = soldiers;
-            armyData.stayingIn = selectedProvince.GetComponent<ProvinceData>();
-            armyData.owner = gameData.playingAsTag;
-            armyData.maintenance = maintenance;
-            selectedProvince.GetComponent<ProvinceData>().AddArmy(armyData);
+            gameData = GetComponent<GameData>();
+            clickProvince = GetComponent<ClickProvince>();
         }
-    }
 
-    public void SelectProvince()
-    {
-        clickProvince.clickMode = ClickMode.province;
-    }
-
-    /*void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && selectMode)
+        public void PerformRecruit()
         {
-            if (EventSystem.current.IsPointerOverGameObject()) return;
+            int amount = int.Parse(inputField.text);
+            int cost = amount * 10;
+            int maintenance = amount * 2;
+            int turns = 2;
+            Transform placement = clickProvince.province.GetComponent<Transform>();
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
+            gameData.trainingDivisions.Add(new TrainingDivisions(amount, cost, maintenance, turns, placement));
+            //Recruit(amount, cost, maintenance);
+        }
+
+        //TODO move Recruit() from here over to TurnManager
+        public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince)
+        {
+            //selectedProvince = clickProvince.province.GetComponent<Transform>();
+            if (!selectedProvince) return;
+
+            Country country = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag);
+            if ((country.currentArmy + soldiers) <= country.maxArmy && country.money >= cost)
             {
-                Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
-                if (hit.collider.tag != "province")
+                country.currentArmy += soldiers;
+                country.money -= cost;
+                country.manpower -= soldiers;
+                //selectedProvince.housingArmy = soldiers;
+
+                Vector3 center = selectedProvince.GetComponent<Renderer>().bounds.center;
+
+                GameObject army = Instantiate(armyPrefab, new Vector3(center.x, armiesParent.position.y, center.z), Quaternion.identity, armiesParent);
+                army.GetComponentInChildren<TMP_Text>().text = soldiers.ToString();
+                army.GetComponent<Transform>().Find("BackgroundImg").GetComponent<SpriteRenderer>().color = gameData.countries.FirstOrDefault(c => c.countryTag == gameData.playingAsTag).color;
+                Army armyData = army.GetComponent<Army>();
+                armyData.soldiers = soldiers;
+                armyData.stayingIn = selectedProvince.GetComponent<ProvinceData>();
+                armyData.owner = gameData.playingAsTag;
+                armyData.maintenance = maintenance;
+                selectedProvince.GetComponent<ProvinceData>().AddArmy(armyData);
+            }
+        }
+
+        public void SelectProvince()
+        {
+            clickProvince.clickMode = ClickMode.province;
+        }
+
+        /*void Update()
+        {
+            if (Input.GetMouseButtonDown(0) && selectMode)
+            {
+                if (EventSystem.current.IsPointerOverGameObject()) return;
+
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, hitLayers))
                 {
-                    Debug.Log("Hit object isn't a \"province\" tag");
-                    return;
-                }
+                    Debug.Log("Hit: " + hit.collider.name + " at " + hit.point);
+                    if (hit.collider.tag != "province")
+                    {
+                        Debug.Log("Hit object isn't a \"province\" tag");
+                        return;
+                    }
 
-                selectedProvince = hit.collider.GetComponent<Transform>();
-                Debug.Log($"nigga Selected: {selectedProvince.GetComponent<ProvinceInformation>().id}");
+                    selectedProvince = hit.collider.GetComponent<Transform>();
+                    Debug.Log($"nigga Selected: {selectedProvince.GetComponent<ProvinceInformation>().id}");
+                }
+                else
+                {
+                    Debug.Log("No nigga");
+                }
+                selectMode = false;
             }
-            else
-            {
-                Debug.Log("No nigga");
-            }
-            selectMode = false;
-        }
-    }*/
+        }*/
+    }
 }

@@ -1,11 +1,15 @@
 using UnityEngine;
+using GrandWarStrategy.Province;
 
-public class Army : MonoBehaviour
+namespace GrandWarStrategy.Division
 {
-    public int soldiers;
-    public ProvinceData stayingIn;
-    public string owner;
-    public int maintenance;
-}
+    public class Army : MonoBehaviour
+    {
+        public int soldiers;
+        public ProvinceData stayingIn;
+        public string owner;
+        public int maintenance;
+    }
 
-public enum ArmyType {infantry, tank, artillery}
+    public enum ArmyType { infantry, tank, artillery }
+}

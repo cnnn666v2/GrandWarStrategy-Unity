@@ -2,44 +2,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using GrandWarStrategy.Province;
+using GrandWarStrategy.Logic;
 
-public class ButtonHandler : MonoBehaviour
+namespace GrandWarStrategy.Utility
 {
-    [SerializeField] List<Button> constructionButtons;
-    ProvinceManager provinceManager;
-    BuildingsManager buildingsManager;
-    GUIUpdater guiUpdater;
-
-    void Start()
+    public class ButtonHandler : MonoBehaviour
     {
-        provinceManager = GetComponent<ProvinceManager>();
-        buildingsManager = GetComponent<BuildingsManager>();
-        guiUpdater = GetComponent<GUIUpdater>();
+        [SerializeField] List<Button> constructionButtons;
+        ProvinceManager provinceManager;
+        BuildingsManager buildingsManager;
+        GUIUpdater guiUpdater;
 
-        for (int i = 0; i < constructionButtons.Count; i++)
+        void Start()
         {
-            int index = i;
-            TMP_Text btnText = constructionButtons[index].GetComponentInChildren<TMP_Text>();
-            btnText.text = $"Build {buildingsManager.buildings[index].buildingName} - {buildingsManager.buildings[index].cost} money, {buildingsManager.buildings[index].constructionTime} turns";
+            provinceManager = GetComponent<ProvinceManager>();
+            buildingsManager = GetComponent<BuildingsManager>();
+            guiUpdater = GetComponent<GUIUpdater>();
 
-            constructionButtons[i].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[index]));
-            constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
-            constructionButtons[i].onClick.AddListener(() => guiUpdater.updateTopBar());
-        }
-    }
-
-    public void isBuilt()
-    {
-        for (int i = 0; i < constructionButtons.Count; i++)
-        {
-            int index = i;
-            if (provinceManager.isConstructedBuilding(buildingsManager.buildings[index]))
+            for (int i = 0; i < constructionButtons.Count; i++)
             {
-                constructionButtons[index].interactable = false;
+                int index = i;
+                TMP_Text btnText = constructionButtons[index].GetComponentInChildren<TMP_Text>();
+                btnText.text = $"Build {buildingsManager.buildings[index].buildingName} - {buildingsManager.buildings[index].cost} money, {buildingsManager.buildings[index].constructionTime} turns";
+
+                constructionButtons[i].onClick.AddListener(() => provinceManager.constructBuilding(buildingsManager.buildings[index]));
+                constructionButtons[i].onClick.AddListener(() => guiUpdater.updateBuildingsPanel());
+                constructionButtons[i].onClick.AddListener(() => guiUpdater.updateTopBar());
             }
-            else
+        }
+
+        public void isBuilt()
+        {
+            for (int i = 0; i < constructionButtons.Count; i++)
             {
-                constructionButtons[index].interactable = true;
+                int index = i;
+                if (provinceManager.isConstructedBuilding(buildingsManager.buildings[index]))
+                {
+                    constructionButtons[index].interactable = false;
+                }
+                else
+                {
+                    constructionButtons[index].interactable = true;
+                }
             }
         }
     }

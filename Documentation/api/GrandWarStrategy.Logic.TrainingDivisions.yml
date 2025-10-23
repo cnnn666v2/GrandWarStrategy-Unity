@@ -1,37 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.War
-  commentId: T:Global.War
-  id: War
-  parent: Global
+- uid: GrandWarStrategy.Logic.TrainingDivisions
+  commentId: T:GrandWarStrategy.Logic.TrainingDivisions
+  id: TrainingDivisions
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.War.#ctor(System.String,List{System.String},List{System.String})
-  - Global.War.defenders
-  - Global.War.name
-  - Global.War.offenders
+  - GrandWarStrategy.Logic.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  - GrandWarStrategy.Logic.TrainingDivisions.amount
+  - GrandWarStrategy.Logic.TrainingDivisions.cost
+  - GrandWarStrategy.Logic.TrainingDivisions.maintenance
+  - GrandWarStrategy.Logic.TrainingDivisions.trainingDestination
+  - GrandWarStrategy.Logic.TrainingDivisions.trainingTime
   langs:
   - csharp
   - vb
-  name: War
-  nameWithType: War
-  fullName: War
+  name: TrainingDivisions
+  nameWithType: TrainingDivisions
+  fullName: GrandWarStrategy.Logic.TrainingDivisions
   type: Class
   source:
-    id: War
+    id: TrainingDivisions
     path: ''
-    startLine: 977
+    startLine: 97
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: >-
-      [Serializable]
-
-      public class War
-    content.vb: >-
-      <Serializable>
-
-      Public Class War
+    content: public class TrainingDivisions
+    content.vb: Public Class TrainingDivisions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,113 +38,175 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
-- uid: Global.War.name
-  commentId: F:Global.War.name
-  id: name
-  parent: Global.War
+- uid: GrandWarStrategy.Logic.TrainingDivisions.amount
+  commentId: F:GrandWarStrategy.Logic.TrainingDivisions.amount
+  id: amount
+  parent: GrandWarStrategy.Logic.TrainingDivisions
   langs:
   - csharp
   - vb
-  name: name
-  nameWithType: War.name
-  fullName: War.name
+  name: amount
+  nameWithType: TrainingDivisions.amount
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.amount
   type: Field
   source:
-    id: name
+    id: amount
     path: ''
-    startLine: 980
+    startLine: 99
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public string name
+    content: public int amount
     return:
-      type: System.String
-    content.vb: Public name As String
-- uid: Global.War.offenders
-  commentId: F:Global.War.offenders
-  id: offenders
-  parent: Global.War
+      type: System.Int32
+    content.vb: Public amount As Integer
+- uid: GrandWarStrategy.Logic.TrainingDivisions.cost
+  commentId: F:GrandWarStrategy.Logic.TrainingDivisions.cost
+  id: cost
+  parent: GrandWarStrategy.Logic.TrainingDivisions
   langs:
   - csharp
   - vb
-  name: offenders
-  nameWithType: War.offenders
-  fullName: War.offenders
+  name: cost
+  nameWithType: TrainingDivisions.cost
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.cost
   type: Field
   source:
-    id: offenders
+    id: cost
     path: ''
-    startLine: 981
+    startLine: 100
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public List<string> offenders
+    content: public int cost
     return:
-      type: Global.List{System.String}
-    content.vb: Public offenders As List(Of String)
-- uid: Global.War.defenders
-  commentId: F:Global.War.defenders
-  id: defenders
-  parent: Global.War
+      type: System.Int32
+    content.vb: Public cost As Integer
+- uid: GrandWarStrategy.Logic.TrainingDivisions.maintenance
+  commentId: F:GrandWarStrategy.Logic.TrainingDivisions.maintenance
+  id: maintenance
+  parent: GrandWarStrategy.Logic.TrainingDivisions
   langs:
   - csharp
   - vb
-  name: defenders
-  nameWithType: War.defenders
-  fullName: War.defenders
+  name: maintenance
+  nameWithType: TrainingDivisions.maintenance
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.maintenance
   type: Field
   source:
-    id: defenders
+    id: maintenance
     path: ''
-    startLine: 982
+    startLine: 101
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public List<string> defenders
+    content: public int maintenance
     return:
-      type: Global.List{System.String}
-    content.vb: Public defenders As List(Of String)
-- uid: Global.War.#ctor(System.String,List{System.String},List{System.String})
-  commentId: M:Global.War.#ctor(System.String,List{System.String},List{System.String})
-  id: '#ctor(System.String,List{System.String},List{System.String})'
-  parent: Global.War
+      type: System.Int32
+    content.vb: Public maintenance As Integer
+- uid: GrandWarStrategy.Logic.TrainingDivisions.trainingTime
+  commentId: F:GrandWarStrategy.Logic.TrainingDivisions.trainingTime
+  id: trainingTime
+  parent: GrandWarStrategy.Logic.TrainingDivisions
   langs:
   - csharp
   - vb
-  name: War(string, List<string>, List<string>)
-  nameWithType: War.War(string, List<string>, List<string>)
-  fullName: War.War(string, List<string>, List<string>)
+  name: trainingTime
+  nameWithType: TrainingDivisions.trainingTime
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.trainingTime
+  type: Field
+  source:
+    id: trainingTime
+    path: ''
+    startLine: 102
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: public int trainingTime
+    return:
+      type: System.Int32
+    content.vb: Public trainingTime As Integer
+- uid: GrandWarStrategy.Logic.TrainingDivisions.trainingDestination
+  commentId: F:GrandWarStrategy.Logic.TrainingDivisions.trainingDestination
+  id: trainingDestination
+  parent: GrandWarStrategy.Logic.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: trainingDestination
+  nameWithType: TrainingDivisions.trainingDestination
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.trainingDestination
+  type: Field
+  source:
+    id: trainingDestination
+    path: ''
+    startLine: 103
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: public Transform trainingDestination
+    return:
+      type: Global.Transform
+    content.vb: Public trainingDestination As Transform
+- uid: GrandWarStrategy.Logic.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  commentId: M:GrandWarStrategy.Logic.TrainingDivisions.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,Transform)'
+  parent: GrandWarStrategy.Logic.TrainingDivisions
+  langs:
+  - csharp
+  - vb
+  name: TrainingDivisions(int, int, int, int, Transform)
+  nameWithType: TrainingDivisions.TrainingDivisions(int, int, int, int, Transform)
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.TrainingDivisions(int, int, int, int, Transform)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 984
+    startLine: 105
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public War(string name, List<string> offenders, List<string> defenders)
+    content: public TrainingDivisions(int amount, int cost, int maintenance, int trainingTime, Transform trainingDestination)
     parameters:
-    - id: name
-      type: System.String
-    - id: offenders
-      type: Global.List{System.String}
-    - id: defenders
-      type: Global.List{System.String}
-    content.vb: Public Sub New(name As String, offenders As List(Of String), defenders As List(Of String))
-  overload: Global.War.#ctor*
-  nameWithType.vb: War.New(String, List(Of String), List(Of String))
-  fullName.vb: War.New(String, List(Of String), List(Of String))
-  name.vb: New(String, List(Of String), List(Of String))
+    - id: amount
+      type: System.Int32
+    - id: cost
+      type: System.Int32
+    - id: maintenance
+      type: System.Int32
+    - id: trainingTime
+      type: System.Int32
+    - id: trainingDestination
+      type: Global.Transform
+    content.vb: Public Sub New(amount As Integer, cost As Integer, maintenance As Integer, trainingTime As Integer, trainingDestination As Transform)
+  overload: GrandWarStrategy.Logic.TrainingDivisions.#ctor*
+  nameWithType.vb: TrainingDivisions.New(Integer, Integer, Integer, Integer, Transform)
+  fullName.vb: GrandWarStrategy.Logic.TrainingDivisions.New(Integer, Integer, Integer, Integer, Transform)
+  name.vb: New(Integer, Integer, Integer, Integer, Transform)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -353,74 +411,26 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Global.List{System.String}
-  commentId: '!:Global.List{System.String}'
-  definition: Global.List`1
-  name: List<string>
-  nameWithType: List<string>
-  fullName: List<string>
-  nameWithType.vb: List(Of String)
-  fullName.vb: List(Of String)
-  name.vb: List(Of String)
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-  - name: )
-- uid: Global.List`1
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Transform
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - name: ''
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: ''
-  - name: )
-- uid: Global.War.#ctor*
-  commentId: Overload:Global.War.#ctor
-  name: War
-  nameWithType: War.War
-  fullName: War.War
-  nameWithType.vb: War.New
-  fullName.vb: War.New
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: GrandWarStrategy.Logic.TrainingDivisions.#ctor*
+  commentId: Overload:GrandWarStrategy.Logic.TrainingDivisions.#ctor
+  name: TrainingDivisions
+  nameWithType: TrainingDivisions.TrainingDivisions
+  fullName: GrandWarStrategy.Logic.TrainingDivisions.TrainingDivisions
+  nameWithType.vb: TrainingDivisions.New
+  fullName.vb: GrandWarStrategy.Logic.TrainingDivisions.New
   name.vb: New

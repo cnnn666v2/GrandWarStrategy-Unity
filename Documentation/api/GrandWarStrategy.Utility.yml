@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Utility
+  commentId: N:GrandWarStrategy.Utility
+  id: GrandWarStrategy.Utility
+  children:
+  - GrandWarStrategy.Utility.ButtonHandler
+  - GrandWarStrategy.Utility.GUIChanges
+  - GrandWarStrategy.Utility.GUIUpdater
+  - GrandWarStrategy.Utility.SelectCountry
+  langs:
+  - csharp
+  - vb
+  name: GrandWarStrategy.Utility
+  nameWithType: GrandWarStrategy.Utility
+  fullName: GrandWarStrategy.Utility
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: GrandWarStrategy.Utility.SelectCountry
+  commentId: T:GrandWarStrategy.Utility.SelectCountry
+  name: SelectCountry
+  nameWithType: SelectCountry
+  fullName: GrandWarStrategy.Utility.SelectCountry
+- uid: GrandWarStrategy.Utility.GUIChanges
+  commentId: T:GrandWarStrategy.Utility.GUIChanges
+  name: GUIChanges
+  nameWithType: GUIChanges
+  fullName: GrandWarStrategy.Utility.GUIChanges
+- uid: GrandWarStrategy.Utility.ButtonHandler
+  commentId: T:GrandWarStrategy.Utility.ButtonHandler
+  name: ButtonHandler
+  nameWithType: ButtonHandler
+  fullName: GrandWarStrategy.Utility.ButtonHandler
+- uid: GrandWarStrategy.Utility.GUIUpdater
+  commentId: T:GrandWarStrategy.Utility.GUIUpdater
+  name: GUIUpdater
+  nameWithType: GUIUpdater
+  fullName: GrandWarStrategy.Utility.GUIUpdater

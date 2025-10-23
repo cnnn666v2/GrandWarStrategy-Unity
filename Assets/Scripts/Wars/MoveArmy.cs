@@ -1,40 +1,45 @@
 using UnityEngine;
+using GrandWarStrategy.Province;
+using GrandWarStrategy.Division;
 
-public class MoveArmy : MonoBehaviour
+namespace GrandWarStrategy.Logic
 {
-    ClickProvince clickProvince;
-    GameData gameData;
-    WarManager warManager;
-    //RecruitArmy recruitArmy;
-
-    void Start()
+    public class MoveArmy : MonoBehaviour
     {
-        clickProvince = GetComponent<ClickProvince>();
-        gameData = GetComponent<GameData>();
-        warManager = GetComponent<WarManager>();
-        //recruitArmy = GetComponent<RecruitArmy>();
-    }
+        ClickProvince clickProvince;
+        GameData gameData;
+        WarManager warManager;
+        //RecruitArmy recruitArmy;
 
-    public void TransportArmy()
-    {
-        //ProvinceInformation destination = recruitArmy.selectedProvince.GetComponent<ProvinceInformation>();
-        ProvinceData destination = clickProvince.province;
-        Transform armyPosition = clickProvince.selectedArmy.GetComponent<Transform>();
-        Army army = clickProvince.selectedArmy.GetComponent<Army>();
-
-        if (destination.owner != gameData.playingAsTag && !warManager.AreAtWar(gameData.playingAsTag, destination.owner))
+        void Start()
         {
-            Debug.Log("not owner or not at war");
-            return;
+            clickProvince = GetComponent<ClickProvince>();
+            gameData = GetComponent<GameData>();
+            warManager = GetComponent<WarManager>();
+            //recruitArmy = GetComponent<RecruitArmy>();
         }
 
-        if (!army.stayingIn.neighbours.Contains(destination)) return;
+        public void TransportArmy()
+        {
+            //ProvinceInformation destination = recruitArmy.selectedProvince.GetComponent<ProvinceInformation>();
+            ProvinceData destination = clickProvince.province;
+            Transform armyPosition = clickProvince.selectedArmy.GetComponent<Transform>();
+            Army army = clickProvince.selectedArmy.GetComponent<Army>();
 
-        int travelTime = 2;
-        gameData.movingDivisions.Add(new MovingDivisions(army, army.stayingIn, destination, travelTime));
-        
-        /*Vector3 destinationVector = destination.GetComponent<Renderer>().bounds.center;
-        clickProvince.selectedArmy.GetComponent<Army>().stayingIn = destination;
-        armyPosition.position = new Vector3(destinationVector.x, armyPosition.position.y, destinationVector.z);*/
+            if (destination.owner != gameData.playingAsTag && !warManager.AreAtWar(gameData.playingAsTag, destination.owner))
+            {
+                Debug.Log("not owner or not at war");
+                return;
+            }
+
+            if (!army.stayingIn.neighbours.Contains(destination)) return;
+
+            int travelTime = 2;
+            gameData.movingDivisions.Add(new MovingDivisions(army, army.stayingIn, destination, travelTime));
+
+            /*Vector3 destinationVector = destination.GetComponent<Renderer>().bounds.center;
+            clickProvince.selectedArmy.GetComponent<Army>().stayingIn = destination;
+            armyPosition.position = new Vector3(destinationVector.x, armyPosition.position.y, destinationVector.z);*/
+        }
     }
 }

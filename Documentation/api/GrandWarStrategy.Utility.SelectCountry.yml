@@ -1,60 +1,76 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.SelectCountry
-  commentId: T:Global.SelectCountry
+- uid: GrandWarStrategy.Utility.SelectCountry
+  commentId: T:GrandWarStrategy.Utility.SelectCountry
   id: SelectCountry
-  parent: Global
+  parent: GrandWarStrategy.Utility
   children:
-  - Global.SelectCountry.SelectCountryTag(System.String)
+  - GrandWarStrategy.Utility.SelectCountry.SelectCountryTag(System.String)
   langs:
   - csharp
   - vb
   name: SelectCountry
   nameWithType: SelectCountry
-  fullName: SelectCountry
+  fullName: GrandWarStrategy.Utility.SelectCountry
   type: Class
   source:
     id: SelectCountry
     path: ''
-    startLine: 2
+    startLine: 5
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Utility
   syntax:
     content: 'public class SelectCountry : MonoBehaviour'
     content.vb: Public Class SelectCountry Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.SelectCountry.SelectCountryTag(System.String)
-  commentId: M:Global.SelectCountry.SelectCountryTag(System.String)
+- uid: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag(System.String)
+  commentId: M:GrandWarStrategy.Utility.SelectCountry.SelectCountryTag(System.String)
   id: SelectCountryTag(System.String)
-  parent: Global.SelectCountry
+  parent: GrandWarStrategy.Utility.SelectCountry
   langs:
   - csharp
   - vb
   name: SelectCountryTag(string)
   nameWithType: SelectCountry.SelectCountryTag(string)
-  fullName: SelectCountry.SelectCountryTag(string)
+  fullName: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag(string)
   type: Method
   source:
     id: SelectCountryTag
     path: ''
-    startLine: 13
+    startLine: 16
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Utility
   syntax:
     content: public void SelectCountryTag(string countryTag)
     parameters:
     - id: countryTag
       type: System.String
     content.vb: Public Sub SelectCountryTag(countryTag As String)
-  overload: Global.SelectCountry.SelectCountryTag*
+  overload: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag*
   nameWithType.vb: SelectCountry.SelectCountryTag(String)
-  fullName.vb: SelectCountry.SelectCountryTag(String)
+  fullName.vb: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag(String)
   name.vb: SelectCountryTag(String)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Utility
+  commentId: N:GrandWarStrategy.Utility
+  name: GrandWarStrategy.Utility
+  nameWithType: GrandWarStrategy.Utility
+  fullName: GrandWarStrategy.Utility
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -71,11 +87,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.SelectCountry.SelectCountryTag*
-  commentId: Overload:Global.SelectCountry.SelectCountryTag
+- uid: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag*
+  commentId: Overload:GrandWarStrategy.Utility.SelectCountry.SelectCountryTag
   name: SelectCountryTag
   nameWithType: SelectCountry.SelectCountryTag
-  fullName: SelectCountry.SelectCountryTag
+  fullName: GrandWarStrategy.Utility.SelectCountry.SelectCountryTag
 - uid: System.String
   commentId: T:System.String
   parent: System

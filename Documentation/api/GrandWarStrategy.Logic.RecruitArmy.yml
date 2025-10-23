@@ -1,72 +1,72 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.RecruitArmy
-  commentId: T:Global.RecruitArmy
+- uid: GrandWarStrategy.Logic.RecruitArmy
+  commentId: T:GrandWarStrategy.Logic.RecruitArmy
   id: RecruitArmy
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.RecruitArmy.PerformRecruit
-  - Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
-  - Global.RecruitArmy.SelectProvince
+  - GrandWarStrategy.Logic.RecruitArmy.PerformRecruit
+  - GrandWarStrategy.Logic.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  - GrandWarStrategy.Logic.RecruitArmy.SelectProvince
   langs:
   - csharp
   - vb
   name: RecruitArmy
   nameWithType: RecruitArmy
-  fullName: RecruitArmy
+  fullName: GrandWarStrategy.Logic.RecruitArmy
   type: Class
   source:
     id: RecruitArmy
     path: ''
-    startLine: 1140
+    startLine: 1075
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class RecruitArmy : MonoBehaviour'
     content.vb: Public Class RecruitArmy Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.RecruitArmy.PerformRecruit
-  commentId: M:Global.RecruitArmy.PerformRecruit
+- uid: GrandWarStrategy.Logic.RecruitArmy.PerformRecruit
+  commentId: M:GrandWarStrategy.Logic.RecruitArmy.PerformRecruit
   id: PerformRecruit
-  parent: Global.RecruitArmy
+  parent: GrandWarStrategy.Logic.RecruitArmy
   langs:
   - csharp
   - vb
   name: PerformRecruit()
   nameWithType: RecruitArmy.PerformRecruit()
-  fullName: RecruitArmy.PerformRecruit()
+  fullName: GrandWarStrategy.Logic.RecruitArmy.PerformRecruit()
   type: Method
   source:
     id: PerformRecruit
     path: ''
-    startLine: 1159
+    startLine: 1094
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public void PerformRecruit()
     content.vb: Public Sub PerformRecruit()
-  overload: Global.RecruitArmy.PerformRecruit*
-- uid: Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
-  commentId: M:Global.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  overload: GrandWarStrategy.Logic.RecruitArmy.PerformRecruit*
+- uid: GrandWarStrategy.Logic.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
+  commentId: M:GrandWarStrategy.Logic.RecruitArmy.Recruit(System.Int32,System.Int32,System.Int32,Transform)
   id: Recruit(System.Int32,System.Int32,System.Int32,Transform)
-  parent: Global.RecruitArmy
+  parent: GrandWarStrategy.Logic.RecruitArmy
   langs:
   - csharp
   - vb
   name: Recruit(int, int, int, Transform)
   nameWithType: RecruitArmy.Recruit(int, int, int, Transform)
-  fullName: RecruitArmy.Recruit(int, int, int, Transform)
+  fullName: GrandWarStrategy.Logic.RecruitArmy.Recruit(int, int, int, Transform)
   type: Method
   source:
     id: Recruit
     path: ''
-    startLine: 1172
+    startLine: 1107
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public void Recruit(int soldiers, int cost, int maintenance, Transform selectedProvince)
     parameters:
@@ -79,34 +79,50 @@ items:
     - id: selectedProvince
       type: Global.Transform
     content.vb: Public Sub Recruit(soldiers As Integer, cost As Integer, maintenance As Integer, selectedProvince As Transform)
-  overload: Global.RecruitArmy.Recruit*
+  overload: GrandWarStrategy.Logic.RecruitArmy.Recruit*
   nameWithType.vb: RecruitArmy.Recruit(Integer, Integer, Integer, Transform)
-  fullName.vb: RecruitArmy.Recruit(Integer, Integer, Integer, Transform)
+  fullName.vb: GrandWarStrategy.Logic.RecruitArmy.Recruit(Integer, Integer, Integer, Transform)
   name.vb: Recruit(Integer, Integer, Integer, Transform)
-- uid: Global.RecruitArmy.SelectProvince
-  commentId: M:Global.RecruitArmy.SelectProvince
+- uid: GrandWarStrategy.Logic.RecruitArmy.SelectProvince
+  commentId: M:GrandWarStrategy.Logic.RecruitArmy.SelectProvince
   id: SelectProvince
-  parent: Global.RecruitArmy
+  parent: GrandWarStrategy.Logic.RecruitArmy
   langs:
   - csharp
   - vb
   name: SelectProvince()
   nameWithType: RecruitArmy.SelectProvince()
-  fullName: RecruitArmy.SelectProvince()
+  fullName: GrandWarStrategy.Logic.RecruitArmy.SelectProvince()
   type: Method
   source:
     id: SelectProvince
     path: ''
-    startLine: 1199
+    startLine: 1134
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public void SelectProvince()
     content.vb: Public Sub SelectProvince()
-  overload: Global.RecruitArmy.SelectProvince*
+  overload: GrandWarStrategy.Logic.RecruitArmy.SelectProvince*
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -123,16 +139,16 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.RecruitArmy.PerformRecruit*
-  commentId: Overload:Global.RecruitArmy.PerformRecruit
+- uid: GrandWarStrategy.Logic.RecruitArmy.PerformRecruit*
+  commentId: Overload:GrandWarStrategy.Logic.RecruitArmy.PerformRecruit
   name: PerformRecruit
   nameWithType: RecruitArmy.PerformRecruit
-  fullName: RecruitArmy.PerformRecruit
-- uid: Global.RecruitArmy.Recruit*
-  commentId: Overload:Global.RecruitArmy.Recruit
+  fullName: GrandWarStrategy.Logic.RecruitArmy.PerformRecruit
+- uid: GrandWarStrategy.Logic.RecruitArmy.Recruit*
+  commentId: Overload:GrandWarStrategy.Logic.RecruitArmy.Recruit
   name: Recruit
   nameWithType: RecruitArmy.Recruit
-  fullName: RecruitArmy.Recruit
+  fullName: GrandWarStrategy.Logic.RecruitArmy.Recruit
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -148,8 +164,8 @@ references:
   name: Transform
   nameWithType: Transform
   fullName: Transform
-- uid: Global.RecruitArmy.SelectProvince*
-  commentId: Overload:Global.RecruitArmy.SelectProvince
+- uid: GrandWarStrategy.Logic.RecruitArmy.SelectProvince*
+  commentId: Overload:GrandWarStrategy.Logic.RecruitArmy.SelectProvince
   name: SelectProvince
   nameWithType: RecruitArmy.SelectProvince
-  fullName: RecruitArmy.SelectProvince
+  fullName: GrandWarStrategy.Logic.RecruitArmy.SelectProvince

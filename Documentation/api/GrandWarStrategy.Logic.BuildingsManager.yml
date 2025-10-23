@@ -1,55 +1,71 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.BuildingsManager
-  commentId: T:Global.BuildingsManager
+- uid: GrandWarStrategy.Logic.BuildingsManager
+  commentId: T:GrandWarStrategy.Logic.BuildingsManager
   id: BuildingsManager
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.BuildingsManager.buildings
+  - GrandWarStrategy.Logic.BuildingsManager.buildings
   langs:
   - csharp
   - vb
   name: BuildingsManager
   nameWithType: BuildingsManager
-  fullName: BuildingsManager
+  fullName: GrandWarStrategy.Logic.BuildingsManager
   type: Class
   source:
     id: BuildingsManager
     path: ''
-    startLine: 699
+    startLine: 659
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class BuildingsManager : MonoBehaviour'
     content.vb: Public Class BuildingsManager Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.BuildingsManager.buildings
-  commentId: F:Global.BuildingsManager.buildings
+- uid: GrandWarStrategy.Logic.BuildingsManager.buildings
+  commentId: F:GrandWarStrategy.Logic.BuildingsManager.buildings
   id: buildings
-  parent: Global.BuildingsManager
+  parent: GrandWarStrategy.Logic.BuildingsManager
   langs:
   - csharp
   - vb
   name: buildings
   nameWithType: BuildingsManager.buildings
-  fullName: BuildingsManager.buildings
+  fullName: GrandWarStrategy.Logic.BuildingsManager.buildings
   type: Field
   source:
     id: buildings
     path: ''
-    startLine: 701
+    startLine: 661
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public List<Building> buildings
     return:
       type: Global.List{Building}
     content.vb: Public buildings As List(Of Building)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -82,6 +98,7 @@ references:
   - name: <
   - uid: Global.Building
     name: Building
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: Global.List`1
@@ -92,6 +109,7 @@ references:
   - name: " "
   - uid: Global.Building
     name: Building
+    isExternal: true
   - name: )
 - uid: Global.List`1
   isExternal: true

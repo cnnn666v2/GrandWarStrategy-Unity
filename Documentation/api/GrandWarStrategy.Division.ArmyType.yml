@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Division.ArmyType
+  commentId: T:GrandWarStrategy.Division.ArmyType
+  id: ArmyType
+  parent: GrandWarStrategy.Division
+  children:
+  - GrandWarStrategy.Division.ArmyType.artillery
+  - GrandWarStrategy.Division.ArmyType.infantry
+  - GrandWarStrategy.Division.ArmyType.tank
+  langs:
+  - csharp
+  - vb
+  name: ArmyType
+  nameWithType: ArmyType
+  fullName: GrandWarStrategy.Division.ArmyType
+  type: Enum
+  source:
+    id: ArmyType
+    path: ''
+    startLine: 1065
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Division
+  syntax:
+    content: public enum ArmyType
+    content.vb: Public Enum ArmyType
+- uid: GrandWarStrategy.Division.ArmyType.infantry
+  commentId: F:GrandWarStrategy.Division.ArmyType.infantry
+  id: infantry
+  parent: GrandWarStrategy.Division.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: infantry
+  nameWithType: ArmyType.infantry
+  fullName: GrandWarStrategy.Division.ArmyType.infantry
+  type: Field
+  source:
+    id: infantry
+    path: ''
+    startLine: 1065
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Division
+  syntax:
+    content: infantry = 0
+    return:
+      type: GrandWarStrategy.Division.ArmyType
+- uid: GrandWarStrategy.Division.ArmyType.tank
+  commentId: F:GrandWarStrategy.Division.ArmyType.tank
+  id: tank
+  parent: GrandWarStrategy.Division.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: tank
+  nameWithType: ArmyType.tank
+  fullName: GrandWarStrategy.Division.ArmyType.tank
+  type: Field
+  source:
+    id: tank
+    path: ''
+    startLine: 1065
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Division
+  syntax:
+    content: tank = 1
+    return:
+      type: GrandWarStrategy.Division.ArmyType
+- uid: GrandWarStrategy.Division.ArmyType.artillery
+  commentId: F:GrandWarStrategy.Division.ArmyType.artillery
+  id: artillery
+  parent: GrandWarStrategy.Division.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: artillery
+  nameWithType: ArmyType.artillery
+  fullName: GrandWarStrategy.Division.ArmyType.artillery
+  type: Field
+  source:
+    id: artillery
+    path: ''
+    startLine: 1065
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Division
+  syntax:
+    content: artillery = 2
+    return:
+      type: GrandWarStrategy.Division.ArmyType
+references:
+- uid: GrandWarStrategy.Division
+  commentId: N:GrandWarStrategy.Division
+  name: GrandWarStrategy.Division
+  nameWithType: GrandWarStrategy.Division
+  fullName: GrandWarStrategy.Division
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division
+- uid: GrandWarStrategy.Division.ArmyType
+  commentId: T:GrandWarStrategy.Division.ArmyType
+  parent: GrandWarStrategy.Division
+  name: ArmyType
+  nameWithType: ArmyType
+  fullName: GrandWarStrategy.Division.ArmyType

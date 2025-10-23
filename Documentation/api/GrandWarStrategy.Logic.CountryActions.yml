@@ -1,48 +1,48 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.CountryActions
-  commentId: T:Global.CountryActions
+- uid: GrandWarStrategy.Logic.CountryActions
+  commentId: T:GrandWarStrategy.Logic.CountryActions
   id: CountryActions
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.CountryActions.DeclareWar(System.String,System.String)
+  - GrandWarStrategy.Logic.CountryActions.DeclareWar(System.String,System.String)
   langs:
   - csharp
   - vb
   name: CountryActions
   nameWithType: CountryActions
-  fullName: CountryActions
+  fullName: GrandWarStrategy.Logic.CountryActions
   type: Class
   source:
     id: CountryActions
     path: ''
-    startLine: 1257
+    startLine: 1194
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class CountryActions : MonoBehaviour'
     content.vb: Public Class CountryActions Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.CountryActions.DeclareWar(System.String,System.String)
-  commentId: M:Global.CountryActions.DeclareWar(System.String,System.String)
+- uid: GrandWarStrategy.Logic.CountryActions.DeclareWar(System.String,System.String)
+  commentId: M:GrandWarStrategy.Logic.CountryActions.DeclareWar(System.String,System.String)
   id: DeclareWar(System.String,System.String)
-  parent: Global.CountryActions
+  parent: GrandWarStrategy.Logic.CountryActions
   langs:
   - csharp
   - vb
   name: DeclareWar(string, string)
   nameWithType: CountryActions.DeclareWar(string, string)
-  fullName: CountryActions.DeclareWar(string, string)
+  fullName: GrandWarStrategy.Logic.CountryActions.DeclareWar(string, string)
   type: Method
   source:
     id: DeclareWar
     path: ''
-    startLine: 1265
+    startLine: 1202
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public void DeclareWar(string offender, string defender)
     parameters:
@@ -51,12 +51,28 @@ items:
     - id: defender
       type: System.String
     content.vb: Public Sub DeclareWar(offender As String, defender As String)
-  overload: Global.CountryActions.DeclareWar*
+  overload: GrandWarStrategy.Logic.CountryActions.DeclareWar*
   nameWithType.vb: CountryActions.DeclareWar(String, String)
-  fullName.vb: CountryActions.DeclareWar(String, String)
+  fullName.vb: GrandWarStrategy.Logic.CountryActions.DeclareWar(String, String)
   name.vb: DeclareWar(String, String)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -73,11 +89,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.CountryActions.DeclareWar*
-  commentId: Overload:Global.CountryActions.DeclareWar
+- uid: GrandWarStrategy.Logic.CountryActions.DeclareWar*
+  commentId: Overload:GrandWarStrategy.Logic.CountryActions.DeclareWar
   name: DeclareWar
   nameWithType: CountryActions.DeclareWar
-  fullName: CountryActions.DeclareWar
+  fullName: GrandWarStrategy.Logic.CountryActions.DeclareWar
 - uid: System.String
   commentId: T:System.String
   parent: System

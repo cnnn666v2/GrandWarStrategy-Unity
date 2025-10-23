@@ -1,127 +1,143 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.ClickProvince
-  commentId: T:Global.ClickProvince
+- uid: GrandWarStrategy.Logic.ClickProvince
+  commentId: T:GrandWarStrategy.Logic.ClickProvince
   id: ClickProvince
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.ClickProvince.clickMode
-  - Global.ClickProvince.maxDistance
-  - Global.ClickProvince.province
-  - Global.ClickProvince.selectedArmy
+  - GrandWarStrategy.Logic.ClickProvince.clickMode
+  - GrandWarStrategy.Logic.ClickProvince.maxDistance
+  - GrandWarStrategy.Logic.ClickProvince.province
+  - GrandWarStrategy.Logic.ClickProvince.selectedArmy
   langs:
   - csharp
   - vb
   name: ClickProvince
   nameWithType: ClickProvince
-  fullName: ClickProvince
+  fullName: GrandWarStrategy.Logic.ClickProvince
   type: Class
   source:
     id: ClickProvince
     path: ''
-    startLine: 280
+    startLine: 299
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class ClickProvince : MonoBehaviour'
     content.vb: Public Class ClickProvince Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.ClickProvince.clickMode
-  commentId: F:Global.ClickProvince.clickMode
+- uid: GrandWarStrategy.Logic.ClickProvince.clickMode
+  commentId: F:GrandWarStrategy.Logic.ClickProvince.clickMode
   id: clickMode
-  parent: Global.ClickProvince
+  parent: GrandWarStrategy.Logic.ClickProvince
   langs:
   - csharp
   - vb
   name: clickMode
   nameWithType: ClickProvince.clickMode
-  fullName: ClickProvince.clickMode
+  fullName: GrandWarStrategy.Logic.ClickProvince.clickMode
   type: Field
   source:
     id: clickMode
     path: ''
-    startLine: 282
+    startLine: 301
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public ClickMode clickMode
     return:
-      type: Global.ClickMode
+      type: GrandWarStrategy.Logic.ClickMode
     content.vb: Public clickMode As ClickMode
-- uid: Global.ClickProvince.province
-  commentId: F:Global.ClickProvince.province
+- uid: GrandWarStrategy.Logic.ClickProvince.province
+  commentId: F:GrandWarStrategy.Logic.ClickProvince.province
   id: province
-  parent: Global.ClickProvince
+  parent: GrandWarStrategy.Logic.ClickProvince
   langs:
   - csharp
   - vb
   name: province
   nameWithType: ClickProvince.province
-  fullName: ClickProvince.province
+  fullName: GrandWarStrategy.Logic.ClickProvince.province
   type: Field
   source:
     id: province
     path: ''
-    startLine: 284
+    startLine: 303
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public ProvinceData province
     return:
       type: Global.ProvinceData
     content.vb: Public province As ProvinceData
-- uid: Global.ClickProvince.selectedArmy
-  commentId: F:Global.ClickProvince.selectedArmy
+- uid: GrandWarStrategy.Logic.ClickProvince.selectedArmy
+  commentId: F:GrandWarStrategy.Logic.ClickProvince.selectedArmy
   id: selectedArmy
-  parent: Global.ClickProvince
+  parent: GrandWarStrategy.Logic.ClickProvince
   langs:
   - csharp
   - vb
   name: selectedArmy
   nameWithType: ClickProvince.selectedArmy
-  fullName: ClickProvince.selectedArmy
+  fullName: GrandWarStrategy.Logic.ClickProvince.selectedArmy
   type: Field
   source:
     id: selectedArmy
     path: ''
-    startLine: 285
+    startLine: 304
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public Army selectedArmy
     return:
       type: Global.Army
     content.vb: Public selectedArmy As Army
-- uid: Global.ClickProvince.maxDistance
-  commentId: F:Global.ClickProvince.maxDistance
+- uid: GrandWarStrategy.Logic.ClickProvince.maxDistance
+  commentId: F:GrandWarStrategy.Logic.ClickProvince.maxDistance
   id: maxDistance
-  parent: Global.ClickProvince
+  parent: GrandWarStrategy.Logic.ClickProvince
   langs:
   - csharp
   - vb
   name: maxDistance
   nameWithType: ClickProvince.maxDistance
-  fullName: ClickProvince.maxDistance
+  fullName: GrandWarStrategy.Logic.ClickProvince.maxDistance
   type: Field
   source:
     id: maxDistance
     path: ''
-    startLine: 287
+    startLine: 306
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public float maxDistance
     return:
       type: System.Single
     content.vb: Public maxDistance As Single
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -138,18 +154,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.ClickMode
-  commentId: T:Global.ClickMode
+- uid: GrandWarStrategy.Logic.ClickMode
+  commentId: T:GrandWarStrategy.Logic.ClickMode
+  parent: GrandWarStrategy.Logic
   name: ClickMode
   nameWithType: ClickMode
-  fullName: ClickMode
+  fullName: GrandWarStrategy.Logic.ClickMode
 - uid: Global.ProvinceData
-  commentId: T:Global.ProvinceData
+  isExternal: true
   name: ProvinceData
   nameWithType: ProvinceData
   fullName: ProvinceData
 - uid: Global.Army
-  commentId: T:Global.Army
+  isExternal: true
   name: Army
   nameWithType: Army
   fullName: Army

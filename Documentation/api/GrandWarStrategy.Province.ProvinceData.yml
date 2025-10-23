@@ -1,567 +1,583 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.ProvinceData
-  commentId: T:Global.ProvinceData
+- uid: GrandWarStrategy.Province.ProvinceData
+  commentId: T:GrandWarStrategy.Province.ProvinceData
   id: ProvinceData
-  parent: Global
+  parent: GrandWarStrategy.Province
   children:
-  - Global.ProvinceData.AddArmy(Army)
-  - Global.ProvinceData.AddBuilding(Building)
-  - Global.ProvinceData.buildingLimit
-  - Global.ProvinceData.buildings
-  - Global.ProvinceData.cachedIncome
-  - Global.ProvinceData.cachedMaintenance
-  - Global.ProvinceData.cachedMaxArmy
-  - Global.ProvinceData.cachedMoneyStorage
-  - Global.ProvinceData.color
-  - Global.ProvinceData.ConstructBuilding(Construction)
-  - Global.ProvinceData.constructions
-  - Global.ProvinceData.housingArmies
-  - Global.ProvinceData.id
-  - Global.ProvinceData.infrastructure
-  - Global.ProvinceData.infrastructureLimit
-  - Global.ProvinceData.isCapital
-  - Global.ProvinceData.neighbours
-  - Global.ProvinceData.owner
-  - Global.ProvinceData.population
-  - Global.ProvinceData.provinceName
-  - Global.ProvinceData.RemoveArmy(Army)
-  - Global.ProvinceData.resource
+  - GrandWarStrategy.Province.ProvinceData.AddArmy(Army)
+  - GrandWarStrategy.Province.ProvinceData.AddBuilding(Building)
+  - GrandWarStrategy.Province.ProvinceData.buildingLimit
+  - GrandWarStrategy.Province.ProvinceData.buildings
+  - GrandWarStrategy.Province.ProvinceData.cachedIncome
+  - GrandWarStrategy.Province.ProvinceData.cachedMaintenance
+  - GrandWarStrategy.Province.ProvinceData.cachedMaxArmy
+  - GrandWarStrategy.Province.ProvinceData.cachedMoneyStorage
+  - GrandWarStrategy.Province.ProvinceData.color
+  - GrandWarStrategy.Province.ProvinceData.ConstructBuilding(GrandWarStrategy.Province.Construction)
+  - GrandWarStrategy.Province.ProvinceData.constructions
+  - GrandWarStrategy.Province.ProvinceData.housingArmies
+  - GrandWarStrategy.Province.ProvinceData.id
+  - GrandWarStrategy.Province.ProvinceData.infrastructure
+  - GrandWarStrategy.Province.ProvinceData.infrastructureLimit
+  - GrandWarStrategy.Province.ProvinceData.isCapital
+  - GrandWarStrategy.Province.ProvinceData.neighbours
+  - GrandWarStrategy.Province.ProvinceData.owner
+  - GrandWarStrategy.Province.ProvinceData.population
+  - GrandWarStrategy.Province.ProvinceData.provinceName
+  - GrandWarStrategy.Province.ProvinceData.RemoveArmy(Army)
+  - GrandWarStrategy.Province.ProvinceData.resource
   langs:
   - csharp
   - vb
   name: ProvinceData
   nameWithType: ProvinceData
-  fullName: ProvinceData
+  fullName: GrandWarStrategy.Province.ProvinceData
   type: Class
   source:
     id: ProvinceData
     path: ''
-    startLine: 542
+    startLine: 496
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: 'public class ProvinceData : MonoBehaviour'
     content.vb: Public Class ProvinceData Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.ProvinceData.neighbours
-  commentId: F:Global.ProvinceData.neighbours
+- uid: GrandWarStrategy.Province.ProvinceData.neighbours
+  commentId: F:GrandWarStrategy.Province.ProvinceData.neighbours
   id: neighbours
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: neighbours
   nameWithType: ProvinceData.neighbours
-  fullName: ProvinceData.neighbours
+  fullName: GrandWarStrategy.Province.ProvinceData.neighbours
   type: Field
   source:
     id: neighbours
     path: ''
-    startLine: 545
+    startLine: 499
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public List<ProvinceData> neighbours
     return:
-      type: Global.List{ProvinceData}
+      type: Global.List{GrandWarStrategy.Province.ProvinceData}
     content.vb: Public neighbours As List(Of ProvinceData)
-- uid: Global.ProvinceData.provinceName
-  commentId: F:Global.ProvinceData.provinceName
+- uid: GrandWarStrategy.Province.ProvinceData.provinceName
+  commentId: F:GrandWarStrategy.Province.ProvinceData.provinceName
   id: provinceName
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: provinceName
   nameWithType: ProvinceData.provinceName
-  fullName: ProvinceData.provinceName
+  fullName: GrandWarStrategy.Province.ProvinceData.provinceName
   type: Field
   source:
     id: provinceName
     path: ''
-    startLine: 552
+    startLine: 506
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public string provinceName
     return:
       type: System.String
     content.vb: Public provinceName As String
-- uid: Global.ProvinceData.population
-  commentId: F:Global.ProvinceData.population
+- uid: GrandWarStrategy.Province.ProvinceData.population
+  commentId: F:GrandWarStrategy.Province.ProvinceData.population
   id: population
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: population
   nameWithType: ProvinceData.population
-  fullName: ProvinceData.population
+  fullName: GrandWarStrategy.Province.ProvinceData.population
   type: Field
   source:
     id: population
     path: ''
-    startLine: 553
+    startLine: 507
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int population
     return:
       type: System.Int32
     content.vb: Public population As Integer
-- uid: Global.ProvinceData.id
-  commentId: F:Global.ProvinceData.id
+- uid: GrandWarStrategy.Province.ProvinceData.id
+  commentId: F:GrandWarStrategy.Province.ProvinceData.id
   id: id
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: id
   nameWithType: ProvinceData.id
-  fullName: ProvinceData.id
+  fullName: GrandWarStrategy.Province.ProvinceData.id
   type: Field
   source:
     id: id
     path: ''
-    startLine: 554
+    startLine: 508
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int id
     return:
       type: System.Int32
     content.vb: Public id As Integer
-- uid: Global.ProvinceData.owner
-  commentId: F:Global.ProvinceData.owner
+- uid: GrandWarStrategy.Province.ProvinceData.owner
+  commentId: F:GrandWarStrategy.Province.ProvinceData.owner
   id: owner
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: owner
   nameWithType: ProvinceData.owner
-  fullName: ProvinceData.owner
+  fullName: GrandWarStrategy.Province.ProvinceData.owner
   type: Field
   source:
     id: owner
     path: ''
-    startLine: 555
+    startLine: 509
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public string owner
     return:
       type: System.String
     content.vb: Public owner As String
-- uid: Global.ProvinceData.color
-  commentId: F:Global.ProvinceData.color
+- uid: GrandWarStrategy.Province.ProvinceData.color
+  commentId: F:GrandWarStrategy.Province.ProvinceData.color
   id: color
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: color
   nameWithType: ProvinceData.color
-  fullName: ProvinceData.color
+  fullName: GrandWarStrategy.Province.ProvinceData.color
   type: Field
   source:
     id: color
     path: ''
-    startLine: 556
+    startLine: 510
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public Color color
     return:
       type: Global.Color
     content.vb: Public color As Color
-- uid: Global.ProvinceData.isCapital
-  commentId: F:Global.ProvinceData.isCapital
+- uid: GrandWarStrategy.Province.ProvinceData.isCapital
+  commentId: F:GrandWarStrategy.Province.ProvinceData.isCapital
   id: isCapital
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: isCapital
   nameWithType: ProvinceData.isCapital
-  fullName: ProvinceData.isCapital
+  fullName: GrandWarStrategy.Province.ProvinceData.isCapital
   type: Field
   source:
     id: isCapital
     path: ''
-    startLine: 557
+    startLine: 511
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public bool isCapital
     return:
       type: System.Boolean
     content.vb: Public isCapital As Boolean
-- uid: Global.ProvinceData.infrastructure
-  commentId: F:Global.ProvinceData.infrastructure
+- uid: GrandWarStrategy.Province.ProvinceData.infrastructure
+  commentId: F:GrandWarStrategy.Province.ProvinceData.infrastructure
   id: infrastructure
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: infrastructure
   nameWithType: ProvinceData.infrastructure
-  fullName: ProvinceData.infrastructure
+  fullName: GrandWarStrategy.Province.ProvinceData.infrastructure
   type: Field
   source:
     id: infrastructure
     path: ''
-    startLine: 558
+    startLine: 512
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int infrastructure
     return:
       type: System.Int32
     content.vb: Public infrastructure As Integer
-- uid: Global.ProvinceData.infrastructureLimit
-  commentId: F:Global.ProvinceData.infrastructureLimit
+- uid: GrandWarStrategy.Province.ProvinceData.infrastructureLimit
+  commentId: F:GrandWarStrategy.Province.ProvinceData.infrastructureLimit
   id: infrastructureLimit
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: infrastructureLimit
   nameWithType: ProvinceData.infrastructureLimit
-  fullName: ProvinceData.infrastructureLimit
+  fullName: GrandWarStrategy.Province.ProvinceData.infrastructureLimit
   type: Field
   source:
     id: infrastructureLimit
     path: ''
-    startLine: 559
+    startLine: 513
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int infrastructureLimit
     return:
       type: System.Int32
     content.vb: Public infrastructureLimit As Integer
-- uid: Global.ProvinceData.resource
-  commentId: F:Global.ProvinceData.resource
+- uid: GrandWarStrategy.Province.ProvinceData.resource
+  commentId: F:GrandWarStrategy.Province.ProvinceData.resource
   id: resource
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: resource
   nameWithType: ProvinceData.resource
-  fullName: ProvinceData.resource
+  fullName: GrandWarStrategy.Province.ProvinceData.resource
   type: Field
   source:
     id: resource
     path: ''
-    startLine: 560
+    startLine: 514
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public string resource
     return:
       type: System.String
     content.vb: Public resource As String
-- uid: Global.ProvinceData.buildingLimit
-  commentId: F:Global.ProvinceData.buildingLimit
+- uid: GrandWarStrategy.Province.ProvinceData.buildingLimit
+  commentId: F:GrandWarStrategy.Province.ProvinceData.buildingLimit
   id: buildingLimit
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: buildingLimit
   nameWithType: ProvinceData.buildingLimit
-  fullName: ProvinceData.buildingLimit
+  fullName: GrandWarStrategy.Province.ProvinceData.buildingLimit
   type: Field
   source:
     id: buildingLimit
     path: ''
-    startLine: 563
+    startLine: 517
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int buildingLimit
     return:
       type: System.Int32
     content.vb: Public buildingLimit As Integer
-- uid: Global.ProvinceData.buildings
-  commentId: F:Global.ProvinceData.buildings
+- uid: GrandWarStrategy.Province.ProvinceData.buildings
+  commentId: F:GrandWarStrategy.Province.ProvinceData.buildings
   id: buildings
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: buildings
   nameWithType: ProvinceData.buildings
-  fullName: ProvinceData.buildings
+  fullName: GrandWarStrategy.Province.ProvinceData.buildings
   type: Field
   source:
     id: buildings
     path: ''
-    startLine: 564
+    startLine: 518
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public List<Building> buildings
     return:
       type: Global.List{Building}
     content.vb: Public buildings As List(Of Building)
-- uid: Global.ProvinceData.constructions
-  commentId: F:Global.ProvinceData.constructions
+- uid: GrandWarStrategy.Province.ProvinceData.constructions
+  commentId: F:GrandWarStrategy.Province.ProvinceData.constructions
   id: constructions
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: constructions
   nameWithType: ProvinceData.constructions
-  fullName: ProvinceData.constructions
+  fullName: GrandWarStrategy.Province.ProvinceData.constructions
   type: Field
   source:
     id: constructions
     path: ''
-    startLine: 565
+    startLine: 519
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public List<Construction> constructions
     return:
-      type: Global.List{Construction}
+      type: Global.List{GrandWarStrategy.Province.Construction}
     content.vb: Public constructions As List(Of Construction)
-- uid: Global.ProvinceData.cachedIncome
-  commentId: F:Global.ProvinceData.cachedIncome
+- uid: GrandWarStrategy.Province.ProvinceData.cachedIncome
+  commentId: F:GrandWarStrategy.Province.ProvinceData.cachedIncome
   id: cachedIncome
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: cachedIncome
   nameWithType: ProvinceData.cachedIncome
-  fullName: ProvinceData.cachedIncome
+  fullName: GrandWarStrategy.Province.ProvinceData.cachedIncome
   type: Field
   source:
     id: cachedIncome
     path: ''
-    startLine: 568
+    startLine: 522
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int cachedIncome
     return:
       type: System.Int32
     content.vb: Public cachedIncome As Integer
-- uid: Global.ProvinceData.cachedMoneyStorage
-  commentId: F:Global.ProvinceData.cachedMoneyStorage
+- uid: GrandWarStrategy.Province.ProvinceData.cachedMoneyStorage
+  commentId: F:GrandWarStrategy.Province.ProvinceData.cachedMoneyStorage
   id: cachedMoneyStorage
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: cachedMoneyStorage
   nameWithType: ProvinceData.cachedMoneyStorage
-  fullName: ProvinceData.cachedMoneyStorage
+  fullName: GrandWarStrategy.Province.ProvinceData.cachedMoneyStorage
   type: Field
   source:
     id: cachedMoneyStorage
     path: ''
-    startLine: 569
+    startLine: 523
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int cachedMoneyStorage
     return:
       type: System.Int32
     content.vb: Public cachedMoneyStorage As Integer
-- uid: Global.ProvinceData.cachedMaxArmy
-  commentId: F:Global.ProvinceData.cachedMaxArmy
+- uid: GrandWarStrategy.Province.ProvinceData.cachedMaxArmy
+  commentId: F:GrandWarStrategy.Province.ProvinceData.cachedMaxArmy
   id: cachedMaxArmy
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: cachedMaxArmy
   nameWithType: ProvinceData.cachedMaxArmy
-  fullName: ProvinceData.cachedMaxArmy
+  fullName: GrandWarStrategy.Province.ProvinceData.cachedMaxArmy
   type: Field
   source:
     id: cachedMaxArmy
     path: ''
-    startLine: 570
+    startLine: 524
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int cachedMaxArmy
     return:
       type: System.Int32
     content.vb: Public cachedMaxArmy As Integer
-- uid: Global.ProvinceData.cachedMaintenance
-  commentId: F:Global.ProvinceData.cachedMaintenance
+- uid: GrandWarStrategy.Province.ProvinceData.cachedMaintenance
+  commentId: F:GrandWarStrategy.Province.ProvinceData.cachedMaintenance
   id: cachedMaintenance
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: cachedMaintenance
   nameWithType: ProvinceData.cachedMaintenance
-  fullName: ProvinceData.cachedMaintenance
+  fullName: GrandWarStrategy.Province.ProvinceData.cachedMaintenance
   type: Field
   source:
     id: cachedMaintenance
     path: ''
-    startLine: 571
+    startLine: 525
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public int cachedMaintenance
     return:
       type: System.Int32
     content.vb: Public cachedMaintenance As Integer
-- uid: Global.ProvinceData.housingArmies
-  commentId: F:Global.ProvinceData.housingArmies
+- uid: GrandWarStrategy.Province.ProvinceData.housingArmies
+  commentId: F:GrandWarStrategy.Province.ProvinceData.housingArmies
   id: housingArmies
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: housingArmies
   nameWithType: ProvinceData.housingArmies
-  fullName: ProvinceData.housingArmies
+  fullName: GrandWarStrategy.Province.ProvinceData.housingArmies
   type: Field
   source:
     id: housingArmies
     path: ''
-    startLine: 573
+    startLine: 527
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public List<Army> housingArmies
     return:
       type: Global.List{Army}
     content.vb: Public housingArmies As List(Of Army)
-- uid: Global.ProvinceData.AddBuilding(Building)
-  commentId: M:Global.ProvinceData.AddBuilding(Building)
+- uid: GrandWarStrategy.Province.ProvinceData.AddBuilding(Building)
+  commentId: M:GrandWarStrategy.Province.ProvinceData.AddBuilding(Building)
   id: AddBuilding(Building)
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: AddBuilding(Building)
   nameWithType: ProvinceData.AddBuilding(Building)
-  fullName: ProvinceData.AddBuilding(Building)
+  fullName: GrandWarStrategy.Province.ProvinceData.AddBuilding(Building)
   type: Method
   source:
     id: AddBuilding
     path: ''
-    startLine: 649
+    startLine: 603
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public void AddBuilding(Building building)
     parameters:
     - id: building
       type: Global.Building
     content.vb: Public Sub AddBuilding(building As Building)
-  overload: Global.ProvinceData.AddBuilding*
-- uid: Global.ProvinceData.ConstructBuilding(Construction)
-  commentId: M:Global.ProvinceData.ConstructBuilding(Construction)
-  id: ConstructBuilding(Construction)
-  parent: Global.ProvinceData
+  overload: GrandWarStrategy.Province.ProvinceData.AddBuilding*
+- uid: GrandWarStrategy.Province.ProvinceData.ConstructBuilding(GrandWarStrategy.Province.Construction)
+  commentId: M:GrandWarStrategy.Province.ProvinceData.ConstructBuilding(GrandWarStrategy.Province.Construction)
+  id: ConstructBuilding(GrandWarStrategy.Province.Construction)
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: ConstructBuilding(Construction)
   nameWithType: ProvinceData.ConstructBuilding(Construction)
-  fullName: ProvinceData.ConstructBuilding(Construction)
+  fullName: GrandWarStrategy.Province.ProvinceData.ConstructBuilding(GrandWarStrategy.Province.Construction)
   type: Method
   source:
     id: ConstructBuilding
     path: ''
-    startLine: 654
+    startLine: 608
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public void ConstructBuilding(Construction construction)
     parameters:
     - id: construction
-      type: Global.Construction
+      type: GrandWarStrategy.Province.Construction
     content.vb: Public Sub ConstructBuilding(construction As Construction)
-  overload: Global.ProvinceData.ConstructBuilding*
-- uid: Global.ProvinceData.AddArmy(Army)
-  commentId: M:Global.ProvinceData.AddArmy(Army)
+  overload: GrandWarStrategy.Province.ProvinceData.ConstructBuilding*
+- uid: GrandWarStrategy.Province.ProvinceData.AddArmy(Army)
+  commentId: M:GrandWarStrategy.Province.ProvinceData.AddArmy(Army)
   id: AddArmy(Army)
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: AddArmy(Army)
   nameWithType: ProvinceData.AddArmy(Army)
-  fullName: ProvinceData.AddArmy(Army)
+  fullName: GrandWarStrategy.Province.ProvinceData.AddArmy(Army)
   type: Method
   source:
     id: AddArmy
     path: ''
-    startLine: 664
+    startLine: 618
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public void AddArmy(Army army)
     parameters:
     - id: army
       type: Global.Army
     content.vb: Public Sub AddArmy(army As Army)
-  overload: Global.ProvinceData.AddArmy*
-- uid: Global.ProvinceData.RemoveArmy(Army)
-  commentId: M:Global.ProvinceData.RemoveArmy(Army)
+  overload: GrandWarStrategy.Province.ProvinceData.AddArmy*
+- uid: GrandWarStrategy.Province.ProvinceData.RemoveArmy(Army)
+  commentId: M:GrandWarStrategy.Province.ProvinceData.RemoveArmy(Army)
   id: RemoveArmy(Army)
-  parent: Global.ProvinceData
+  parent: GrandWarStrategy.Province.ProvinceData
   langs:
   - csharp
   - vb
   name: RemoveArmy(Army)
   nameWithType: ProvinceData.RemoveArmy(Army)
-  fullName: ProvinceData.RemoveArmy(Army)
+  fullName: GrandWarStrategy.Province.ProvinceData.RemoveArmy(Army)
   type: Method
   source:
     id: RemoveArmy
     path: ''
-    startLine: 670
+    startLine: 624
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Province
   syntax:
     content: public void RemoveArmy(Army army)
     parameters:
     - id: army
       type: Global.Army
     content.vb: Public Sub RemoveArmy(army As Army)
-  overload: Global.ProvinceData.RemoveArmy*
+  overload: GrandWarStrategy.Province.ProvinceData.RemoveArmy*
 references:
-- uid: Global
+- uid: GrandWarStrategy.Province
+  commentId: N:GrandWarStrategy.Province
+  name: GrandWarStrategy.Province
+  nameWithType: GrandWarStrategy.Province
+  fullName: GrandWarStrategy.Province
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Province
+    name: Province
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Province
+    name: Province
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -578,21 +594,21 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.List{ProvinceData}
-  commentId: '!:Global.List{ProvinceData}'
+- uid: Global.List{GrandWarStrategy.Province.ProvinceData}
+  commentId: '!:Global.List{GrandWarStrategy.Province.ProvinceData}'
   definition: Global.List`1
   name: List<ProvinceData>
   nameWithType: List<ProvinceData>
-  fullName: List<ProvinceData>
+  fullName: List<GrandWarStrategy.Province.ProvinceData>
   nameWithType.vb: List(Of ProvinceData)
-  fullName.vb: List(Of ProvinceData)
+  fullName.vb: List(Of GrandWarStrategy.Province.ProvinceData)
   name.vb: List(Of ProvinceData)
   spec.csharp:
   - uid: Global.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Global.ProvinceData
+  - uid: GrandWarStrategy.Province.ProvinceData
     name: ProvinceData
   - name: '>'
   spec.vb:
@@ -602,7 +618,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Global.ProvinceData
+  - uid: GrandWarStrategy.Province.ProvinceData
     name: ProvinceData
   - name: )
 - uid: Global.List`1
@@ -680,6 +696,7 @@ references:
   - name: <
   - uid: Global.Building
     name: Building
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: Global.List`1
@@ -690,22 +707,23 @@ references:
   - name: " "
   - uid: Global.Building
     name: Building
+    isExternal: true
   - name: )
-- uid: Global.List{Construction}
-  commentId: '!:Global.List{Construction}'
+- uid: Global.List{GrandWarStrategy.Province.Construction}
+  commentId: '!:Global.List{GrandWarStrategy.Province.Construction}'
   definition: Global.List`1
   name: List<Construction>
   nameWithType: List<Construction>
-  fullName: List<Construction>
+  fullName: List<GrandWarStrategy.Province.Construction>
   nameWithType.vb: List(Of Construction)
-  fullName.vb: List(Of Construction)
+  fullName.vb: List(Of GrandWarStrategy.Province.Construction)
   name.vb: List(Of Construction)
   spec.csharp:
   - uid: Global.List`1
     name: List
     isExternal: true
   - name: <
-  - uid: Global.Construction
+  - uid: GrandWarStrategy.Province.Construction
     name: Construction
   - name: '>'
   spec.vb:
@@ -715,7 +733,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Global.Construction
+  - uid: GrandWarStrategy.Province.Construction
     name: Construction
   - name: )
 - uid: Global.List{Army}
@@ -734,6 +752,7 @@ references:
   - name: <
   - uid: Global.Army
     name: Army
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: Global.List`1
@@ -744,39 +763,41 @@ references:
   - name: " "
   - uid: Global.Army
     name: Army
+    isExternal: true
   - name: )
-- uid: Global.ProvinceData.AddBuilding*
-  commentId: Overload:Global.ProvinceData.AddBuilding
+- uid: GrandWarStrategy.Province.ProvinceData.AddBuilding*
+  commentId: Overload:GrandWarStrategy.Province.ProvinceData.AddBuilding
   name: AddBuilding
   nameWithType: ProvinceData.AddBuilding
-  fullName: ProvinceData.AddBuilding
+  fullName: GrandWarStrategy.Province.ProvinceData.AddBuilding
 - uid: Global.Building
-  commentId: T:Global.Building
+  isExternal: true
   name: Building
   nameWithType: Building
   fullName: Building
-- uid: Global.ProvinceData.ConstructBuilding*
-  commentId: Overload:Global.ProvinceData.ConstructBuilding
+- uid: GrandWarStrategy.Province.ProvinceData.ConstructBuilding*
+  commentId: Overload:GrandWarStrategy.Province.ProvinceData.ConstructBuilding
   name: ConstructBuilding
   nameWithType: ProvinceData.ConstructBuilding
-  fullName: ProvinceData.ConstructBuilding
-- uid: Global.Construction
-  commentId: T:Global.Construction
+  fullName: GrandWarStrategy.Province.ProvinceData.ConstructBuilding
+- uid: GrandWarStrategy.Province.Construction
+  commentId: T:GrandWarStrategy.Province.Construction
+  parent: GrandWarStrategy.Province
   name: Construction
   nameWithType: Construction
-  fullName: Construction
-- uid: Global.ProvinceData.AddArmy*
-  commentId: Overload:Global.ProvinceData.AddArmy
+  fullName: GrandWarStrategy.Province.Construction
+- uid: GrandWarStrategy.Province.ProvinceData.AddArmy*
+  commentId: Overload:GrandWarStrategy.Province.ProvinceData.AddArmy
   name: AddArmy
   nameWithType: ProvinceData.AddArmy
-  fullName: ProvinceData.AddArmy
+  fullName: GrandWarStrategy.Province.ProvinceData.AddArmy
 - uid: Global.Army
-  commentId: T:Global.Army
+  isExternal: true
   name: Army
   nameWithType: Army
   fullName: Army
-- uid: Global.ProvinceData.RemoveArmy*
-  commentId: Overload:Global.ProvinceData.RemoveArmy
+- uid: GrandWarStrategy.Province.ProvinceData.RemoveArmy*
+  commentId: Overload:GrandWarStrategy.Province.ProvinceData.RemoveArmy
   name: RemoveArmy
   nameWithType: ProvinceData.RemoveArmy
-  fullName: ProvinceData.RemoveArmy
+  fullName: GrandWarStrategy.Province.ProvinceData.RemoveArmy

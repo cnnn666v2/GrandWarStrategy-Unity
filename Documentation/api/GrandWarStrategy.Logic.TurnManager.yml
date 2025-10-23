@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Logic.TurnManager
+  commentId: T:GrandWarStrategy.Logic.TurnManager
+  id: TurnManager
+  parent: GrandWarStrategy.Logic
+  children:
+  - GrandWarStrategy.Logic.TurnManager.NextTurn
+  langs:
+  - csharp
+  - vb
+  name: TurnManager
+  nameWithType: TurnManager
+  fullName: GrandWarStrategy.Logic.TurnManager
+  type: Class
+  source:
+    id: TurnManager
+    path: ''
+    startLine: 139
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: 'public class TurnManager : MonoBehaviour'
+    content.vb: Public Class TurnManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: GrandWarStrategy.Logic.TurnManager.NextTurn
+  commentId: M:GrandWarStrategy.Logic.TurnManager.NextTurn
+  id: NextTurn
+  parent: GrandWarStrategy.Logic.TurnManager
+  langs:
+  - csharp
+  - vb
+  name: NextTurn()
+  nameWithType: TurnManager.NextTurn()
+  fullName: GrandWarStrategy.Logic.TurnManager.NextTurn()
+  type: Method
+  source:
+    id: NextTurn
+    path: ''
+    startLine: 152
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: public void NextTurn()
+    content.vb: Public Sub NextTurn()
+  overload: GrandWarStrategy.Logic.TurnManager.NextTurn*
+references:
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GrandWarStrategy.Logic.TurnManager.NextTurn*
+  commentId: Overload:GrandWarStrategy.Logic.TurnManager.NextTurn
+  name: NextTurn
+  nameWithType: TurnManager.NextTurn
+  fullName: GrandWarStrategy.Logic.TurnManager.NextTurn

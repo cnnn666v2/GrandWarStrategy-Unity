@@ -1,5 +1,8 @@
-[System.Serializable]
-public class Market : Building
+namespace GrandWarStrategy.Buildings
 {
-    public int income;
+    [System.Serializable]
+    public class Market : Building
+    {
+        public int income;
+    }
 }

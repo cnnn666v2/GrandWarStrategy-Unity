@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Utility.GUIUpdater
+  commentId: T:GrandWarStrategy.Utility.GUIUpdater
+  id: GUIUpdater
+  parent: GrandWarStrategy.Utility
+  children:
+  - GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel
+  - GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel
+  - GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel
+  - GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel
+  - GrandWarStrategy.Utility.GUIUpdater.updateTopBar
+  - GrandWarStrategy.Utility.GUIUpdater.updateTopBar(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: GUIUpdater
+  nameWithType: GUIUpdater
+  fullName: GrandWarStrategy.Utility.GUIUpdater
+  type: Class
+  source:
+    id: GUIUpdater
+    path: ''
+    startLine: 795
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: 'public class GUIUpdater : MonoBehaviour'
+    content.vb: Public Class GUIUpdater Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel
+  id: updateProvincePanel
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateProvincePanel()
+  nameWithType: GUIUpdater.updateProvincePanel()
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel()
+  type: Method
+  source:
+    id: updateProvincePanel
+    path: ''
+    startLine: 825
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateProvincePanel()
+    content.vb: Public Sub updateProvincePanel()
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel*
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel
+  id: updateBuildingsPanel
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateBuildingsPanel()
+  nameWithType: GUIUpdater.updateBuildingsPanel()
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel()
+  type: Method
+  source:
+    id: updateBuildingsPanel
+    path: ''
+    startLine: 837
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateBuildingsPanel()
+    content.vb: Public Sub updateBuildingsPanel()
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel*
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateTopBar
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateTopBar
+  id: updateTopBar
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateTopBar()
+  nameWithType: GUIUpdater.updateTopBar()
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateTopBar()
+  type: Method
+  source:
+    id: updateTopBar
+    path: ''
+    startLine: 847
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateTopBar()
+    content.vb: Public Sub updateTopBar()
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateTopBar*
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateTopBar(System.Int32)
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateTopBar(System.Int32)
+  id: updateTopBar(System.Int32)
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateTopBar(int)
+  nameWithType: GUIUpdater.updateTopBar(int)
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateTopBar(int)
+  type: Method
+  source:
+    id: updateTopBar
+    path: ''
+    startLine: 866
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateTopBar(int income)
+    parameters:
+    - id: income
+      type: System.Int32
+    content.vb: Public Sub updateTopBar(income As Integer)
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateTopBar*
+  nameWithType.vb: GUIUpdater.updateTopBar(Integer)
+  fullName.vb: GrandWarStrategy.Utility.GUIUpdater.updateTopBar(Integer)
+  name.vb: updateTopBar(Integer)
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel
+  id: updateDiplomacyPanel
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateDiplomacyPanel()
+  nameWithType: GUIUpdater.updateDiplomacyPanel()
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel()
+  type: Method
+  source:
+    id: updateDiplomacyPanel
+    path: ''
+    startLine: 886
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateDiplomacyPanel()
+    content.vb: Public Sub updateDiplomacyPanel()
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel*
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel
+  commentId: M:GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel
+  id: updateRecruitmentPanel
+  parent: GrandWarStrategy.Utility.GUIUpdater
+  langs:
+  - csharp
+  - vb
+  name: updateRecruitmentPanel()
+  nameWithType: GUIUpdater.updateRecruitmentPanel()
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel()
+  type: Method
+  source:
+    id: updateRecruitmentPanel
+    path: ''
+    startLine: 915
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Utility
+  syntax:
+    content: public void updateRecruitmentPanel()
+    content.vb: Public Sub updateRecruitmentPanel()
+  overload: GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel*
+references:
+- uid: GrandWarStrategy.Utility
+  commentId: N:GrandWarStrategy.Utility
+  name: GrandWarStrategy.Utility
+  nameWithType: GrandWarStrategy.Utility
+  fullName: GrandWarStrategy.Utility
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Utility
+    name: Utility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel*
+  commentId: Overload:GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel
+  name: updateProvincePanel
+  nameWithType: GUIUpdater.updateProvincePanel
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateProvincePanel
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel*
+  commentId: Overload:GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel
+  name: updateBuildingsPanel
+  nameWithType: GUIUpdater.updateBuildingsPanel
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateBuildingsPanel
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateTopBar*
+  commentId: Overload:GrandWarStrategy.Utility.GUIUpdater.updateTopBar
+  name: updateTopBar
+  nameWithType: GUIUpdater.updateTopBar
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateTopBar
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel*
+  commentId: Overload:GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel
+  name: updateDiplomacyPanel
+  nameWithType: GUIUpdater.updateDiplomacyPanel
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateDiplomacyPanel
+- uid: GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel*
+  commentId: Overload:GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel
+  name: updateRecruitmentPanel
+  nameWithType: GUIUpdater.updateRecruitmentPanel
+  fullName: GrandWarStrategy.Utility.GUIUpdater.updateRecruitmentPanel

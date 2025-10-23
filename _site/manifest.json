@@ -24,203 +24,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.Army.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Army.html",
-          "hash": "je6ROjBA1vakewgno5FEDSYxM9Mx1muORlbE89aTfAY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ArmyType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ArmyType.html",
-          "hash": "4SHuY8xH98eHB5uOmeji+jbxhZhWjD5ebLyN2xBoYdI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.Bank.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Bank.html",
-          "hash": "bw9p2bzcvDNMLBtRc9x7Om+Vrfr+f7RGe+NhbtIc8FM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.Barracks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Barracks.html",
-          "hash": "z5z5gkMb49p2/QlI/B9vnkLYQesXKZu/neLORauCPpo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.BoardData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.BoardData.html",
-          "hash": "/IWjYV3DPRMmdTF86AAs19nhhSonqF2q7CIqriKhwkY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.Building.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Building.html",
-          "hash": "D+3mfhIS6nkWPlMf2u/EW4qf7NMOGnknNFnRtuW54Dw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.BuildingsManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.BuildingsManager.html",
-          "hash": "XXnUrfwK1/3vEDUBMGx/LVKhlk8LE0qpwmTZznRFu/o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ButtonHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ButtonHandler.html",
-          "hash": "EBsS+lIkzmZ+vlMZlmfGUmGY5TfdsncLuk3Q4zCscns="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ClickArmy_O.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ClickArmy_O.html",
-          "hash": "5oV+6S6Ck7tpOXWRvT2uRatMVG41XySsvq+kz+Ku5pg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ClickMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ClickMode.html",
-          "hash": "WOXcEcIVf+eWScE+chVXdu9hSxATaRP2mCkfUYRblaI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ClickProvince.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ClickProvince.html",
-          "hash": "jYwwRkzfArPsLykHpLvvEIklegHw1kVhNvXqqthQ/jg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.Construction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Construction.html",
-          "hash": "dWlrP9IfrogQR4v07DgiZoSO9oJO1pYRTtMegQZ29WA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.Country.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.Country.html",
-          "hash": "CjE5Zqsw1s2ZsLeixKn54pLGW3q++cCYHmBQ1dQe9H8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.CountryActions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.CountryActions.html",
-          "hash": "FA2EHlLQUiuuf2ikmjfGfT+X9SkPQIid8PYqH7LFaB0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.GUIChanges.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.GUIChanges.html",
-          "hash": "HDg7/o1j4TnMxwov59F5RBr/MpGHRIh8P8dVN4W5ZsI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.GUIUpdater.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.GUIUpdater.html",
-          "hash": "Wf35vRCcp8UuHMBSht8u6eZeQ5v9YbPJLvKWF6gQV54="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.GameData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.GameData.html",
-          "hash": "He28UBcUvQFaNiKpZhn/kpbXH/Y2i1yr62OSuf1pKYk="
+          "hash": "rDefzRzFvm0YHm64yoxSo7F9WkZ59K/8yKf6ZB3E44s="
         }
       },
       "is_incremental": false,
@@ -240,114 +48,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.Market.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.Market.html",
-          "hash": "2NG8dsxUpt/LqCPJoYomCMqunRw2dv6wlfDWk0Y9ACI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.MoveArmy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.MoveArmy.html",
-          "hash": "Y6d4ObNDD33QEP8aPtS2Ubo5MYxqTO/fjkePz0NLXCk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.MovingDivisions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.MovingDivisions.html",
-          "hash": "7goD96bbrNbXwwlRpDkfDK4qFDFx9ZB14DrzcjtJrhc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ProvinceData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ProvinceData.html",
-          "hash": "c8CJ+T/ePbpyWky9VvzLn+HbsFGUfSbzhb2Dp0ANAiU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ProvinceInformation_O.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ProvinceInformation_O.html",
-          "hash": "g1xqFFq+AIFtxKg/TzeQWxRnGjYTJrX+7hCYTS8pbCc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ProvinceManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ProvinceManager.html",
-          "hash": "7mLjOjg9nvGq4QP4rHJ3voiRJRDZvuCB5/nTsH9Grfo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.ProvinceSO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.ProvinceSO.html",
-          "hash": "H0l92+In09XP4+vX3j//05dIRhXRgLl/LmjgxJFZg2I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.RecruitArmy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.RecruitArmy.html",
-          "hash": "nXwE4aTxIt8Fi3cLKhkJRYdJTjzG/5Kwlhxkt79oz2g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.SelectCountry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.SelectCountry.html",
-          "hash": "gEnlfVlHfJ0fxQ41Me44hAqN9LMGN41dhpMFKnB024o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.SwitchClickMode.yml",
       "output": {
         ".html": {
@@ -360,47 +60,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.TrainingDivisions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.TrainingDivisions.html",
-          "hash": "PQPGqIH4YspcmSz2qo8ZyZMCiGCzCI3U3VojJ41KA6w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.TurnManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.TurnManager.html",
-          "hash": "XN+xcnBMnDOFzCYjN6Kb1CxKQGc1LxcxP/IVRynLYyw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.War.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.War.html",
-          "hash": "zeSpi8cuFj9ZvvojV06lBaPk9ZMCopQ6+b26mJozjwk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.WarManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.WarManager.html",
-          "hash": "vZ+WV8Akaymi3FyLkql0+gQvpth4tB6T55goso8Ft0Y="
+          "hash": "V9qw2mr7fgaIApX5x0RgU+dv6eIj8alPdVnUKQvEF0A="
         }
       },
       "is_incremental": false,
@@ -412,7 +76,367 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "cNYusgmaXfynuQd8h170aGee5HBF/7vfDIFCxLdB17U="
+          "hash": "mXFjdAcp5wVOLcyRwILrh7TiiGa5650JeI0zqAxEhJ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Buildings.Bank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Buildings.Bank.html",
+          "hash": "kYsI9CBTicqIIgA9slXZ7+j3FSKplZmLB6v33tsex6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Buildings.Barracks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Buildings.Barracks.html",
+          "hash": "WXWptU60+4Tx9bK5zX28zbBSpKVzGOEQomGSZbvb8SA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Buildings.Building.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Buildings.Building.html",
+          "hash": "8n1cKTAxAuCzbht35rYeZYqQzWbfRpplN5/WSZzwqoA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Buildings.Market.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Buildings.Market.html",
+          "hash": "3WMjcFjlnKtxgpZuzz1Jd0f+rEB5jBjNG0hK8t787Vs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Buildings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Buildings.html",
+          "hash": "wqLgOSzx/mF/H3YEpJvnnJEyYtIw+WmerTtbSK8mN5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Division.Army.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Division.Army.html",
+          "hash": "d9e7PonyoZnRejyx9DXuxojfMY8MdzUGK+unkfLeIYQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Division.ArmyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Division.ArmyType.html",
+          "hash": "N3ptnZsedK+Jl7jhfd7moIFoahq2bOgtSNgT8oXXCbE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Division.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Division.html",
+          "hash": "gZ2goyd2o/d6Vl8ovBbNzyfUhOTy1Y4kFNtdeoTsIig="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.BoardData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.BoardData.html",
+          "hash": "JLPI84jzGnt9soEoyDoLyF9OAhVk4xtRuBmpJlaVAcw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.BuildingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.BuildingsManager.html",
+          "hash": "PuDWH+hWm64ZvvygB8mgLxF2MNV51c07SIFYOHATVo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.ClickMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.ClickMode.html",
+          "hash": "o1Qn0Girs4BkngWC5pEt60unXJDb/M74pWTyaUZ6PIA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.ClickProvince.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.ClickProvince.html",
+          "hash": "tzfpp3ub5sFLgCb/3WjLPPd7JLq8kWdbYyk7ggxtuIc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.CountryActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.CountryActions.html",
+          "hash": "ijtIkWBUCFGjjXUIZxctjzW7Fv7PRsAic9VPp5SSpMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.GameData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.GameData.html",
+          "hash": "QURJgzj3pYiqFNh2ybI9Z6mIhT2uBnNj+VKvitoqBJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.MoveArmy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.MoveArmy.html",
+          "hash": "0kgatkr0HnDX6RmRdRxeW0Yl8PTTdAIOzR5iW1bXL70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.MovingDivisions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.MovingDivisions.html",
+          "hash": "1JdsD/AxqhDrymfesJ71NmMll4/UpwYt1PwVBJ9dRpM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.ProvinceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.ProvinceManager.html",
+          "hash": "LDjr06GijT9ogshjxqa7PmcSEY+4fUGrfTI6kaEF9e0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.RecruitArmy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.RecruitArmy.html",
+          "hash": "djUy9UWUrXnGgbWePNgRfgup8LKhnG7cecmvBHmDUt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.TrainingDivisions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.TrainingDivisions.html",
+          "hash": "oHJ5bUnmKM+R6Bw8rrbNRiIf3auncztSFLf9S844Sps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.TurnManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.TurnManager.html",
+          "hash": "4rLNBXc4lsVkBPVIC/Sfsmz0xtelk2bvi4CQpU6a7JM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.WarManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.WarManager.html",
+          "hash": "MQWPd8un1Qtr+Rkqe0+WYyZ6VhwbW7KsHFa5vgrvgfc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Logic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Logic.html",
+          "hash": "zdL9EhwCxrQ6mAxtGV0eXsdLqjdAA+T+dijO4Zb+SAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Province.Construction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Province.Construction.html",
+          "hash": "Z/0IXt1jgEevHiixKH4Luq4UkG/3q8Dqvc9ASgbExzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Province.ProvinceData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Province.ProvinceData.html",
+          "hash": "ulvFTKvWhB6SXNaIQLjiBCzer3COZ/fZ4+/rqxv2lsI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Province.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Province.html",
+          "hash": "2T00PN+E+GTLDpcB0bJq+B0BBpvY1KYhYU2Gpd7W86I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Utility.ButtonHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Utility.ButtonHandler.html",
+          "hash": "AQ6sKHFAKAzFN4KjnqHkqsAkF37usWIO/nb9v+zhCnw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Utility.GUIChanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Utility.GUIChanges.html",
+          "hash": "y5Ynlj7bELwC083fDkU4SnsWtFp1OX1qTP62t/odlhM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Utility.GUIUpdater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Utility.GUIUpdater.html",
+          "hash": "og7BHP83b7Rpwxb4OutPNYUU2wYi7maKR9KGpERrccc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Utility.SelectCountry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Utility.SelectCountry.html",
+          "hash": "JJks8HGEfXrDKCgHIFaKzzn8KPGt9f33DxqYNReJmVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GrandWarStrategy.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GrandWarStrategy.Utility.html",
+          "hash": "F2PIFP8bFdMFXrpIS2v/JDKDSo9I1ThetVivF72rLKE="
         }
       },
       "is_incremental": false,
@@ -424,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RsEzHDPLrAEgThOmhp32sqD97caVVaFJpyT9m5eGATc="
+          "hash": "YTx33NIQy/Pl2SUtIwMtNwuoix+JfGrCAtJtwcvHwts="
         }
       },
       "is_incremental": false,
@@ -436,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "cV7BZQ5oSx8l8ipMfMJuwqso9sIg8XeVOfn4zSkAI2w="
+          "hash": "ndt1acwOI4bYeboj3W9SxvgC2RS+vb65B5IHg+5+IYE="
         }
       },
       "is_incremental": false,
@@ -517,11 +541,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
@@ -533,7 +557,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 33,
+          "total_file_count": 35,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Province
+  commentId: N:GrandWarStrategy.Province
+  id: GrandWarStrategy.Province
+  children:
+  - GrandWarStrategy.Province.Construction
+  - GrandWarStrategy.Province.ProvinceData
+  langs:
+  - csharp
+  - vb
+  name: GrandWarStrategy.Province
+  nameWithType: GrandWarStrategy.Province
+  fullName: GrandWarStrategy.Province
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: GrandWarStrategy.Province.ProvinceData
+  commentId: T:GrandWarStrategy.Province.ProvinceData
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: GrandWarStrategy.Province.ProvinceData
+- uid: GrandWarStrategy.Province.Construction
+  commentId: T:GrandWarStrategy.Province.Construction
+  parent: GrandWarStrategy.Province
+  name: Construction
+  nameWithType: Construction
+  fullName: GrandWarStrategy.Province.Construction
+- uid: GrandWarStrategy.Province
+  commentId: N:GrandWarStrategy.Province
+  name: GrandWarStrategy.Province
+  nameWithType: GrandWarStrategy.Province
+  fullName: GrandWarStrategy.Province
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Province
+    name: Province
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Province
+    name: Province

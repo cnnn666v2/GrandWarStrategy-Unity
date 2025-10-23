@@ -16,7 +16,7 @@ items:
   source:
     id: SwitchClickMode
     path: ''
-    startLine: 107
+    startLine: 118
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -39,7 +39,7 @@ items:
   source:
     id: ChangeClickMode
     path: ''
-    startLine: 116
+    startLine: 127
   assemblies:
   - cs.temp.dll
   namespace: Global

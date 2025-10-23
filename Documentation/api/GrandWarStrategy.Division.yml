@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: GrandWarStrategy.Division
+  commentId: N:GrandWarStrategy.Division
+  id: GrandWarStrategy.Division
+  children:
+  - GrandWarStrategy.Division.Army
+  - GrandWarStrategy.Division.ArmyType
+  langs:
+  - csharp
+  - vb
+  name: GrandWarStrategy.Division
+  nameWithType: GrandWarStrategy.Division
+  fullName: GrandWarStrategy.Division
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: GrandWarStrategy.Division.Army
+  commentId: T:GrandWarStrategy.Division.Army
+  name: Army
+  nameWithType: Army
+  fullName: GrandWarStrategy.Division.Army
+- uid: GrandWarStrategy.Division.ArmyType
+  commentId: T:GrandWarStrategy.Division.ArmyType
+  parent: GrandWarStrategy.Division
+  name: ArmyType
+  nameWithType: ArmyType
+  fullName: GrandWarStrategy.Division.ArmyType
+- uid: GrandWarStrategy.Division
+  commentId: N:GrandWarStrategy.Division
+  name: GrandWarStrategy.Division
+  nameWithType: GrandWarStrategy.Division
+  fullName: GrandWarStrategy.Division
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division

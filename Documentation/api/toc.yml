@@ -2,67 +2,76 @@
 - uid: Global
   name: ''
   items:
-  - uid: Global.Army
-    name: Army
-  - uid: Global.ArmyType
-    name: ArmyType
-  - uid: Global.Bank
-    name: Bank
-  - uid: Global.Barracks
-    name: Barracks
-  - uid: Global.BoardData
-    name: BoardData
-  - uid: Global.Building
-    name: Building
-  - uid: Global.BuildingsManager
-    name: BuildingsManager
-  - uid: Global.ButtonHandler
-    name: ButtonHandler
-  - uid: Global.ClickArmy_O
-    name: ClickArmy_O
-  - uid: Global.ClickMode
-    name: ClickMode
-  - uid: Global.ClickProvince
-    name: ClickProvince
-  - uid: Global.Construction
-    name: Construction
   - uid: Global.Country
     name: Country
-  - uid: Global.CountryActions
-    name: CountryActions
-  - uid: Global.GameData
-    name: GameData
   - uid: Global.Government
     name: Government
-  - uid: Global.GUIChanges
-    name: GUIChanges
-  - uid: Global.GUIUpdater
-    name: GUIUpdater
-  - uid: Global.Market
-    name: Market
-  - uid: Global.MoveArmy
-    name: MoveArmy
-  - uid: Global.MovingDivisions
-    name: MovingDivisions
-  - uid: Global.ProvinceData
-    name: ProvinceData
-  - uid: Global.ProvinceInformation_O
-    name: ProvinceInformation_O
-  - uid: Global.ProvinceManager
-    name: ProvinceManager
-  - uid: Global.ProvinceSO
-    name: ProvinceSO
-  - uid: Global.RecruitArmy
-    name: RecruitArmy
-  - uid: Global.SelectCountry
-    name: SelectCountry
   - uid: Global.SwitchClickMode
     name: SwitchClickMode
-  - uid: Global.TrainingDivisions
-    name: TrainingDivisions
-  - uid: Global.TurnManager
-    name: TurnManager
   - uid: Global.War
     name: War
-  - uid: Global.WarManager
+- uid: GrandWarStrategy.Buildings
+  name: GrandWarStrategy.Buildings
+  items:
+  - uid: GrandWarStrategy.Buildings.Bank
+    name: Bank
+  - uid: GrandWarStrategy.Buildings.Barracks
+    name: Barracks
+  - uid: GrandWarStrategy.Buildings.Building
+    name: Building
+  - uid: GrandWarStrategy.Buildings.Market
+    name: Market
+- uid: GrandWarStrategy.Division
+  name: GrandWarStrategy.Division
+  items:
+  - uid: GrandWarStrategy.Division.Army
+    name: Army
+  - uid: GrandWarStrategy.Division.ArmyType
+    name: ArmyType
+- uid: GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  items:
+  - uid: GrandWarStrategy.Logic.BoardData
+    name: BoardData
+  - uid: GrandWarStrategy.Logic.BuildingsManager
+    name: BuildingsManager
+  - uid: GrandWarStrategy.Logic.ClickMode
+    name: ClickMode
+  - uid: GrandWarStrategy.Logic.ClickProvince
+    name: ClickProvince
+  - uid: GrandWarStrategy.Logic.CountryActions
+    name: CountryActions
+  - uid: GrandWarStrategy.Logic.GameData
+    name: GameData
+  - uid: GrandWarStrategy.Logic.MoveArmy
+    name: MoveArmy
+  - uid: GrandWarStrategy.Logic.MovingDivisions
+    name: MovingDivisions
+  - uid: GrandWarStrategy.Logic.ProvinceManager
+    name: ProvinceManager
+  - uid: GrandWarStrategy.Logic.RecruitArmy
+    name: RecruitArmy
+  - uid: GrandWarStrategy.Logic.TrainingDivisions
+    name: TrainingDivisions
+  - uid: GrandWarStrategy.Logic.TurnManager
+    name: TurnManager
+  - uid: GrandWarStrategy.Logic.WarManager
     name: WarManager
+- uid: GrandWarStrategy.Province
+  name: GrandWarStrategy.Province
+  items:
+  - uid: GrandWarStrategy.Province.Construction
+    name: Construction
+  - uid: GrandWarStrategy.Province.ProvinceData
+    name: ProvinceData
+- uid: GrandWarStrategy.Utility
+  name: GrandWarStrategy.Utility
+  items:
+  - uid: GrandWarStrategy.Utility.ButtonHandler
+    name: ButtonHandler
+  - uid: GrandWarStrategy.Utility.GUIChanges
+    name: GUIChanges
+  - uid: GrandWarStrategy.Utility.GUIUpdater
+    name: GUIUpdater
+  - uid: GrandWarStrategy.Utility.SelectCountry
+    name: SelectCountry

@@ -1,127 +1,143 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.Army
-  commentId: T:Global.Army
+- uid: GrandWarStrategy.Division.Army
+  commentId: T:GrandWarStrategy.Division.Army
   id: Army
-  parent: Global
+  parent: GrandWarStrategy.Division
   children:
-  - Global.Army.maintenance
-  - Global.Army.owner
-  - Global.Army.soldiers
-  - Global.Army.stayingIn
+  - GrandWarStrategy.Division.Army.maintenance
+  - GrandWarStrategy.Division.Army.owner
+  - GrandWarStrategy.Division.Army.soldiers
+  - GrandWarStrategy.Division.Army.stayingIn
   langs:
   - csharp
   - vb
   name: Army
   nameWithType: Army
-  fullName: Army
+  fullName: GrandWarStrategy.Division.Army
   type: Class
   source:
     id: Army
     path: ''
-    startLine: 1127
+    startLine: 1057
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Division
   syntax:
     content: 'public class Army : MonoBehaviour'
     content.vb: Public Class Army Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.Army.soldiers
-  commentId: F:Global.Army.soldiers
+- uid: GrandWarStrategy.Division.Army.soldiers
+  commentId: F:GrandWarStrategy.Division.Army.soldiers
   id: soldiers
-  parent: Global.Army
+  parent: GrandWarStrategy.Division.Army
   langs:
   - csharp
   - vb
   name: soldiers
   nameWithType: Army.soldiers
-  fullName: Army.soldiers
+  fullName: GrandWarStrategy.Division.Army.soldiers
   type: Field
   source:
     id: soldiers
     path: ''
-    startLine: 1129
+    startLine: 1059
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Division
   syntax:
     content: public int soldiers
     return:
       type: System.Int32
     content.vb: Public soldiers As Integer
-- uid: Global.Army.stayingIn
-  commentId: F:Global.Army.stayingIn
+- uid: GrandWarStrategy.Division.Army.stayingIn
+  commentId: F:GrandWarStrategy.Division.Army.stayingIn
   id: stayingIn
-  parent: Global.Army
+  parent: GrandWarStrategy.Division.Army
   langs:
   - csharp
   - vb
   name: stayingIn
   nameWithType: Army.stayingIn
-  fullName: Army.stayingIn
+  fullName: GrandWarStrategy.Division.Army.stayingIn
   type: Field
   source:
     id: stayingIn
     path: ''
-    startLine: 1130
+    startLine: 1060
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Division
   syntax:
     content: public ProvinceData stayingIn
     return:
       type: Global.ProvinceData
     content.vb: Public stayingIn As ProvinceData
-- uid: Global.Army.owner
-  commentId: F:Global.Army.owner
+- uid: GrandWarStrategy.Division.Army.owner
+  commentId: F:GrandWarStrategy.Division.Army.owner
   id: owner
-  parent: Global.Army
+  parent: GrandWarStrategy.Division.Army
   langs:
   - csharp
   - vb
   name: owner
   nameWithType: Army.owner
-  fullName: Army.owner
+  fullName: GrandWarStrategy.Division.Army.owner
   type: Field
   source:
     id: owner
     path: ''
-    startLine: 1131
+    startLine: 1061
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Division
   syntax:
     content: public string owner
     return:
       type: System.String
     content.vb: Public owner As String
-- uid: Global.Army.maintenance
-  commentId: F:Global.Army.maintenance
+- uid: GrandWarStrategy.Division.Army.maintenance
+  commentId: F:GrandWarStrategy.Division.Army.maintenance
   id: maintenance
-  parent: Global.Army
+  parent: GrandWarStrategy.Division.Army
   langs:
   - csharp
   - vb
   name: maintenance
   nameWithType: Army.maintenance
-  fullName: Army.maintenance
+  fullName: GrandWarStrategy.Division.Army.maintenance
   type: Field
   source:
     id: maintenance
     path: ''
-    startLine: 1132
+    startLine: 1062
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Division
   syntax:
     content: public int maintenance
     return:
       type: System.Int32
     content.vb: Public maintenance As Integer
 references:
-- uid: Global
+- uid: GrandWarStrategy.Division
+  commentId: N:GrandWarStrategy.Division
+  name: GrandWarStrategy.Division
+  nameWithType: GrandWarStrategy.Division
+  fullName: GrandWarStrategy.Division
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Division
+    name: Division
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -149,7 +165,7 @@ references:
   fullName.vb: Integer
   name.vb: Integer
 - uid: Global.ProvinceData
-  commentId: T:Global.ProvinceData
+  isExternal: true
   name: ProvinceData
   nameWithType: ProvinceData
   fullName: ProvinceData

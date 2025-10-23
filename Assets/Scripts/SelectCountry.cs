@@ -1,19 +1,23 @@
 using UnityEngine;
+using GrandWarStrategy.Logic;
 
-public class SelectCountry : MonoBehaviour
+namespace GrandWarStrategy.Utility
 {
-    GameData gameData;
-    GUIUpdater guiUpdater;
-
-    void Start()
+    public class SelectCountry : MonoBehaviour
     {
-        gameData = GetComponent<GameData>();
-        guiUpdater = GetComponent<GUIUpdater>();
-    }
+        GameData gameData;
+        GUIUpdater guiUpdater;
 
-    public void SelectCountryTag(string countryTag)
-    {
-        gameData.playingAsTag = countryTag;
-        guiUpdater.updateTopBar();
+        void Start()
+        {
+            gameData = GetComponent<GameData>();
+            guiUpdater = GetComponent<GUIUpdater>();
+        }
+
+        public void SelectCountryTag(string countryTag)
+        {
+            gameData.playingAsTag = countryTag;
+            guiUpdater.updateTopBar();
+        }
     }
 }

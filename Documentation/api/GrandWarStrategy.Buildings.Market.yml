@@ -1,40 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.War
-  commentId: T:Global.War
-  id: War
-  parent: Global
+- uid: GrandWarStrategy.Buildings.Market
+  commentId: T:GrandWarStrategy.Buildings.Market
+  id: Market
+  parent: GrandWarStrategy.Buildings
   children:
-  - Global.War.#ctor(System.String,List{System.String},List{System.String})
-  - Global.War.defenders
-  - Global.War.name
-  - Global.War.offenders
+  - GrandWarStrategy.Buildings.Market.income
   langs:
   - csharp
   - vb
-  name: War
-  nameWithType: War
-  fullName: War
+  name: Market
+  nameWithType: Market
+  fullName: GrandWarStrategy.Buildings.Market
   type: Class
   source:
-    id: War
+    id: Market
     path: ''
-    startLine: 977
+    startLine: 686
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Buildings
   syntax:
     content: >-
       [Serializable]
 
-      public class War
+      public class Market : Building
     content.vb: >-
       <Serializable>
 
-      Public Class War
+      Public Class Market Inherits Building
   inheritance:
   - System.Object
+  - GrandWarStrategy.Buildings.Building
   inheritedMembers:
+  - GrandWarStrategy.Buildings.Building.buildingName
+  - GrandWarStrategy.Buildings.Building.cost
+  - GrandWarStrategy.Buildings.Building.constructionTime
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -46,109 +47,47 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: Global.War.name
-  commentId: F:Global.War.name
-  id: name
-  parent: Global.War
+- uid: GrandWarStrategy.Buildings.Market.income
+  commentId: F:GrandWarStrategy.Buildings.Market.income
+  id: income
+  parent: GrandWarStrategy.Buildings.Market
   langs:
   - csharp
   - vb
-  name: name
-  nameWithType: War.name
-  fullName: War.name
+  name: income
+  nameWithType: Market.income
+  fullName: GrandWarStrategy.Buildings.Market.income
   type: Field
   source:
-    id: name
+    id: income
     path: ''
-    startLine: 980
+    startLine: 689
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Buildings
   syntax:
-    content: public string name
+    content: public int income
     return:
-      type: System.String
-    content.vb: Public name As String
-- uid: Global.War.offenders
-  commentId: F:Global.War.offenders
-  id: offenders
-  parent: Global.War
-  langs:
-  - csharp
-  - vb
-  name: offenders
-  nameWithType: War.offenders
-  fullName: War.offenders
-  type: Field
-  source:
-    id: offenders
-    path: ''
-    startLine: 981
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public List<string> offenders
-    return:
-      type: Global.List{System.String}
-    content.vb: Public offenders As List(Of String)
-- uid: Global.War.defenders
-  commentId: F:Global.War.defenders
-  id: defenders
-  parent: Global.War
-  langs:
-  - csharp
-  - vb
-  name: defenders
-  nameWithType: War.defenders
-  fullName: War.defenders
-  type: Field
-  source:
-    id: defenders
-    path: ''
-    startLine: 982
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public List<string> defenders
-    return:
-      type: Global.List{System.String}
-    content.vb: Public defenders As List(Of String)
-- uid: Global.War.#ctor(System.String,List{System.String},List{System.String})
-  commentId: M:Global.War.#ctor(System.String,List{System.String},List{System.String})
-  id: '#ctor(System.String,List{System.String},List{System.String})'
-  parent: Global.War
-  langs:
-  - csharp
-  - vb
-  name: War(string, List<string>, List<string>)
-  nameWithType: War.War(string, List<string>, List<string>)
-  fullName: War.War(string, List<string>, List<string>)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 984
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public War(string name, List<string> offenders, List<string> defenders)
-    parameters:
-    - id: name
-      type: System.String
-    - id: offenders
-      type: Global.List{System.String}
-    - id: defenders
-      type: Global.List{System.String}
-    content.vb: Public Sub New(name As String, offenders As List(Of String), defenders As List(Of String))
-  overload: Global.War.#ctor*
-  nameWithType.vb: War.New(String, List(Of String), List(Of String))
-  fullName.vb: War.New(String, List(Of String), List(Of String))
-  name.vb: New(String, List(Of String), List(Of String))
+      type: System.Int32
+    content.vb: Public income As Integer
 references:
-- uid: Global
+- uid: GrandWarStrategy.Buildings
+  commentId: N:GrandWarStrategy.Buildings
+  name: GrandWarStrategy.Buildings
+  nameWithType: GrandWarStrategy.Buildings
+  fullName: GrandWarStrategy.Buildings
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Buildings
+    name: Buildings
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Buildings
+    name: Buildings
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -159,6 +98,30 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: GrandWarStrategy.Buildings.Building
+  commentId: T:GrandWarStrategy.Buildings.Building
+  parent: GrandWarStrategy.Buildings
+  name: Building
+  nameWithType: Building
+  fullName: GrandWarStrategy.Buildings.Building
+- uid: GrandWarStrategy.Buildings.Building.buildingName
+  commentId: F:GrandWarStrategy.Buildings.Building.buildingName
+  parent: GrandWarStrategy.Buildings.Building
+  name: buildingName
+  nameWithType: Building.buildingName
+  fullName: GrandWarStrategy.Buildings.Building.buildingName
+- uid: GrandWarStrategy.Buildings.Building.cost
+  commentId: F:GrandWarStrategy.Buildings.Building.cost
+  parent: GrandWarStrategy.Buildings.Building
+  name: cost
+  nameWithType: Building.cost
+  fullName: GrandWarStrategy.Buildings.Building.cost
+- uid: GrandWarStrategy.Buildings.Building.constructionTime
+  commentId: F:GrandWarStrategy.Buildings.Building.constructionTime
+  parent: GrandWarStrategy.Buildings.Building
+  name: constructionTime
+  nameWithType: Building.constructionTime
+  fullName: GrandWarStrategy.Buildings.Building.constructionTime
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -353,74 +316,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Global.List{System.String}
-  commentId: '!:Global.List{System.String}'
-  definition: Global.List`1
-  name: List<string>
-  nameWithType: List<string>
-  fullName: List<string>
-  nameWithType.vb: List(Of String)
-  fullName.vb: List(Of String)
-  name.vb: List(Of String)
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-  - name: )
-- uid: Global.List`1
-  isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - name: ''
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: ''
-  - name: )
-- uid: Global.War.#ctor*
-  commentId: Overload:Global.War.#ctor
-  name: War
-  nameWithType: War.War
-  fullName: War.War
-  nameWithType.vb: War.New
-  fullName.vb: War.New
-  name.vb: New
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

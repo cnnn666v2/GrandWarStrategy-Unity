@@ -1,98 +1,98 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.ProvinceManager
-  commentId: T:Global.ProvinceManager
+- uid: GrandWarStrategy.Logic.ProvinceManager
+  commentId: T:GrandWarStrategy.Logic.ProvinceManager
   id: ProvinceManager
-  parent: Global
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.ProvinceManager.constructBuilding(Building)
-  - Global.ProvinceManager.isConstructedBuilding(Building)
-  - Global.ProvinceManager.selectedProvince
+  - GrandWarStrategy.Logic.ProvinceManager.constructBuilding(Building)
+  - GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding(Building)
+  - GrandWarStrategy.Logic.ProvinceManager.selectedProvince
   langs:
   - csharp
   - vb
   name: ProvinceManager
   nameWithType: ProvinceManager
-  fullName: ProvinceManager
+  fullName: GrandWarStrategy.Logic.ProvinceManager
   type: Class
   source:
     id: ProvinceManager
     path: ''
-    startLine: 224
+    startLine: 239
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: 'public class ProvinceManager : MonoBehaviour'
     content.vb: Public Class ProvinceManager Inherits MonoBehaviour
   inheritance:
   - System.Object
-- uid: Global.ProvinceManager.selectedProvince
-  commentId: F:Global.ProvinceManager.selectedProvince
+- uid: GrandWarStrategy.Logic.ProvinceManager.selectedProvince
+  commentId: F:GrandWarStrategy.Logic.ProvinceManager.selectedProvince
   id: selectedProvince
-  parent: Global.ProvinceManager
+  parent: GrandWarStrategy.Logic.ProvinceManager
   langs:
   - csharp
   - vb
   name: selectedProvince
   nameWithType: ProvinceManager.selectedProvince
-  fullName: ProvinceManager.selectedProvince
+  fullName: GrandWarStrategy.Logic.ProvinceManager.selectedProvince
   type: Field
   source:
     id: selectedProvince
     path: ''
-    startLine: 227
+    startLine: 242
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public int selectedProvince
     return:
       type: System.Int32
     content.vb: Public selectedProvince As Integer
-- uid: Global.ProvinceManager.constructBuilding(Building)
-  commentId: M:Global.ProvinceManager.constructBuilding(Building)
+- uid: GrandWarStrategy.Logic.ProvinceManager.constructBuilding(Building)
+  commentId: M:GrandWarStrategy.Logic.ProvinceManager.constructBuilding(Building)
   id: constructBuilding(Building)
-  parent: Global.ProvinceManager
+  parent: GrandWarStrategy.Logic.ProvinceManager
   langs:
   - csharp
   - vb
   name: constructBuilding(Building)
   nameWithType: ProvinceManager.constructBuilding(Building)
-  fullName: ProvinceManager.constructBuilding(Building)
+  fullName: GrandWarStrategy.Logic.ProvinceManager.constructBuilding(Building)
   type: Method
   source:
     id: constructBuilding
     path: ''
-    startLine: 233
+    startLine: 248
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public void constructBuilding(Building newBuilding)
     parameters:
     - id: newBuilding
       type: Global.Building
     content.vb: Public Sub constructBuilding(newBuilding As Building)
-  overload: Global.ProvinceManager.constructBuilding*
-- uid: Global.ProvinceManager.isConstructedBuilding(Building)
-  commentId: M:Global.ProvinceManager.isConstructedBuilding(Building)
+  overload: GrandWarStrategy.Logic.ProvinceManager.constructBuilding*
+- uid: GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding(Building)
+  commentId: M:GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding(Building)
   id: isConstructedBuilding(Building)
-  parent: Global.ProvinceManager
+  parent: GrandWarStrategy.Logic.ProvinceManager
   langs:
   - csharp
   - vb
   name: isConstructedBuilding(Building)
   nameWithType: ProvinceManager.isConstructedBuilding(Building)
-  fullName: ProvinceManager.isConstructedBuilding(Building)
+  fullName: GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding(Building)
   type: Method
   source:
     id: isConstructedBuilding
     path: ''
-    startLine: 253
+    startLine: 268
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
     content: public bool isConstructedBuilding(Building building)
     parameters:
@@ -101,9 +101,25 @@ items:
     return:
       type: System.Boolean
     content.vb: Public Function isConstructedBuilding(building As Building) As Boolean
-  overload: Global.ProvinceManager.isConstructedBuilding*
+  overload: GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding*
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -130,21 +146,21 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Global.ProvinceManager.constructBuilding*
-  commentId: Overload:Global.ProvinceManager.constructBuilding
+- uid: GrandWarStrategy.Logic.ProvinceManager.constructBuilding*
+  commentId: Overload:GrandWarStrategy.Logic.ProvinceManager.constructBuilding
   name: constructBuilding
   nameWithType: ProvinceManager.constructBuilding
-  fullName: ProvinceManager.constructBuilding
+  fullName: GrandWarStrategy.Logic.ProvinceManager.constructBuilding
 - uid: Global.Building
-  commentId: T:Global.Building
+  isExternal: true
   name: Building
   nameWithType: Building
   fullName: Building
-- uid: Global.ProvinceManager.isConstructedBuilding*
-  commentId: Overload:Global.ProvinceManager.isConstructedBuilding
+- uid: GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding*
+  commentId: Overload:GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding
   name: isConstructedBuilding
   nameWithType: ProvinceManager.isConstructedBuilding
-  fullName: ProvinceManager.isConstructedBuilding
+  fullName: GrandWarStrategy.Logic.ProvinceManager.isConstructedBuilding
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

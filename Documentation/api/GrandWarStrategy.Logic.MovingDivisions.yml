@@ -1,37 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.War
-  commentId: T:Global.War
-  id: War
-  parent: Global
+- uid: GrandWarStrategy.Logic.MovingDivisions
+  commentId: T:GrandWarStrategy.Logic.MovingDivisions
+  id: MovingDivisions
+  parent: GrandWarStrategy.Logic
   children:
-  - Global.War.#ctor(System.String,List{System.String},List{System.String})
-  - Global.War.defenders
-  - Global.War.name
-  - Global.War.offenders
+  - GrandWarStrategy.Logic.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  - GrandWarStrategy.Logic.MovingDivisions.army
+  - GrandWarStrategy.Logic.MovingDivisions.destination
+  - GrandWarStrategy.Logic.MovingDivisions.stayingIn
+  - GrandWarStrategy.Logic.MovingDivisions.travelTime
   langs:
   - csharp
   - vb
-  name: War
-  nameWithType: War
-  fullName: War
+  name: MovingDivisions
+  nameWithType: MovingDivisions
+  fullName: GrandWarStrategy.Logic.MovingDivisions
   type: Class
   source:
-    id: War
+    id: MovingDivisions
     path: ''
-    startLine: 977
+    startLine: 82
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: >-
-      [Serializable]
-
-      public class War
-    content.vb: >-
-      <Serializable>
-
-      Public Class War
+    content: public class MovingDivisions
+    content.vb: Public Class MovingDivisions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,113 +37,150 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
-- uid: Global.War.name
-  commentId: F:Global.War.name
-  id: name
-  parent: Global.War
+- uid: GrandWarStrategy.Logic.MovingDivisions.army
+  commentId: F:GrandWarStrategy.Logic.MovingDivisions.army
+  id: army
+  parent: GrandWarStrategy.Logic.MovingDivisions
   langs:
   - csharp
   - vb
-  name: name
-  nameWithType: War.name
-  fullName: War.name
+  name: army
+  nameWithType: MovingDivisions.army
+  fullName: GrandWarStrategy.Logic.MovingDivisions.army
   type: Field
   source:
-    id: name
+    id: army
     path: ''
-    startLine: 980
+    startLine: 84
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public string name
+    content: public Army army
     return:
-      type: System.String
-    content.vb: Public name As String
-- uid: Global.War.offenders
-  commentId: F:Global.War.offenders
-  id: offenders
-  parent: Global.War
+      type: Global.Army
+    content.vb: Public army As Army
+- uid: GrandWarStrategy.Logic.MovingDivisions.stayingIn
+  commentId: F:GrandWarStrategy.Logic.MovingDivisions.stayingIn
+  id: stayingIn
+  parent: GrandWarStrategy.Logic.MovingDivisions
   langs:
   - csharp
   - vb
-  name: offenders
-  nameWithType: War.offenders
-  fullName: War.offenders
+  name: stayingIn
+  nameWithType: MovingDivisions.stayingIn
+  fullName: GrandWarStrategy.Logic.MovingDivisions.stayingIn
   type: Field
   source:
-    id: offenders
+    id: stayingIn
     path: ''
-    startLine: 981
+    startLine: 85
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public List<string> offenders
+    content: public ProvinceData stayingIn
     return:
-      type: Global.List{System.String}
-    content.vb: Public offenders As List(Of String)
-- uid: Global.War.defenders
-  commentId: F:Global.War.defenders
-  id: defenders
-  parent: Global.War
+      type: Global.ProvinceData
+    content.vb: Public stayingIn As ProvinceData
+- uid: GrandWarStrategy.Logic.MovingDivisions.destination
+  commentId: F:GrandWarStrategy.Logic.MovingDivisions.destination
+  id: destination
+  parent: GrandWarStrategy.Logic.MovingDivisions
   langs:
   - csharp
   - vb
-  name: defenders
-  nameWithType: War.defenders
-  fullName: War.defenders
+  name: destination
+  nameWithType: MovingDivisions.destination
+  fullName: GrandWarStrategy.Logic.MovingDivisions.destination
   type: Field
   source:
-    id: defenders
+    id: destination
     path: ''
-    startLine: 982
+    startLine: 85
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public List<string> defenders
+    content: public ProvinceData destination
     return:
-      type: Global.List{System.String}
-    content.vb: Public defenders As List(Of String)
-- uid: Global.War.#ctor(System.String,List{System.String},List{System.String})
-  commentId: M:Global.War.#ctor(System.String,List{System.String},List{System.String})
-  id: '#ctor(System.String,List{System.String},List{System.String})'
-  parent: Global.War
+      type: Global.ProvinceData
+    content.vb: Public destination As ProvinceData
+- uid: GrandWarStrategy.Logic.MovingDivisions.travelTime
+  commentId: F:GrandWarStrategy.Logic.MovingDivisions.travelTime
+  id: travelTime
+  parent: GrandWarStrategy.Logic.MovingDivisions
   langs:
   - csharp
   - vb
-  name: War(string, List<string>, List<string>)
-  nameWithType: War.War(string, List<string>, List<string>)
-  fullName: War.War(string, List<string>, List<string>)
+  name: travelTime
+  nameWithType: MovingDivisions.travelTime
+  fullName: GrandWarStrategy.Logic.MovingDivisions.travelTime
+  type: Field
+  source:
+    id: travelTime
+    path: ''
+    startLine: 86
+  assemblies:
+  - cs.temp.dll
+  namespace: GrandWarStrategy.Logic
+  syntax:
+    content: public int travelTime
+    return:
+      type: System.Int32
+    content.vb: Public travelTime As Integer
+- uid: GrandWarStrategy.Logic.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  commentId: M:GrandWarStrategy.Logic.MovingDivisions.#ctor(Army,ProvinceData,ProvinceData,System.Int32)
+  id: '#ctor(Army,ProvinceData,ProvinceData,System.Int32)'
+  parent: GrandWarStrategy.Logic.MovingDivisions
+  langs:
+  - csharp
+  - vb
+  name: MovingDivisions(Army, ProvinceData, ProvinceData, int)
+  nameWithType: MovingDivisions.MovingDivisions(Army, ProvinceData, ProvinceData, int)
+  fullName: GrandWarStrategy.Logic.MovingDivisions.MovingDivisions(Army, ProvinceData, ProvinceData, int)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 984
+    startLine: 88
   assemblies:
   - cs.temp.dll
-  namespace: Global
+  namespace: GrandWarStrategy.Logic
   syntax:
-    content: public War(string name, List<string> offenders, List<string> defenders)
+    content: public MovingDivisions(Army army, ProvinceData stayingIn, ProvinceData destination, int travelTime)
     parameters:
-    - id: name
-      type: System.String
-    - id: offenders
-      type: Global.List{System.String}
-    - id: defenders
-      type: Global.List{System.String}
-    content.vb: Public Sub New(name As String, offenders As List(Of String), defenders As List(Of String))
-  overload: Global.War.#ctor*
-  nameWithType.vb: War.New(String, List(Of String), List(Of String))
-  fullName.vb: War.New(String, List(Of String), List(Of String))
-  name.vb: New(String, List(Of String), List(Of String))
+    - id: army
+      type: Global.Army
+    - id: stayingIn
+      type: Global.ProvinceData
+    - id: destination
+      type: Global.ProvinceData
+    - id: travelTime
+      type: System.Int32
+    content.vb: Public Sub New(army As Army, stayingIn As ProvinceData, destination As ProvinceData, travelTime As Integer)
+  overload: GrandWarStrategy.Logic.MovingDivisions.#ctor*
+  nameWithType.vb: MovingDivisions.New(Army, ProvinceData, ProvinceData, Integer)
+  fullName.vb: GrandWarStrategy.Logic.MovingDivisions.New(Army, ProvinceData, ProvinceData, Integer)
+  name.vb: New(Army, ProvinceData, ProvinceData, Integer)
 references:
-- uid: Global
+- uid: GrandWarStrategy.Logic
+  commentId: N:GrandWarStrategy.Logic
+  name: GrandWarStrategy.Logic
+  nameWithType: GrandWarStrategy.Logic
+  fullName: GrandWarStrategy.Logic
+  spec.csharp:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
+  spec.vb:
+  - uid: GrandWarStrategy
+    name: GrandWarStrategy
+  - name: .
+  - uid: GrandWarStrategy.Logic
+    name: Logic
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -353,74 +385,31 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
+- uid: Global.Army
+  isExternal: true
+  name: Army
+  nameWithType: Army
+  fullName: Army
+- uid: Global.ProvinceData
+  isExternal: true
+  name: ProvinceData
+  nameWithType: ProvinceData
+  fullName: ProvinceData
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Global.List{System.String}
-  commentId: '!:Global.List{System.String}'
-  definition: Global.List`1
-  name: List<string>
-  nameWithType: List<string>
-  fullName: List<string>
-  nameWithType.vb: List(Of String)
-  fullName.vb: List(Of String)
-  name.vb: List(Of String)
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-  - name: )
-- uid: Global.List`1
-  isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
-  spec.csharp:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: <
-  - name: ''
-  - name: '>'
-  spec.vb:
-  - uid: Global.List`1
-    name: List
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: ''
-  - name: )
-- uid: Global.War.#ctor*
-  commentId: Overload:Global.War.#ctor
-  name: War
-  nameWithType: War.War
-  fullName: War.War
-  nameWithType.vb: War.New
-  fullName.vb: War.New
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: GrandWarStrategy.Logic.MovingDivisions.#ctor*
+  commentId: Overload:GrandWarStrategy.Logic.MovingDivisions.#ctor
+  name: MovingDivisions
+  nameWithType: MovingDivisions.MovingDivisions
+  fullName: GrandWarStrategy.Logic.MovingDivisions.MovingDivisions
+  nameWithType.vb: MovingDivisions.New
+  fullName.vb: GrandWarStrategy.Logic.MovingDivisions.New
   name.vb: New
